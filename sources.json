@@ -1,0 +1,16 @@
+[
+{
+"name": "Yahoo Finance - Trending",
+"module": "scrapers.yahoo_trending",
+"function": "get_yahoo_trending",
+"type": "api",
+"enabled": true
+},
+{
+"name": "MarketWatch - Most Active",
+"module": "scrapers.marketwatch_top",
+"function": "get_marketwatch_top",
+"type": "scrape",
+"enabled": true
+}
+]
