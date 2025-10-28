@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Yahoo Finance - Trending",
+    "module": "yahoo",
+    "url": "https://query1.finance.yahoo.com/v1/finance/trending/US",
+    "type": "api",
+    "enabled": true
+  },
+  {
+    "name": "MarketWatch - Most Active",
+    "module": "marketwatch",
+    "url": "https://www.marketwatch.com/tools/screener/mostactive",
+    "type": "scrape",
+    "enabled": true
+  }
+]

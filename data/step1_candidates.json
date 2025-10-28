@@ -1,0 +1,191 @@
+[
+  {
+    "ticker": "SOFI",
+    "name": "SoFi Technologies, Inc.",
+    "source": "https://finance.yahoo.com/most-active",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "PYPL",
+    "name": "PayPal Holdings, Inc.",
+    "source": "https://finance.yahoo.com/most-active",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "WULF",
+    "name": "TeraWulf Inc.",
+    "source": "https://finance.yahoo.com/most-active",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "source": "https://finance.yahoo.com/most-active",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "ARQT",
+    "name": "Arcutis Biotherapeutics, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "CCJ",
+    "name": "Cameco Corporation",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "W",
+    "name": "Wayfair Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "SWKS",
+    "name": "Skyworks Solutions, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "CLS",
+    "name": "Celestica Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "QRVO",
+    "name": "Qorvo, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "NXE",
+    "name": "NexGen Energy Ltd.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "UPS",
+    "name": "United Parcel Service, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "FRMI",
+    "name": "Fermi Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "CFLT",
+    "name": "Confluent, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "UPWK",
+    "name": "Upwork Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "ATI",
+    "name": "ATI Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "UEC",
+    "name": "Uranium Energy Corp.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "PONY",
+    "name": "Pony AI Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "SHW",
+    "name": "The Sherwin-Williams Company",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "NOV",
+    "name": "NOV Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "SOLSV",
+    "name": "Solstice Advanced Materials, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "BEPC",
+    "name": "Brookfield Renewable Corporation",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "BMNR",
+    "name": "Bitmine Immersion Technologies, Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "BEP",
+    "name": "Brookfield Renewable Partners L.P.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "CHKP",
+    "name": "Check Point Software Technologies Ltd.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "UUUU",
+    "name": "Energy Fuels Inc.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  },
+  {
+    "ticker": "CX",
+    "name": "CEMEX, S.A.B. de C.V.",
+    "source": "https://finance.yahoo.com/gainers",
+    "percent_change": 0.0,
+    "date": "2025-10-28"
+  }
+]
