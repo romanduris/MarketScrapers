@@ -1,0 +1,32 @@
+name: Daily MarketScraper
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # každý deň 07:00 UTC
+  workflow_dispatch:   # možnosť manuálneho spustenia
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python main.py
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v3
+        with:
+          name: ai_stock_report
+          path: data/ai_report.html
