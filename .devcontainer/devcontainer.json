@@ -1,0 +1,15 @@
+{
+  "name": "MarketScrapers",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "remoteEnv": {
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
+  }
+}
