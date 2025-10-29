@@ -1,14 +1,13 @@
 """
 step4_ranking.py
-Kombinuje technické a sentimentálne dáta a vyberá top 10 akcií.
+Kombinuje technické a sentimentálne dáta a vyhodnocuje "buy_score".
 Výstup: JSON s top 10 akciami vrátane všetkých relevantných metrík.
 """
 import json
 from pathlib import Path
 
 # ---------- SETTINGS ----------
-STEP2_FILE = "data/step2_filtered.json"  # technické filtre
-STEP3_FILE = "data/step3_sentiment.json" # sentiment
+STEP3_FILE = "data/step3_sentiment.json"  # sentiment + technické dáta
 OUTPUT_FILE = "data/step4_top10.json"
 TOP_N = 10
 
@@ -23,60 +22,64 @@ def normalize_minmax(values):
         return [0.5]*len(values)  # rovnaké hodnoty -> stred
     return [(v - min_v)/(max_v - min_v) for v in values]
 
+def recommendation_to_score(rec):
+    """Prevádza recommendation text na číselnú hodnotu"""
+    mapping = {
+        "Strong Buy": 1.0,
+        "Buy": 0.8,
+        "Hold": 0.5,
+        "Sell": 0.2,
+        "Strong Sell": 0.0
+    }
+    return mapping.get(rec, 0.5)  # default stred
+
 # ---------- LOAD DATA ----------
-if not Path(STEP2_FILE).exists() or not Path(STEP3_FILE).exists():
-    print("⚠️ Chýba vstupný súbor Step2 alebo Step3. Spusti najprv predchádzajúce kroky.")
+if not Path(STEP3_FILE).exists():
+    print("⚠️ Chýba vstupný súbor Step3. Spusti najprv predchádzajúce kroky.")
     exit(1)
 
-with open(STEP2_FILE, "r", encoding="utf-8") as f:
-    tech_data = json.load(f)
-
 with open(STEP3_FILE, "r", encoding="utf-8") as f:
-    sentiment_data = json.load(f)
+    data = json.load(f)
 
-# ---------- MERGE DATA ----------
-# vytvor dict pre rýchly lookup sentimentu
-sent_dict = {item['ticker']: item for item in sentiment_data}
+# ---------- FILTER OUT NEGATIVE OR ZERO COMBINED SENTIMENT ----------
+filtered = [d for d in data if d.get("combined_sentiment",0) > 0 and d.get("news_mentions",0) > 0]
 
-merged = []
-for t in tech_data:
-    ticker = t['ticker']
-    s = sent_dict.get(ticker, {})
-    merged_item = dict(t)  # skopíruj technické dáta
-    merged_item.update({
-        "news_sentiment": s.get("news_sentiment", 0.0),
-        "social_sentiment": s.get("social_sentiment", 0.0),
-        "combined_sentiment": s.get("combined_sentiment", 0.0),
-        "news_mentions": s.get("news_mentions", 0),
-        "social_mentions": s.get("social_mentions", 0),
-        "total_mentions": s.get("total_mentions", 0),
-        "sentiment_date": s.get("sentiment_date", None)
-    })
-    merged.append(merged_item)
+if not filtered:
+    print("⚠️ Žiadne vhodné tickery na základe sentimentu.")
+    exit(1)
 
-# ---------- SCORE CALCULATION ----------
-# váhy: combined_sentiment 0.5, percent_change 0.3, total_mentions 0.2
-sentiments = [m["combined_sentiment"] for m in merged]
-percent_changes = [m.get("percent_change", 0.0) for m in merged]
-mentions = [m.get("total_mentions", 0) for m in merged]
+# ---------- NORMALIZE FEATURES ----------
+sentiments = [d["combined_sentiment"] for d in filtered]
+percent_changes = [d.get("percent_change",0.0) for d in filtered]
+mentions = [d.get("total_mentions",0) for d in filtered]
+recommendations = [recommendation_to_score(d.get("recommendation","Hold")) for d in filtered]
 
 norm_sent = normalize_minmax(sentiments)
 norm_pct = normalize_minmax(percent_changes)
 norm_mentions = normalize_minmax(mentions)
+norm_rec = normalize_minmax(recommendations)
 
-for i, m in enumerate(merged):
-    # celkové skóre vážený súčet
-    m["score"] = round(norm_sent[i]*0.5 + norm_pct[i]*0.3 + norm_mentions[i]*0.2, 3)
+# ---------- CALCULATE BUY SCORE ----------
+for i, d in enumerate(filtered):
+    d["buy_score"] = round(
+        norm_sent[i]*0.4 +  # váha sentimentu
+        norm_rec[i]*0.3 +   # váha recommendation
+        norm_pct[i]*0.2 +   # váha percent change
+        norm_mentions[i]*0.1, # váha mentions
+        3
+    )
 
 # ---------- SORT AND SELECT TOP 10 ----------
-merged_sorted = sorted(merged, key=lambda x: x["score"], reverse=True)
-top10 = merged_sorted[:TOP_N]
+top10 = sorted(filtered, key=lambda x: x["buy_score"], reverse=True)[:TOP_N]
 
 # ---------- SAVE OUTPUT ----------
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(top10, f, indent=2, ensure_ascii=False)
 
+# ---------- PRINT SUMMARY ----------
 print(f"💾 Top {TOP_N} tickery uložené do {OUTPUT_FILE}")
 for idx, t in enumerate(top10, 1):
-    print(f"{idx}. {t['ticker']} - score: {t['score']}, sentiment: {t['combined_sentiment']}, %change: {t.get('percent_change',0)}, mentions: {t.get('total_mentions',0)}")
+    print(f"{idx}. {t['ticker']} - buy_score: {t['buy_score']}, sentiment: {t.get('combined_sentiment',0)}, "
+          f"recommendation: {t.get('recommendation','NA')}, %change: {t.get('percent_change',0)}, "
+          f"mentions: {t.get('total_mentions',0)}")

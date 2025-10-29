@@ -1,8 +1,8 @@
 """
 STEP 5 – AI Comment s TP a SL
-- Top 5 akcií, ktoré boli vybrané
+- Všetky akcie zo vstupného súboru
 - Doplní current_price cez yfinance, ak chýba
-- Generovanie AI reasoning
+- Generovanie AI reasoning cez OpenAI API (nová syntax >=1.0.0)
 - Výpočet odporúčaného Take Profit (TP) a Stop Loss (SL)
 - Výstup uložený do data/step5_ai_report.json
 """
@@ -10,23 +10,54 @@ STEP 5 – AI Comment s TP a SL
 import json
 from pathlib import Path
 import yfinance as yf
+import openai
+
+# ---------- SETTINGS ----------
+OPENAI_API_KEY = "REMOVED_SECRET"  # nastav svoj token
+AI_MODEL = "gpt-3.5-turbo"  # alebo "gpt-4" ak máš prístup
+TP_PERCENT = 5
+SL_PERCENT = 3
+
+openai.api_key = OPENAI_API_KEY
 
 # ---------- FUNKCIA TP/SL ----------
-def calculate_tp_sl(current_price, tp_percent=5, sl_percent=3):
-    """Vypočíta odporúčané TP a SL."""
+def calculate_tp_sl(current_price, tp_percent=TP_PERCENT, sl_percent=SL_PERCENT):
     tp_price = round(current_price * (1 + tp_percent / 100), 2)
     sl_price = round(current_price * (1 - sl_percent / 100), 2)
     return tp_price, sl_price
 
-# ---------- Hlavná funkcia ----------
-def run_ai_comment(top_stocks):
-    print("📡 Generovanie AI komentárov a TP/SL pre top akcie...")
+# ---------- FUNKCIA AI COMMENT ----------
+def generate_ai_reasoning(stock):
+    prompt = f"""
+Si skúsený finančný analytik. Zhodnoť túto akciu
+Akcia: {stock.get('ticker', '')} ({stock.get('name', '')})
+Napíš stručný opis podniku, prečo by mohol byť vhodný na kúpu a čo sú riziká. max jedna veta alebo 2 ktatke vety
+"""
+    try:
+        response = openai.chat.completions.create(
+            model=AI_MODEL,
+            messages=[
+                {"role": "system", "content": "Si skúsený finančný analytik."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=300
+        )
+        # nová syntax pre získanie textu
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"⚠️ Chyba pri generovaní AI reasoning pre {stock.get('ticker','N/A')}: {e}")
+        return "AI reasoning sa nepodarilo vygenerovať."
+
+# ---------- HLAVNÁ FUNKCIA ----------
+def run_ai_comment(all_stocks):
+    print("📡 Generovanie AI komentárov a TP/SL pre všetky akcie...")
 
     output = []
 
-    for i, stock in enumerate(top_stocks, start=1):
-        # doplnenie current_price, ak neexistuje alebo je 0
-        if "current_price" not in stock or stock["current_price"] == 0:
+    for i, stock in enumerate(all_stocks, start=1):
+        # doplnenie current_price
+        if "current_price" not in stock or stock["current_price"] in (0, None):
             ticker = stock["ticker"]
             try:
                 info = yf.Ticker(ticker).info
@@ -38,19 +69,8 @@ def run_ai_comment(top_stocks):
         # výpočet TP a SL
         tp, sl = calculate_tp_sl(stock["current_price"])
 
-        # placeholder reasoning – tu môže prísť AI analýza (GPT4All/GPT)
-        reasoning = f"""
-        AI reasoning pre {stock['ticker']} ({stock.get('name', '')}):
-        - Aktuálna cena: {stock['current_price']}
-        - RSI: {stock.get('rsi', 'N/A')}
-        - Volume: {stock.get('volume', 'N/A')}
-        - Percent change: {stock.get('percent_change', 'N/A')}%
-        - News sentiment: {stock.get('news_sentiment', 'N/A')}
-        - Social sentiment: {stock.get('social_sentiment', 'N/A')}
-        - Combined sentiment: {stock.get('combined_sentiment', 'N/A')}
-        - TP (Take Profit): {tp}
-        - SL (Stop Loss): {sl}
-        """
+        # AI reasoning
+        reasoning = generate_ai_reasoning(stock)
 
         output.append({
             "rank": i,
@@ -59,17 +79,19 @@ def run_ai_comment(top_stocks):
             "current_price": stock["current_price"],
             "TP": tp,
             "SL": sl,
-            "reasoning": reasoning.strip(),
-            "rsi": stock.get("rsi", None),
-            "volume": stock.get("volume", None),
-            "percent_change": stock.get("percent_change", None),
-            "news_sentiment": stock.get("news_sentiment", None),
-            "social_sentiment": stock.get("social_sentiment", None),
-            "combined_sentiment": stock.get("combined_sentiment", None)
-         
+            "reasoning": reasoning,
+            "rsi": stock.get("rsi"),
+            "volume": stock.get("volume"),
+            "percent_change": stock.get("percent_change"),
+            "market_cap": stock.get("market_cap"),
+            "news_sentiment": stock.get("news_sentiment"),
+            "social_sentiment": stock.get("social_sentiment"),
+            "combined_sentiment": stock.get("combined_sentiment"),
+            "buy_score": stock.get("buy_score"),
+            "recommendation": stock.get("recommendation")
         })
 
-        print(f"✅ [{i}] {stock['ticker']} – TP: {tp}, SL: {sl}")
+        print(f"✅ [{i}] {stock['ticker']} – Cena: {stock['current_price']}, TP: {tp}, SL: {sl}")
 
     # uloženie do JSON
     Path("data").mkdir(exist_ok=True)
@@ -84,7 +106,7 @@ def run_ai_comment(top_stocks):
 if __name__ == "__main__":
     input_file = Path("data/step4_top10.json")
     if not input_file.exists():
-        print(f"⚠️ Subor {input_file} neexistuje. Spusť najprv step4_ranking.py")
+        print(f"⚠️ Súbor {input_file} neexistuje. Spusť najprv step4_ranking.py")
     else:
-        top_stocks = json.load(open(input_file, "r", encoding="utf-8"))
-        run_ai_comment(top_stocks[:5])
+        all_stocks = json.load(open(input_file, "r", encoding="utf-8"))
+        run_ai_comment(all_stocks)

@@ -1,191 +1,482 @@
 [
   {
-    "ticker": "SOFI",
-    "name": "SoFi Technologies, Inc.",
-    "source": "https://finance.yahoo.com/most-active",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "ticker": "NOK",
+    "name": "Nokia Oyj",
+    "volume": 364791023,
+    "percent_change": 22.84,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
-    "ticker": "PYPL",
-    "name": "PayPal Holdings, Inc.",
-    "source": "https://finance.yahoo.com/most-active",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "WULF",
-    "name": "TeraWulf Inc.",
-    "source": "https://finance.yahoo.com/most-active",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "ticker": "BBAI",
+    "name": "BigBear.ai Holdings, Inc.",
+    "volume": 354720154,
+    "percent_change": -4.51,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
   },
   {
     "ticker": "NVDA",
     "name": "NVIDIA Corporation",
-    "source": "https://finance.yahoo.com/most-active",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "volume": 287790029,
+    "percent_change": 4.98,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "SOFI",
+    "name": "SoFi Technologies, Inc.",
+    "volume": 180151704,
+    "percent_change": 5.53,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "volume": 180441913,
+    "percent_change": 5.03,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "DNN",
+    "name": "Denison Mines Corp.",
+    "volume": 126750343,
+    "percent_change": 10.43,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "WULF",
+    "name": "TeraWulf Inc.",
+    "volume": 114470160,
+    "percent_change": 16.86,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "OPEN",
+    "name": "Opendoor Technologies Inc.",
+    "volume": 99579222,
+    "percent_change": -2.33,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "volume": 93441981,
+    "percent_change": -0.98,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "RGTI",
+    "name": "Rigetti Computing, Inc.",
+    "volume": 92217841,
+    "percent_change": -7.88,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "PLUG",
+    "name": "Plug Power Inc.",
+    "volume": 87512976,
+    "percent_change": -5.74,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "PYPL",
+    "name": "PayPal Holdings, Inc.",
+    "volume": 83318318,
+    "percent_change": 3.94,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "volume": 79752079,
+    "percent_change": 1.8,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "BITF",
+    "name": "Bitfarms Ltd.",
+    "volume": 70944154,
+    "percent_change": -5.29,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "T",
+    "name": "AT&T Inc.",
+    "volume": 68498532,
+    "percent_change": 0.67,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "QBTS",
+    "name": "D-Wave Quantum Inc.",
+    "volume": 60479665,
+    "percent_change": -8.68,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "ERIC",
+    "name": "Telefonaktiebolaget LM Ericsson (publ)",
+    "volume": 60567444,
+    "percent_change": 3.5,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "HBAN",
+    "name": "Huntington Bancshares Incorporated",
+    "volume": 61631085,
+    "percent_change": -0.64,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "QS",
+    "name": "QuantumScape Corporation",
+    "volume": 55993739,
+    "percent_change": -4.24,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "RF",
+    "name": "Regions Financial Corporation",
+    "volume": 52778049,
+    "percent_change": 0.12,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "AAL",
+    "name": "American Airlines Group Inc.",
+    "volume": 52814576,
+    "percent_change": -5.22,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "RIG",
+    "name": "Transocean Ltd.",
+    "volume": 53711482,
+    "percent_change": -2.85,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "GRAB",
+    "name": "Grab Holdings Limited",
+    "volume": 47201183,
+    "percent_change": -2.94,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "ACHR",
+    "name": "Archer Aviation Inc.",
+    "volume": 45989890,
+    "percent_change": -1.76,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "JOBY",
+    "name": "Joby Aviation, Inc.",
+    "volume": 45126187,
+    "percent_change": -4.23,
+    "source": "Yahoo:most_active",
+    "date": "2025-10-29"
   },
   {
     "ticker": "ARQT",
     "name": "Arcutis Biotherapeutics, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "CCJ",
-    "name": "Cameco Corporation",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "W",
-    "name": "Wayfair Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "SWKS",
-    "name": "Skyworks Solutions, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "CLS",
-    "name": "Celestica Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "QRVO",
-    "name": "Qorvo, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "NXE",
-    "name": "NexGen Energy Ltd.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "UPS",
-    "name": "United Parcel Service, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "volume": 11991199,
+    "percent_change": 27.04,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
     "ticker": "FRMI",
     "name": "Fermi Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "volume": 11068876,
+    "percent_change": 25.3,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
-    "ticker": "CFLT",
-    "name": "Confluent, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "ticker": "CCJ",
+    "name": "Cameco Corporation",
+    "volume": 24124899,
+    "percent_change": 23.42,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
-    "ticker": "UPWK",
-    "name": "Upwork Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "ticker": "W",
+    "name": "Wayfair Inc.",
+    "volume": 17466813,
+    "percent_change": 23.22,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
-    "ticker": "ATI",
-    "name": "ATI Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "ticker": "AGYS",
+    "name": "Agilysys, Inc.",
+    "volume": 1252568,
+    "percent_change": 22.56,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
     "ticker": "UEC",
     "name": "Uranium Energy Corp.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "volume": 19326892,
+    "percent_change": 14.34,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "NXE",
+    "name": "NexGen Energy Ltd.",
+    "volume": 18829236,
+    "percent_change": 12.0,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "REGN",
+    "name": "Regeneron Pharmaceuticals, Inc.",
+    "volume": 2125357,
+    "percent_change": 11.82,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
     "ticker": "PONY",
     "name": "Pony AI Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "SHW",
-    "name": "The Sherwin-Williams Company",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "NOV",
-    "name": "NOV Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "SOLSV",
-    "name": "Solstice Advanced Materials, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "BEPC",
-    "name": "Brookfield Renewable Corporation",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "BMNR",
-    "name": "Bitmine Immersion Technologies, Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "BEP",
-    "name": "Brookfield Renewable Partners L.P.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "CHKP",
-    "name": "Check Point Software Technologies Ltd.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
-  },
-  {
-    "ticker": "UUUU",
-    "name": "Energy Fuels Inc.",
-    "source": "https://finance.yahoo.com/gainers",
-    "percent_change": 0.0,
-    "date": "2025-10-28"
+    "volume": 12548243,
+    "percent_change": 11.13,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
   },
   {
     "ticker": "CX",
     "name": "CEMEX, S.A.B. de C.V.",
-    "source": "https://finance.yahoo.com/gainers",
+    "volume": 26919721,
+    "percent_change": 9.94,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "SMR",
+    "name": "NuScale Power Corporation",
+    "volume": 32136238,
+    "percent_change": 8.81,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "MSCI",
+    "name": "MSCI Inc.",
+    "volume": 1465632,
+    "percent_change": 8.58,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "CLS",
+    "name": "Celestica Inc.",
+    "volume": 7701684,
+    "percent_change": 8.16,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "UPS",
+    "name": "United Parcel Service, Inc.",
+    "volume": 28451715,
+    "percent_change": 8.0,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "UPWK",
+    "name": "Upwork Inc.",
+    "volume": 3519153,
+    "percent_change": 7.75,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "LGN",
+    "name": "Legence Corp.",
+    "volume": 1867506,
+    "percent_change": 7.56,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "CFLT",
+    "name": "Confluent, Inc.",
+    "volume": 25159448,
+    "percent_change": 7.56,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "ATI",
+    "name": "ATI Inc.",
+    "volume": 3802489,
+    "percent_change": 7.44,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "LUMN",
+    "name": "Lumen Technologies, Inc.",
+    "volume": 44110131,
+    "percent_change": 7.37,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "PRAX",
+    "name": "Praxis Precision Medicines, Inc.",
+    "volume": 831678,
+    "percent_change": 7.2,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "NOV",
+    "name": "NOV Inc.",
+    "volume": 13060232,
+    "percent_change": 7.17,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "RCUS",
+    "name": "Arcus Biosciences, Inc.",
+    "volume": 2188006,
+    "percent_change": 6.88,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "GGAL",
+    "name": "Grupo Financiero Galicia S.A.",
+    "volume": 5471666,
+    "percent_change": 6.63,
+    "source": "Yahoo:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "INFLA",
+    "name": "Inflation is quietly chipping away at mo",
+    "volume": 0,
     "percent_change": 0.0,
-    "date": "2025-10-28"
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "HERES",
+    "name": "Here’s why Oreo maker Mondelez gave Wall",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "LUCKI",
+    "name": "‘Luckily, I did not mix our finances’",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "STABL",
+    "name": "This ‘safe’ cryptocurrency promises stab",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "ROYAL",
+    "name": "Royal Caribbean sees cruise demand accel",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "THERE",
+    "name": "‘There’s talk of a mutiny’",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "SWISS",
+    "name": "Swiss National Bank cuts interest rates ",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "DOLLA",
+    "name": "Dollar jumps 0.5% to 0.8890 francs",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "GERMA",
+    "name": "Germany flash services PMI falls to 9-mo",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "POWEL",
+    "name": "Powell says labor market not a source of",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "FINAL",
+    "name": "Final S&P U.S. manufacturing index is 52",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
+  },
+  {
+    "ticker": "DUOLI",
+    "name": "Duolingo started at buy with $222 price ",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:losers",
+    "date": "2025-10-29"
   }
 ]
