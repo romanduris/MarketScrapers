@@ -1,79 +1,43 @@
 """
-STEP 7 – Odoslanie HTML reportu emailom cez Mailjet API
-Bez potreby osobného emailu / hesla.
+STEP 7 – Odoslanie reportu e-mailom
+Odošle súbor data/ai_report.html ako HTML správu.
 """
 
+import smtplib
 import os
-from mailjet_rest import Client
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from pathlib import Path
 
-# =============== KONFIGURÁCIA =================
-MAILJET_API_KEY = os.getenv("MAILJET_API_KEY")
-MAILJET_SECRET_KEY = os.getenv("MAILJET_SECRET_KEY")
-
-SENDER_EMAIL = "your_verified_email@example.com"   # Mail, ktorý si overil v Mailjet
-SENDER_NAME = "MarketScraper AI"
-RECIPIENT_EMAIL = "your_email@example.com"         # Kam chceš poslať report
-
+# Nastavenia (nahrad len email adresu)
+SENDER_EMAIL = "roman.duris@gmail.com"
+RECEIVER_EMAIL = "roman.duris@gmail.com"  # alebo zoznam ["a@b.com", "c@d.com"]
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # uložené ako Codespaces Secret
 REPORT_FILE = Path("data/ai_report.html")
 
-# ===============================================
-
-def send_ai_report():
-    print("📡 Odosielam AI report cez Mailjet...")
-
-    # kontrola API kľúčov
-    if not MAILJET_API_KEY or not MAILJET_SECRET_KEY:
-        print("⚠️ Chýbajú Mailjet API kľúče! Nastav ich ako environment variables:")
-        print("   export MAILJET_API_KEY='your_key_here'")
-        print("   export MAILJET_SECRET_KEY='your_secret_here'")
-        return
-
-    # kontrola reportu
+def send_email():
     if not REPORT_FILE.exists():
-        print(f"⚠️ Súbor {REPORT_FILE} neexistuje, najprv spusti step6_report_html.py")
+        print(f"⚠️ Súbor {REPORT_FILE} neexistuje.")
         return
 
-    html_content = REPORT_FILE.read_text(encoding="utf-8")
+    with open(REPORT_FILE, "r", encoding="utf-8") as f:
+        html_content = f.read()
 
-    # Inicializácia Mailjet klienta
-    mailjet = Client(auth=(MAILJET_API_KEY, MAILJET_SECRET_KEY), version='v3.1')
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = "📊 AI Stock Report"
+    msg["From"] = SENDER_EMAIL
+    msg["To"] = RECEIVER_EMAIL
 
-    data = {
-        'Messages': [
-            {
-                "From": {
-                    "Email": SENDER_EMAIL,
-                    "Name": SENDER_NAME
-                },
-                "To": [
-                    {
-                        "Email": RECIPIENT_EMAIL,
-                        "Name": "Investor"
-                    }
-                ],
-                "Subject": "📊 MarketScraper AI – Denný report Top 10 akcií",
-                "HTMLPart": html_content,
-                "Attachments": [
-                    {
-                        "ContentType": "text/html",
-                        "Filename": "AI_Report.html",
-                        "Base64Content": REPORT_FILE.read_bytes().decode("latin1", errors="ignore")
-                    }
-                ]
-            }
-        ]
-    }
+    msg.attach(MIMEText(html_content, "html", "utf-8"))
 
     try:
-        result = mailjet.send.create(data=data)
-        if result.status_code == 200:
-            print("✅ Email bol úspešne odoslaný!")
-        else:
-            print(f"⚠️ Chyba pri odosielaní: {result.status_code} -> {result.json()}")
+        print("📨 Pripájam sa na Gmail server...")
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+            server.login(SENDER_EMAIL, EMAIL_PASSWORD)
+            server.send_message(msg)
+        print(f"✅ Report úspešne odoslaný na {RECEIVER_EMAIL}")
     except Exception as e:
-        print(f"❌ Výnimka pri odosielaní emailu: {e}")
-
+        print(f"❌ Chyba pri odosielaní e-mailu: {e}")
 
 if __name__ == "__main__":
-    send_ai_report()
+    send_email()
