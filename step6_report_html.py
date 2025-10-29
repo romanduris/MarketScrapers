@@ -1,7 +1,7 @@
 """
 Step 6 – HTML Report
 Vytvorí vizuálne atraktívny HTML report z AI hodnotenia akcií.
-Vhodné aj ako príloha pre e-mail briefing.
+Výstup obsahuje: rank, ticker, current_price, TP, SL, buy_score, combined_sentiment, recommendation, reasoning.
 """
 
 import json
@@ -11,41 +11,24 @@ from datetime import datetime
 INPUT_FILE = "data/step5_ai_report.json"
 OUTPUT_FILE = "data/ai_report.html"
 
-def get_rating_color(rating: str) -> str:
-    """Farby pre rating"""
-    if "BUY" in rating:
-        return "#00c853"  # zelená
-    elif "WATCH" in rating:
-        return "#ffb300"  # oranžová
-    elif "HOLD" in rating:
-        return "#03a9f4"  # modrá
-    else:
-        return "#d50000"  # červená
-
 def generate_html(data):
     """Generuje HTML report ako string"""
     today = datetime.now().strftime("%Y-%m-%d %H:%M")
 
     rows = ""
-    for i, stock in enumerate(data, start=1):
-        # farebné zvýraznenie ratingu (ak existuje)
-        color = get_rating_color(stock.get("ai_rating", ""))
+    for stock in data:
         reasoning_html = "<br>".join(stock.get("reasoning", "").splitlines())
         rows += f"""
         <tr>
-            <td style="text-align:center;">{i}</td>
+            <td style="text-align:center;">{stock.get('rank','')}</td>
             <td><b>{stock.get('ticker','')}</b></td>
-            <td>{stock.get('name','')}</td>
-            <td style="text-align:center;">{stock.get('rsi','N/A')}</td>
-            <td style="text-align:center;">{stock.get('volume','N/A'):,}</td>
-            <td style="text-align:center;">{stock.get('percent_change','N/A')}%</td>
-            <td style="text-align:center;">{stock.get('news_sentiment',0.0):.3f}</td>
-            <td style="text-align:center;">{stock.get('combined_sentiment',0.0):.3f}</td>
-            <td style="text-align:center; color:{color}; font-weight:bold;">{stock.get('ai_rating','')}</td>
-            <td>
-                <b>TP:</b> {stock.get('TP',0)} | <b>SL:</b> {stock.get('SL',0)}<br>
-                <small>{reasoning_html}</small>
-            </td>
+            <td style="text-align:center;">{stock.get('current_price',0):.2f}</td>
+            <td style="text-align:center;">{stock.get('TP',0):.2f}</td>
+            <td style="text-align:center;">{stock.get('SL',0):.2f}</td>
+            <td style="text-align:center;">{stock.get('buy_score',0):.3f}</td>
+            <td style="text-align:center;">{stock.get('combined_sentiment',0):.3f}</td>
+            <td style="text-align:center;">{stock.get('recommendation','')}</td>
+            <td><small>{reasoning_html}</small></td>
         </tr>
         """
 
@@ -108,14 +91,13 @@ def generate_html(data):
             <tr>
                 <th>#</th>
                 <th>Ticker</th>
-                <th>Company</th>
-                <th>RSI</th>
-                <th>Volume</th>
-                <th>% Change</th>
-                <th>News Sent.</th>
-                <th>Comb. Sent.</th>
-                <th>AI Rating</th>
-                <th>AI Reasoning</th>
+                <th>Current Price</th>
+                <th>TP</th>
+                <th>SL</th>
+                <th>Buy Score</th>
+                <th>Combined Sent.</th>
+                <th>Recommendation</th>
+                <th>Reasoning</th>
             </tr>
             {rows}
         </table>
@@ -137,8 +119,8 @@ def run_html_report():
         print(f"⚠️ Chyba pri načítaní vstupu {INPUT_FILE}: {e}")
         return
 
-    # zoradenie podľa score alebo combined_sentiment
-    data = sorted(data, key=lambda x: x.get("score", x.get("combined_sentiment", 0)), reverse=True)
+    # Zoradenie podľa rank
+    data = sorted(data, key=lambda x: x.get("rank", 0))
 
     html = generate_html(data)
 
