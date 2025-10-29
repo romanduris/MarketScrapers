@@ -11,9 +11,12 @@ import json
 from pathlib import Path
 import yfinance as yf
 import openai
+import os
 
 # ---------- SETTINGS ----------
-OPENAI_API_KEY = "REMOVED_SECRET"  # nastav svoj token
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+
 AI_MODEL = "gpt-3.5-turbo"  # alebo "gpt-4" ak máš prístup
 TP_PERCENT = 5
 SL_PERCENT = 3
