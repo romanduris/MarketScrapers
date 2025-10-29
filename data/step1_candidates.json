@@ -384,6 +384,14 @@
     "date": "2025-10-29"
   },
   {
+    "ticker": "AFTER",
+    "name": "After demolishing $37 million Beverly Hi",
+    "volume": 0,
+    "percent_change": 0.0,
+    "source": "MarketWatch:gainers",
+    "date": "2025-10-29"
+  },
+  {
     "ticker": "INFLA",
     "name": "Inflation is quietly chipping away at mo",
     "volume": 0,
@@ -402,30 +410,6 @@
   {
     "ticker": "LUCKI",
     "name": "‘Luckily, I did not mix our finances’",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-10-29"
-  },
-  {
-    "ticker": "STABL",
-    "name": "This ‘safe’ cryptocurrency promises stab",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-10-29"
-  },
-  {
-    "ticker": "ROYAL",
-    "name": "Royal Caribbean sees cruise demand accel",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-10-29"
-  },
-  {
-    "ticker": "THERE",
-    "name": "‘There’s talk of a mutiny’",
     "volume": 0,
     "percent_change": 0.0,
     "source": "MarketWatch:gainers",
