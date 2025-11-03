@@ -1,6 +1,6 @@
 """
 STEP 7 – Odoslanie reportu e-mailom
-Odošle súbor data/ai_report.html ako HTML správu.
+Odošle report ako HTML správu s odkazom na GitHub Pages a samotným obsahom HTML.
 """
 
 import smtplib
@@ -8,12 +8,14 @@ import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+from datetime import datetime
 
 # Nastavenia (nahrad len email adresu)
 SENDER_EMAIL = "roman.duris@gmail.com"
 RECEIVER_EMAIL = "roman.duris@gmail.com"  # alebo zoznam ["a@b.com", "c@d.com"]
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # uložené ako Codespaces Secret
-REPORT_FILE = Path("data/ai_report.html")
+REPORT_FILE = Path("docs/ai_report.html")  # teraz sa generuje do docs/ pre GitHub Pages
+REPORT_LINK = "https://romanduris.github.io/MarketScrapers/ai_report.html"
 
 def send_email():
     if not REPORT_FILE.exists():
@@ -23,12 +25,26 @@ def send_email():
     with open(REPORT_FILE, "r", encoding="utf-8") as f:
         html_content = f.read()
 
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # Vytvorenie HTML správy
+    email_html = f"""
+    <html>
+    <body>
+        <p>📅 Report vygenerovaný: <b>{now_str}</b></p>
+        <p>🔗 Report je dostupný online tu: <a href="{REPORT_LINK}">{REPORT_LINK}</a></p>
+        <hr>
+        {html_content}
+    </body>
+    </html>
+    """
+
     msg = MIMEMultipart("alternative")
     msg["Subject"] = "📊 AI Stock Report"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECEIVER_EMAIL
 
-    msg.attach(MIMEText(html_content, "html", "utf-8"))
+    msg.attach(MIMEText(email_html, "html", "utf-8"))
 
     try:
         print("📨 Pripájam sa na Gmail server...")
