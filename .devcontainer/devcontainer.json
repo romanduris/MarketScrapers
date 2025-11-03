@@ -5,11 +5,17 @@
   },
   "customizations": {
     "vscode": {
-      "settings": {},
-      "extensions": ["ms-python.python"]
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.terminal.activateEnvironment": true
+      },
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
     }
   },
+  "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt",
   "remoteEnv": {
-    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}",
+    "EMAIL_USER": "${localEnv:EMAIL_USER}",
+    "EMAIL_PASS": "${localEnv:EMAIL_PASS}"
   }
 }
