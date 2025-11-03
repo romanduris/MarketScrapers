@@ -1,8 +1,9 @@
 """
-step4_ranking.py
-Kombinuje technické a sentimentálne dáta a vyhodnocuje "buy_score".
-Výstup: JSON s top 10 akciami vrátane všetkých relevantných metrík.
+step4_ranking_keep_all.py
+Kombinuje technické a sentimentálne dáta, počíta percentuálne skóre a vyhodnocuje "buy_score_percent".
+Zachováva všetky akcie vo výstupe a navyše zobrazí top 10 v konzole.
 """
+
 import json
 from pathlib import Path
 
@@ -41,45 +42,61 @@ if not Path(STEP3_FILE).exists():
 with open(STEP3_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-# ---------- FILTER OUT NEGATIVE OR ZERO COMBINED SENTIMENT ----------
-filtered = [d for d in data if d.get("combined_sentiment",0) > 0 and d.get("news_mentions",0) > 0]
-
-if not filtered:
-    print("⚠️ Žiadne vhodné tickery na základe sentimentu.")
-    exit(1)
-
 # ---------- NORMALIZE FEATURES ----------
-sentiments = [d["combined_sentiment"] for d in filtered]
-percent_changes = [d.get("percent_change",0.0) for d in filtered]
-mentions = [d.get("total_mentions",0) for d in filtered]
-recommendations = [recommendation_to_score(d.get("recommendation","Hold")) for d in filtered]
+sentiments = [d.get("combined_sentiment", 0) for d in data]
+percent_changes = [d.get("percent_change", 0.0) for d in data]
+mentions = [d.get("total_mentions", 0) for d in data]
+recommendations = [recommendation_to_score(d.get("recommendation", "Hold")) for d in data]
+volume_gain = [d.get("volume_gain", 0.0) for d in data]
 
 norm_sent = normalize_minmax(sentiments)
 norm_pct = normalize_minmax(percent_changes)
 norm_mentions = normalize_minmax(mentions)
 norm_rec = normalize_minmax(recommendations)
+norm_vol = normalize_minmax(volume_gain)
 
-# ---------- CALCULATE BUY SCORE ----------
-for i, d in enumerate(filtered):
-    d["buy_score"] = round(
-        norm_sent[i]*0.4 +  # váha sentimentu
-        norm_rec[i]*0.3 +   # váha recommendation
-        norm_pct[i]*0.2 +   # váha percent change
-        norm_mentions[i]*0.1, # váha mentions
-        3
-    )
+# ---------- CALCULATE NEW BUY_SCORE_PERCENT ----------
+# váhy pre novú metriku (možno upraviť)
+W_SENT = 0.35
+W_REC = 0.25
+W_PCT = 0.20
+W_VOL = 0.20
 
-# ---------- SORT AND SELECT TOP 10 ----------
-top10 = sorted(filtered, key=lambda x: x["buy_score"], reverse=True)[:TOP_N]
+for i, d in enumerate(data):
+    score = (norm_sent[i]*W_SENT + norm_rec[i]*W_REC + norm_pct[i]*W_PCT + norm_vol[i]*W_VOL) * 100
+    d["buy_score_percent"] = round(score, 2)
+
+    if score >= 70:
+        d["final_recommendation"] = "Strong Buy"
+    elif score >= 50:
+        d["final_recommendation"] = "Buy"
+    else:
+        d["final_recommendation"] = "Hold / Avoid"
+
+# ---------- SORT FOR DISPLAY ----------
+sorted_all = sorted(data, key=lambda x: x["buy_score_percent"], reverse=True)
+top10 = sorted_all[:TOP_N]
 
 # ---------- SAVE OUTPUT ----------
 Path("data").mkdir(exist_ok=True)
+out_data = {
+    "total_candidates": len(data),
+    "ranked_candidates": sorted_all  # všetky zoradené podľa buy_score_percent
+}
+
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(top10, f, indent=2, ensure_ascii=False)
+    json.dump(out_data, f, indent=2, ensure_ascii=False)
 
 # ---------- PRINT SUMMARY ----------
-print(f"💾 Top {TOP_N} tickery uložené do {OUTPUT_FILE}")
+print(f"💾 Výstup uložený do {OUTPUT_FILE}")
+print(f"🔵 Celkom kandidátov zo Step3: {len(data)}")
+print(f"✅ TOP {TOP_N} tickery podľa novej percentuálnej metriky:\n")
+
 for idx, t in enumerate(top10, 1):
-    print(f"{idx}. {t['ticker']} - buy_score: {t['buy_score']}, sentiment: {t.get('combined_sentiment',0)}, "
-          f"recommendation: {t.get('recommendation','NA')}, %change: {t.get('percent_change',0)}, "
-          f"mentions: {t.get('total_mentions',0)}")
+    print(f"{idx}. {t['ticker']} | buy_score_percent: {t['buy_score_percent']}% | "
+          f"final_recommendation: {t['final_recommendation']} | "
+          f"combined_sentiment: {t.get('combined_sentiment', 0)} | "
+          f"percent_change: {t.get('percent_change', 0)} | "
+          f"volume_gain: {t.get('volume_gain', 0)}")
+
+print("\n✅ Všetky akcie (zoradené podľa buy_score_percent) boli uložené do výstupného JSON súboru.")

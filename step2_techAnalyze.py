@@ -1,5 +1,6 @@
 """
 step2_techAnalyze.py: doplnenie technických dát (RSI, MACD, EMA), filtry a vyhodnotenie vhodnosti nákupu
+Uloží aj volume_gain a priemerný objem z Step 1, Buy Score v percentách.
 """
 
 import json
@@ -14,7 +15,6 @@ print("✅ Step 2: Technická analýza - Start")
 INPUT_FILE = "data/step1_candidates.json"
 OUTPUT_FILE = "data/step2_filtered.json"
 
-# filtre
 MIN_VOLUME = 100_000       # minimálny denný objem
 MIN_PERCENT_CHANGE = 0.5   # minimalna percentuálna zmena
 RSI_PERIOD = 14            # počet dní pre RSI
@@ -25,7 +25,6 @@ MACD_FAST = 12
 MACD_SLOW = 26
 MACD_SIGNAL = 9
 
-# váhy pre Buy Score
 RSI_WEIGHT = 0.3
 MACD_WEIGHT = 0.4
 EMA_WEIGHT = 0.3
@@ -72,12 +71,12 @@ def evaluate_ema(price: float, ema: float) -> float:
     return 1.0 if price > ema else 0.0
 
 def calculate_buy_score(rsi_score: float, macd_score: float, ema_score: float) -> float:
-    return round(RSI_WEIGHT*rsi_score + MACD_WEIGHT*macd_score + EMA_WEIGHT*ema_score,3)
+    return round(100 * (RSI_WEIGHT*rsi_score + MACD_WEIGHT*macd_score + EMA_WEIGHT*ema_score), 1)
 
 def classify_buy(score: float) -> str:
-    if score >= 0.7:
+    if score >= 70:
         return "Strong Buy"
-    elif score >= 0.4:
+    elif score >= 40:
         return "Buy"
     else:
         return "Hold / Avoid"
@@ -92,8 +91,6 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
 
 filtered = []
 processed = 0
-
-# Štatistika filtrov
 filtered_volume = 0
 filtered_percent = 0
 filtered_rsi = 0
@@ -117,11 +114,13 @@ for c in candidates:
 
         info = t.info
         volume = info.get("volume", 0) or 0
+        avg_volume = info.get("averageVolume", c.get("volume", 1))
+        volume_gain = round((volume - avg_volume)/avg_volume*100,2) if avg_volume else 0.0
         current_price = info.get("regularMarketPrice") or hist.iloc[-1]
         prev_close = info.get("previousClose") or current_price
         percent_change = ((current_price - prev_close)/prev_close*100) if prev_close else 0
 
-        # aplikujeme filtre
+        # filtry
         if volume < MIN_VOLUME:
             filtered_volume += 1
             continue
@@ -132,7 +131,6 @@ for c in candidates:
             filtered_rsi += 1
             continue
 
-        # vyhodnotenie Buy Score
         rsi_score = evaluate_rsi(rsi)
         macd_score = evaluate_macd(macd, macd_signal)
         ema_score = evaluate_ema(current_price, ema)
@@ -143,6 +141,8 @@ for c in candidates:
             "ticker": ticker,
             "name": info.get("shortName") or c.get("name",""),
             "volume": volume,
+            "average_volume": avg_volume,
+            "volume_gain": volume_gain,
             "percent_change": round(percent_change,2),
             "rsi": round(rsi,2) if rsi else None,
             "macd": round(macd,4) if macd else None,
@@ -154,7 +154,7 @@ for c in candidates:
             "url": f"https://finance.yahoo.com/quote/{ticker}",
             "date": str(date.today())
         })
-        print(f"✅ [{processed}] {ticker} | Vol:{volume} Δ%:{round(percent_change,2)} RSI:{round(rsi,2) if rsi else 'NA'} EMA:{round(ema,2) if ema else 'NA'} MACD:{round(macd,4) if macd else 'NA'} | Buy Score:{buy_score} -> {recommendation}")
+        print(f"✅ [{processed}] {ticker} | Vol:{volume} Δ%:{round(percent_change,2)} RSI:{round(rsi,2) if rsi else 'NA'} EMA:{round(ema,2) if ema else 'NA'} MACD:{round(macd,4) if macd else 'NA'} | Buy Score:{buy_score}% -> {recommendation} | VolumeGain:{volume_gain}%")
 
     except Exception as e:
         filtered_no_data += 1
@@ -172,6 +172,6 @@ print(f"🔵 Po filtroch: {len(filtered)}")
 print(f"❌ Odfiltrované podľa objemu: {filtered_volume}")
 print(f"❌ Odfiltrované podľa percent change: {filtered_percent}")
 print(f"❌ Odfiltrované podľa RSI: {filtered_rsi}")
-print(f"❌ Odfiltrované kvôli nedostupným historickým dátam: {filtered_no_data}")
+print(f"❌ Chýbajú historické dáta: {filtered_no_data}")
 print(f"💾 Filtrované tickery + Buy Score uložené do {OUTPUT_FILE}")
 print("✅ Step 2: Hotovo")

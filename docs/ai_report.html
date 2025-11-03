@@ -6,7 +6,7 @@
         <style>
             body {
                 font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-                background: #f5f7fa;
+                background: #f7f9fb;
                 color: #333;
                 margin: 40px;
             }
@@ -19,27 +19,31 @@
                 margin-top: 20px;
                 background: white;
                 box-shadow: 0 0 10px rgba(0,0,0,0.05);
-                border-radius: 10px;
+                border-radius: 12px;
                 overflow: hidden;
             }
             th {
-                background: #3949ab;
+                background: #34495e;
                 color: white;
                 text-align: center;
                 padding: 10px;
+                font-size: 14px;
             }
             td {
-                border-bottom: 1px solid #e0e0e0;
-                padding: 8px 10px;
+                border-bottom: 1px solid #ecf0f1;
+                padding: 10px;
                 vertical-align: top;
+                font-size: 14px;
             }
             tr:hover {
-                background-color: #f1f1f1;
+                background-color: #f0f3f6;
+            }
+            b {
+                font-weight: 600;
             }
             small {
                 color: #555;
                 display: block;
-                margin-top: 5px;
                 line-height: 1.4;
             }
             .footer {
@@ -52,138 +56,222 @@
     </head>
     <body>
         <h1>📊 AI Stock Recommendation Report</h1>
-        <p>Generated: <b>2025-11-03 10:46</b></p>
+        <p>Generated: <b>2025-11-03 14:08</b></p>
         <table>
             <tr>
-                <th>#</th>
                 <th>Ticker</th>
+                <th>AI Summary</th>
                 <th>Current Price</th>
                 <th>TP</th>
                 <th>SL</th>
                 <th>Buy Score</th>
-                <th>Combined Sent.</th>
-                <th>Recommendation</th>
-                <th>Reasoning</th>
+                <th>Combined Sentiment</th>
+                <th>AI Analysis</th>
+                <th>AI Recommendation</th>
             </tr>
             
         <tr>
-            <td style="text-align:center;">1</td>
-            <td><b>CRDO</b></td>
-            <td style="text-align:center;">187.62</td>
-            <td style="text-align:center;">197.00</td>
-            <td style="text-align:center;">181.99</td>
-            <td style="text-align:center;">0.864</td>
-            <td style="text-align:center;">0.387</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>CRDO (Credo Technology Group Holding) je technologická spoločnosť zameraná na poskytovanie inovatívnych softvérových riešení. Môže byť vhodná na kúpu kvôli svojmu potenciálu v oblasti rozvoja digitálnej transformácie. Avšak rizikom môže byť intenzívna konkurencia v odvetví a zmeny v reguláciách technologického sektora.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">2</td>
-            <td><b>AMZN</b></td>
-            <td style="text-align:center;">244.22</td>
-            <td style="text-align:center;">256.43</td>
-            <td style="text-align:center;">236.89</td>
-            <td style="text-align:center;">0.862</td>
-            <td style="text-align:center;">0.411</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>Amazon.com, Inc. je globálna spoločnosť zameraná na e-commerce, cloud computing, digitálne streaming a umelú inteligenciu. Je vhodná na kúpu kvôli svojej silnej pozícii na trhu a neustálemu rastu, avšak rizikom môže byť zmena regulácií, konkurencia a náklady na rozvoj nových technológií.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">3</td>
-            <td><b>QS</b></td>
-            <td style="text-align:center;">18.44</td>
-            <td style="text-align:center;">19.36</td>
-            <td style="text-align:center;">17.89</td>
-            <td style="text-align:center;">0.767</td>
-            <td style="text-align:center;">0.268</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>QuantumScape Corporation je technologická spoločnosť zameraná na vývoj a výrobu lítium-železitých baterií pre elektromobily. Investícia do QS môže byť vhodná vzhľadom na potenciál inovácií v oblasti batérií a rastúci trh elektromobilov, avšak existuje riziko spojené s technologickým vývojom a konkurenciou v odvetví.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">4</td>
-            <td><b>OSIS</b></td>
-            <td style="text-align:center;">278.46</td>
-            <td style="text-align:center;">292.38</td>
-            <td style="text-align:center;">270.11</td>
-            <td style="text-align:center;">0.740</td>
-            <td style="text-align:center;">0.267</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>OSI Systems, Inc. je technologická spoločnosť zameraná na vývoj bezpečnostných a zdravotníckych riešení. Môže byť vhodná na kúpu pre svoj potenciál v oblasti bezpečnostných technológií, avšak rizikom môže byť závislosť na vládnych a regulačných kontraktov.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">5</td>
-            <td><b>FSLR</b></td>
-            <td style="text-align:center;">266.94</td>
-            <td style="text-align:center;">280.29</td>
-            <td style="text-align:center;">258.93</td>
-            <td style="text-align:center;">0.708</td>
-            <td style="text-align:center;">0.239</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>First Solar, Inc. je americká spoločnosť zameraná na výrobu solárnych panelov a solárnych riešení. Vzhľadom na rastúci trend využívania obnoviteľných zdrojov energie by mohla byť akcia FSLR vhodná na kúpu. Avšak riziká spojené s touto investíciou môžu zahŕňať výkyvy cen komodít, konkurenciu v odvetví a legislatívne zmeny v oblasti obnoviteľných zdrojov energie.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">6</td>
-            <td><b>TSLA</b></td>
-            <td style="text-align:center;">456.56</td>
-            <td style="text-align:center;">479.39</td>
-            <td style="text-align:center;">442.86</td>
-            <td style="text-align:center;">0.679</td>
-            <td style="text-align:center;">0.305</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>Tesla, Inc. je popredný výrobca elektrických vozidiel a energetických produktov s významným potenciálom rastu v sektore obnoviteľnej energie. Hoci akcie spoločnosti majú vysokú volatilitu a sú vystavené riziku trhu s automobilmi a technologického priemyslu, investícia do Tesla môže byť vhodná pre dlhodobých investorov so záujmom o inovatívne technológie a udržateľný rozvoj.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">7</td>
-            <td><b>KWR</b></td>
-            <td style="text-align:center;">138.89</td>
-            <td style="text-align:center;">145.83</td>
-            <td style="text-align:center;">134.72</td>
-            <td style="text-align:center;">0.659</td>
-            <td style="text-align:center;">0.230</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>Quaker Houghton (ticker: KWR) je globálny dodávateľ chemických produktov pre priemysel, špecializujúci sa na technológie pre úpravu kovov a procesy obrábania kovov. Akcia by mohla byť vhodná na kúpu vzhľadom k stabilnému rastu priemyslu, avšak riziká môžu predstavovať výkyvy v cene surovín a konkurenčný tlak.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">8</td>
-            <td><b>OPEN</b></td>
-            <td style="text-align:center;">7.77</td>
-            <td style="text-align:center;">8.16</td>
-            <td style="text-align:center;">7.54</td>
-            <td style="text-align:center;">0.579</td>
-            <td style="text-align:center;">0.201</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>OPEN (Opendoor Technologies Inc) je technologická spoločnosť zameraná na online realitný trh, ktorá ponúka inovatívne riešenia pre kúpu a predaj nehnuteľností. Mohol by byť vhodný na kúpu kvôli svojmu potenciálu zlepšiť efektivitu trhu s nehnuteľnosťami, avšak riziká sú spojené so zmenami v trhu nehnuteľností a konkurenciou v odvetví.</small></td>
-        </tr>
-        
-        <tr>
-            <td style="text-align:center;">9</td>
             <td><b>BFAM</b></td>
+            <td>Spoločnosť Bright Horizons Family Solutions Inc. (BFAM) poskytuje služby raného vzdelávania a starostlivosti o deti, ako aj ďalšie rodinne orientované podporné programy pre zamestnancov korporátov v rôznych priemyselných odvetviach.</td>
             <td style="text-align:center;">109.23</td>
             <td style="text-align:center;">114.69</td>
             <td style="text-align:center;">105.95</td>
-            <td style="text-align:center;">0.570</td>
-            <td style="text-align:center;">0.086</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>BFAM (Bright Horizons Family Solutions) je poskytovateľ služieb starostlivosti o deti a zamestnaneckých benefitov, čo môže byť atraktívne v dôsledku narastajúcej dopytu po týchto službách. Rizikom môže byť závislosť na ekonomickej situácii a schopnosti zamestnávateľov financovať tieto benefity pre svojich zamestnancov.</small></td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>0.825</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia BFAM (Bright Horizons Family Solution) vykazuje pozitívny trend s rastom o 18.37%, zvýšeným objemom obchodov a relatívne vysokým RSI, čo naznačuje možnú prekúpenosť; odporúčam držať s istotou 70%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (37%)</td>
         </tr>
         
         <tr>
-            <td style="text-align:center;">10</td>
             <td><b>MEOH</b></td>
+            <td>Methanex Corporation je globálny líder v oblasti výroby a dodávok metanolu, ktorý sa používa v rôznych priemyselných aplikáciách a energetickom sektore.</td>
             <td style="text-align:center;">39.32</td>
             <td style="text-align:center;">41.29</td>
             <td style="text-align:center;">38.14</td>
-            <td style="text-align:center;">0.533</td>
-            <td style="text-align:center;">0.074</td>
-            <td style="text-align:center;">Strong Buy</td>
-            <td><small>Methanex Corporation je popredný svetový výrobca metanolu so silným medzinárodným portfóliom tovární. Je vhodný na kúpu vzhľadom na rastúci dopyt po metanole v priemysle a energetike, no rizikom môže byť výkyvná cena surovín a možné geopolitické nestability.</small></td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>0.797</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia Methanex Corporation (MEOH) vykazuje silný rast s pozitívnym objemom a mierne pozitívnym sentimentom, avšak negatívny MACD naznačuje možné riziká; odporúčam držať, Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (65%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>OSIS</b></td>
+            <td>OSI Systems, Inc. je technologická spoločnosť, ktorá sa špecializuje na vývoj a výrobu bezpečnostných a kontrolných systémov pre rôzne priemyselné, vládne a komerčné trhy.</td>
+            <td style="text-align:center;">278.46</td>
+            <td style="text-align:center;">292.38</td>
+            <td style="text-align:center;">270.11</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>0.759</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia OSIS vykazuje silný rast s pozitívnym trhovým sentimentom a technickými indikátormi naznačujúcimi potenciál pre ďalšie zisky; odporúčam "Buy", Confidence: 80%.</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>Buy</b> (80%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>AMZN</b></td>
+            <td>Amazon.com, Inc. je globálna technologická spoločnosť poskytujúca široké spektrum produktov a služieb, vrátane elektronického obchodu, cloudových riešení, digitálneho streamovania a umelé inteligencie, s dominanciou v sektore online maloobchodu.</td>
+            <td style="text-align:center;">244.22</td>
+            <td style="text-align:center;">256.43</td>
+            <td style="text-align:center;">236.89</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>0.706</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia AMZN vykazuje silný rast s pozitívnym novinovým sentimentom a technickými indikátormi naznačujúcimi býčiu tendenciu; odporúčam "Buy" s istotou 80%.</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>Buy</b> (80%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>QS</b></td>
+            <td>QuantumScape Corporation je americká spoločnosť pôsobiaca v segmente pokročilých technológií pre batérie, kde sa zameriava na vývoj a komercializáciu pevných lítium-iontových batérií pre elektrické vozidlá.</td>
+            <td style="text-align:center;">18.44</td>
+            <td style="text-align:center;">19.36</td>
+            <td style="text-align:center;">17.89</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.693</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>QuantumScape Corporation (QS) akcie zažili pozitívny rast s vysokým objemom obchodovania a mierne pozitívnym technickým výhľadom; odporúčam "Buy" s istotou 75%.</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>Buy</b> (75%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>FSLR</b></td>
+            <td>First Solar, Inc. je spoločnosť, ktorá sa špecializuje na výrobu fotovoltaických solárnych panelov a poskytovanie komplexných solárnych energetických riešení v segmente obnoviteľných zdrojov energie.</td>
+            <td style="text-align:center;">266.94</td>
+            <td style="text-align:center;">280.29</td>
+            <td style="text-align:center;">258.93</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.649</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia FSLR (First Solar, Inc.) vykazuje silný rast s vysokým objemom a pozitívnym technickým ukazovateľom, odporúčam kúpiť s istotou 85%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (85%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>CRDO</b></td>
+            <td>Credo Technology Group Holding Ltd. (CRDO) sa špecializuje na vývoj a predaj integrovaných obvodov a technológií pre pripojenia s vysokou rýchlosťou, ktoré sú primárne využívané v dátových centrách a telekomunikačných sieťach.</td>
+            <td style="text-align:center;">187.62</td>
+            <td style="text-align:center;">197.00</td>
+            <td style="text-align:center;">181.99</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.616</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia CRDO ukazuje silný rast s pozitívnym trhovým sentimentom a technickými indikátormi naznačujúcimi silu trendu, odporúčam "Buy" s istotou 85%.</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>Buy</b> (85%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>KWR</b></td>
+            <td>Spoločnosť Quaker Houghton (KWR) sa špecializuje na výrobu a dodávku špecializovaných chemických produktov pre priemyselné procesy, najmä v segmente kovospracujúceho a oceliarskeho priemyslu.</td>
+            <td style="text-align:center;">138.89</td>
+            <td style="text-align:center;">145.83</td>
+            <td style="text-align:center;">134.72</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.608</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia Quaker Houghton (KWR) vykazuje silný rast s pozitívnym technickým výhľadom a pozitívnym sentimentom správ, odporúčam "Buy" s istotou 80%.</td>
+            <td style="text-align:center;"><b style='color:#2ecc71'>Buy</b> (80%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>ALAB</b></td>
+            <td>Astera Labs, Inc. sa zaoberá vývojom riešení pre konektivitu a spracovanie údajov, ktoré umožňujú vysoký výkon a nízku latenciu pre dátové centrá a cloudové výpočtové platformy.</td>
+            <td style="text-align:center;">186.68</td>
+            <td style="text-align:center;">196.01</td>
+            <td style="text-align:center;">181.08</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.599</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Astera Labs, Inc. (ALAB) zaznamenala významný nárast o 10.1% s rastom objemu obchodov o 54.12%, avšak negatívny MACD naznačuje možnú nadhodnotenosť; odporúčam Hold s istotou 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (1%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>RKT</b></td>
+            <td>Rocket Companies, Inc. (RKT) je poskytovateľom hypotekárnych a finančných služieb, ktorý sa špecializuje na digitalizované riešenia v oblasti domáceho financovania a realitného trhu.</td>
+            <td style="text-align:center;">16.66</td>
+            <td style="text-align:center;">17.49</td>
+            <td style="text-align:center;">16.16</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.575</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia RKT vykazuje mierne pozitívny rast s objemom obchodovania nad priemerom, ale s negatívnym MACD signálom; odporúčam držanie akcie s dôverou 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (65%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>PFE</b></td>
+            <td>Pfizer, Inc. je globálna farmaceutická spoločnosť zameraná na vývoj, výrobu a distribúciu liekov a vakcín pre široké spektrum medicínskych oblastí vrátane imunológie, onkológie, kardiológie a neurovedy.</td>
+            <td style="text-align:center;">24.65</td>
+            <td style="text-align:center;">25.88</td>
+            <td style="text-align:center;">23.91</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.564</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia Pfizer (PFE) vykazuje mierny rast a stabilné technické indikátory s neutrálnym sentimentom správ; odporúčam držať, Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (65%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>OPEN</b></td>
+            <td>Opendoor Technologies Inc. je technologická spoločnosť pôsobiaca v segmente realitného trhu, ktorá sa špecializuje na digitálny nákup a predaj domov prostredníctvom svojej online platformy.</td>
+            <td style="text-align:center;">7.77</td>
+            <td style="text-align:center;">8.16</td>
+            <td style="text-align:center;">7.54</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.499</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia OPEN (Opendoor Technologies Inc) zaznamenala nárast o 5.86%, ale s výrazným poklesom objemu obchodov o 54.78%, pričom súčasný RSI a MACD naznačujú neutrálnu pozíciu, avšak pozitívna nálada v správach (61.4% pozitívne) môže podporiť ďalší rast; odporúčam držať akciu. Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (86%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>TSLA</b></td>
+            <td>Tesla, Inc. je americká technologická spoločnosť, ktorá sa zameriava na výrobu elektrických vozidiel, solárnych panelov a riešení pre skladovanie energie, pričom je lídrom v segmente elektrickej mobility.</td>
+            <td style="text-align:center;">456.56</td>
+            <td style="text-align:center;">479.39</td>
+            <td style="text-align:center;">442.86</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.493</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia TSLA zaznamenala nárast o 3.74%, ale s poklesom obchodovaného objemu o 25.56%, pričom technické indikátory ako RSI a MACD naznačujú mierne býčí postoj; na základe pozitívneho sentimentu správ (80%) odporúčam "Hold", Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (74%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>SOFI</b></td>
+            <td>SoFi Technologies, Inc. je americká finančná technologická spoločnosť, ktorá poskytuje rôzne finančné služby vrátane pôžičiek, správy investícií a poistenia prostredníctvom svojej digitálnej platformy primárne zameranej na mladších spotrebiteľov a mileniálov.</td>
+            <td style="text-align:center;">29.68</td>
+            <td style="text-align:center;">31.16</td>
+            <td style="text-align:center;">28.79</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.490</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>SoFi Technologies, Inc. (SOFI) ukazuje pozitívny krátkodobý rast s rastúcou cenou a stabilným RSI, avšak pokles objemu naznačuje opatrnosť; odporúčam "Hold" s istotou 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (65%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>DNN</b></td>
+            <td>Denison Mines Corp je kanadská spoločnosť pôsobiaca v oblasti ťažby uránu, ktorá sa zameriava na prieskum a rozvoj uránových aktív, najmä v oblasti Athabasca Basin v Kanade.</td>
+            <td style="text-align:center;">3.17</td>
+            <td style="text-align:center;">3.33</td>
+            <td style="text-align:center;">3.07</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>0.457</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia DNN (Denison Mines Corp) ukazuje mierne pozitívne technické indikátory a stabilnú náladu na trhu, odporúčam držať, Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (65%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>DGNX</b></td>
+            <td>Diginex Limited je technologická spoločnosť, ktorá sa zaoberá poskytovaním blockchainových riešení a kryptomenových finančných služieb v digitálnom sektore.</td>
+            <td style="text-align:center;">20.89</td>
+            <td style="text-align:center;">21.93</td>
+            <td style="text-align:center;">20.26</td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.380</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia DGNX (Diginex Limited) vykazuje silný krátkodobý rast s 14.34% zmenou ceny a 32.13% nárastom objemu, avšak negatívny MACD a nízky RSI naznačujú možné riziko preinvestovanosti; odporúčam "Hold" s istotou 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (34%)</td>
+        </tr>
+        
+        <tr>
+            <td><b>RGTI</b></td>
+            <td>Rigetti Computing, Inc. (RGTI) je technologická spoločnosť zameraná na vývoj a komercializáciu kvantových počítačov, ktoré majú potenciál poskytovať rýchlejšie a efektívnejšie riešenia pre komplexné výpočtové úlohy.</td>
+            <td style="text-align:center;">44.27</td>
+            <td style="text-align:center;">46.48</td>
+            <td style="text-align:center;">42.94</td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.253</b></td>
+            <td style="text-align:center;"><b style='color:#e74c3c'>0.000</b></td>
+            <td>Akcia RGTI preukázala mierny rast s 4.12% zmenou, no zaznamenala pokles v objeme obchodov o 15.67% a jej RSI signalizuje možné prepredané podmienky; zvážte nákup s istotou 65%. Confidence: 65%.</td>
+            <td style="text-align:center;"><b style='color:#f1c40f'>Hold</b> (12%)</td>
         </tr>
         
         </table>

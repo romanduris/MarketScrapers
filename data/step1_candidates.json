@@ -3,6 +3,8 @@
     "ticker": "NVDA",
     "name": "NVIDIA Corporation",
     "volume": 179802178,
+    "average_volume": 176961839,
+    "volume_gain": 1.61,
     "percent_change": -0.16,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -11,6 +13,8 @@
     "ticker": "AMZN",
     "name": "Amazon.com, Inc.",
     "volume": 166340808,
+    "average_volume": 45581971,
+    "volume_gain": 264.93,
     "percent_change": 9.58,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -19,6 +23,8 @@
     "ticker": "PFE",
     "name": "Pfizer Inc.",
     "volume": 132562343,
+    "average_volume": 52671407,
+    "volume_gain": 151.68,
     "percent_change": 1.48,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -27,6 +33,8 @@
     "ticker": "OPEN",
     "name": "Opendoor Technologies Inc.",
     "volume": 120826257,
+    "average_volume": 267184742,
+    "volume_gain": -54.78,
     "percent_change": 5.86,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -35,6 +43,8 @@
     "ticker": "ONDS",
     "name": "Ondas Holdings Inc.",
     "volume": 103849069,
+    "average_volume": 51875960,
+    "volume_gain": 100.19,
     "percent_change": 2.38,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -43,6 +53,8 @@
     "ticker": "BTG",
     "name": "B2Gold Corp.",
     "volume": 94989594,
+    "average_volume": 46967609,
+    "volume_gain": 102.24,
     "percent_change": -9.86,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -51,6 +63,8 @@
     "ticker": "PLUG",
     "name": "Plug Power Inc.",
     "volume": 94546923,
+    "average_volume": 104499712,
+    "volume_gain": -9.52,
     "percent_change": 1.51,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -59,6 +73,8 @@
     "ticker": "NOK",
     "name": "Nokia Oyj",
     "volume": 91999964,
+    "average_volume": 41477500,
+    "volume_gain": 121.81,
     "percent_change": -3.09,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -67,6 +83,8 @@
     "ticker": "T",
     "name": "AT&T Inc.",
     "volume": 79140706,
+    "average_volume": 41605373,
+    "volume_gain": 90.22,
     "percent_change": 0.28,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -75,6 +93,8 @@
     "ticker": "DNN",
     "name": "Denison Mines Corp.",
     "volume": 86965660,
+    "average_volume": 82674950,
+    "volume_gain": 5.19,
     "percent_change": -1.55,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -83,6 +103,8 @@
     "ticker": "BBAI",
     "name": "BigBear.ai Holdings, Inc.",
     "volume": 84680783,
+    "average_volume": 111082489,
+    "volume_gain": -23.77,
     "percent_change": 2.67,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -91,6 +113,8 @@
     "ticker": "AAPL",
     "name": "Apple Inc.",
     "volume": 86167123,
+    "average_volume": 54316450,
+    "volume_gain": 58.64,
     "percent_change": -0.38,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -99,6 +123,8 @@
     "ticker": "QS",
     "name": "QuantumScape Corporation",
     "volume": 81987059,
+    "average_volume": 40153079,
+    "volume_gain": 104.19,
     "percent_change": 16.78,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -107,6 +133,8 @@
     "ticker": "TSLA",
     "name": "Tesla, Inc.",
     "volume": 64198583,
+    "average_volume": 86244003,
+    "volume_gain": -25.56,
     "percent_change": 3.74,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -115,6 +143,8 @@
     "ticker": "RKT",
     "name": "Rocket Companies, Inc.",
     "volume": 74316068,
+    "average_volume": 34656620,
+    "volume_gain": 114.44,
     "percent_change": 4.52,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -123,6 +153,8 @@
     "ticker": "INTC",
     "name": "Intel Corporation",
     "volume": 61342093,
+    "average_volume": 128749728,
+    "volume_gain": -52.36,
     "percent_change": -0.42,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -131,6 +163,8 @@
     "ticker": "BITF",
     "name": "Bitfarms Ltd.",
     "volume": 78683288,
+    "average_volume": 81149812,
+    "volume_gain": -3.04,
     "percent_change": -2.22,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -139,6 +173,8 @@
     "ticker": "ACHR",
     "name": "Archer Aviation Inc.",
     "volume": 71970765,
+    "average_volume": 44962537,
+    "volume_gain": 60.07,
     "percent_change": 2.37,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -147,6 +183,8 @@
     "ticker": "RIG",
     "name": "Transocean Ltd.",
     "volume": 69505755,
+    "average_volume": 42337528,
+    "volume_gain": 64.17,
     "percent_change": -1.79,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -155,6 +193,8 @@
     "ticker": "F",
     "name": "Ford Motor Company",
     "volume": 63542620,
+    "average_volume": 87590946,
+    "volume_gain": -27.46,
     "percent_change": 0.54,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -163,6 +203,8 @@
     "ticker": "RGTI",
     "name": "Rigetti Computing, Inc.",
     "volume": 67133153,
+    "average_volume": 79608940,
+    "volume_gain": -15.67,
     "percent_change": 4.12,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -171,6 +213,8 @@
     "ticker": "SOFI",
     "name": "SoFi Technologies, Inc.",
     "volume": 66924035,
+    "average_volume": 68937365,
+    "volume_gain": -2.92,
     "percent_change": 2.24,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -179,6 +223,8 @@
     "ticker": "META",
     "name": "Meta Platforms, Inc.",
     "volume": 56953169,
+    "average_volume": 13305806,
+    "volume_gain": 328.03,
     "percent_change": -2.72,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -187,6 +233,8 @@
     "ticker": "PLTR",
     "name": "Palantir Technologies Inc.",
     "volume": 52697644,
+    "average_volume": 62343567,
+    "volume_gain": -15.47,
     "percent_change": 3.04,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -195,6 +243,8 @@
     "ticker": "VZ",
     "name": "Verizon Communications Inc.",
     "volume": 43132338,
+    "average_volume": 22628534,
+    "volume_gain": 90.61,
     "percent_change": 2.0,
     "source": "Yahoo:most_active",
     "date": "2025-11-03"
@@ -203,6 +253,8 @@
     "ticker": "BHF",
     "name": "Brighthouse Financial, Inc.",
     "volume": 4282519,
+    "average_volume": 1180840,
+    "volume_gain": 262.67,
     "percent_change": 24.91,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -211,6 +263,8 @@
     "ticker": "ILMN",
     "name": "Illumina, Inc.",
     "volume": 6797259,
+    "average_volume": 1650878,
+    "volume_gain": 311.74,
     "percent_change": 24.78,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -219,6 +273,8 @@
     "ticker": "TWLO",
     "name": "Twilio Inc.",
     "volume": 8933785,
+    "average_volume": 3711695,
+    "volume_gain": 140.69,
     "percent_change": 19.51,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -227,6 +283,8 @@
     "ticker": "TVTX",
     "name": "Travere Therapeutics, Inc.",
     "volume": 6250526,
+    "average_volume": 2207935,
+    "volume_gain": 183.09,
     "percent_change": 18.58,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -235,6 +293,8 @@
     "ticker": "BFAM",
     "name": "Bright Horizons Family Solutions Inc.",
     "volume": 2976528,
+    "average_volume": 701703,
+    "volume_gain": 324.19,
     "percent_change": 18.37,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -243,6 +303,8 @@
     "ticker": "ATEC",
     "name": "Alphatec Holdings, Inc.",
     "volume": 11584901,
+    "average_volume": 2364787,
+    "volume_gain": 389.89,
     "percent_change": 16.29,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -251,6 +313,8 @@
     "ticker": "MEOH",
     "name": "Methanex Corporation",
     "volume": 2001531,
+    "average_volume": 482056,
+    "volume_gain": 315.21,
     "percent_change": 16.06,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -259,6 +323,8 @@
     "ticker": "METCB",
     "name": "Ramaco Resources, Inc.",
     "volume": 125574,
+    "average_volume": 130937,
+    "volume_gain": -4.1,
     "percent_change": 15.23,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -267,6 +333,8 @@
     "ticker": "DGNX",
     "name": "Diginex Limited",
     "volume": 858429,
+    "average_volume": 649682,
+    "volume_gain": 32.13,
     "percent_change": 14.34,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -275,6 +343,8 @@
     "ticker": "FSLR",
     "name": "First Solar, Inc.",
     "volume": 4396464,
+    "average_volume": 2616278,
+    "volume_gain": 68.04,
     "percent_change": 14.28,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -283,6 +353,8 @@
     "ticker": "OSIS",
     "name": "OSI Systems, Inc.",
     "volume": 644213,
+    "average_volume": 170687,
+    "volume_gain": 277.42,
     "percent_change": 14.21,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -291,6 +363,8 @@
     "ticker": "NET",
     "name": "Cloudflare, Inc.",
     "volume": 9474184,
+    "average_volume": 2398671,
+    "volume_gain": 294.98,
     "percent_change": 13.84,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -299,6 +373,8 @@
     "ticker": "OGCP",
     "name": "Empire State Realty OP, L.P.",
     "volume": 38501,
+    "average_volume": 2082,
+    "volume_gain": 1749.23,
     "percent_change": 13.74,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -307,6 +383,8 @@
     "ticker": "QFIN",
     "name": "Qfin Holdings, Inc.",
     "volume": 5500822,
+    "average_volume": 2010446,
+    "volume_gain": 173.61,
     "percent_change": 13.43,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -315,6 +393,8 @@
     "ticker": "CRDO",
     "name": "Credo Technology Group Holding Ltd",
     "volume": 7556883,
+    "average_volume": 5493735,
+    "volume_gain": 37.55,
     "percent_change": 12.6,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -323,6 +403,8 @@
     "ticker": "SPXC",
     "name": "SPX Technologies, Inc.",
     "volume": 986014,
+    "average_volume": 384854,
+    "volume_gain": 156.2,
     "percent_change": 12.59,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -331,6 +413,8 @@
     "ticker": "EOSE",
     "name": "Eos Energy Enterprises, Inc.",
     "volume": 24103585,
+    "average_volume": 18815135,
+    "volume_gain": 28.11,
     "percent_change": 11.94,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -339,6 +423,8 @@
     "ticker": "QUBT",
     "name": "Quantum Computing Inc.",
     "volume": 44842095,
+    "average_volume": 34279982,
+    "volume_gain": 30.81,
     "percent_change": 11.62,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -347,6 +433,8 @@
     "ticker": "LPLA",
     "name": "LPL Financial Holdings Inc.",
     "volume": 1988183,
+    "average_volume": 898167,
+    "volume_gain": 121.36,
     "percent_change": 11.47,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -355,6 +443,8 @@
     "ticker": "DQ",
     "name": "Daqo New Energy Corp.",
     "volume": 2768472,
+    "average_volume": 1216223,
+    "volume_gain": 127.63,
     "percent_change": 10.67,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -363,6 +453,8 @@
     "ticker": "ACA",
     "name": "Arcosa, Inc.",
     "volume": 507919,
+    "average_volume": 241248,
+    "volume_gain": 110.54,
     "percent_change": 10.57,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -371,6 +463,8 @@
     "ticker": "KWR",
     "name": "Quaker Chemical Corporation",
     "volume": 203793,
+    "average_volume": 124970,
+    "volume_gain": 63.07,
     "percent_change": 10.46,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -379,6 +473,8 @@
     "ticker": "ALAB",
     "name": "Astera Labs, Inc.",
     "volume": 9392262,
+    "average_volume": 6094139,
+    "volume_gain": 54.12,
     "percent_change": 10.1,
     "source": "Yahoo:gainers",
     "date": "2025-11-03"
@@ -387,80 +483,10 @@
     "ticker": "GGAL",
     "name": "Grupo Financiero Galicia S.A.",
     "volume": 3149706,
+    "average_volume": 3296298,
+    "volume_gain": -4.45,
     "percent_change": 9.96,
     "source": "Yahoo:gainers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "HERES",
-    "name": "Here’s what’s worth streaming in Novembe",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "CORPO",
-    "name": "Corporate America’s hefty profit streak ",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "NVIDI",
-    "name": "Nvidia is the biggest winner from earnin",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:gainers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "SWISS",
-    "name": "Swiss National Bank cuts interest rates ",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "DOLLA",
-    "name": "Dollar jumps 0.5% to 0.8890 francs",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "GERMA",
-    "name": "Germany flash services PMI falls to 9-mo",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "POWEL",
-    "name": "Powell says labor market not a source of",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "FINAL",
-    "name": "Final S&P U.S. manufacturing index is 52",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
-    "date": "2025-11-03"
-  },
-  {
-    "ticker": "DUOLI",
-    "name": "Duolingo started at buy with $222 price ",
-    "volume": 0,
-    "percent_change": 0.0,
-    "source": "MarketWatch:losers",
     "date": "2025-11-03"
   }
 ]

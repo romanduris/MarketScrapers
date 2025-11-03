@@ -2,13 +2,7 @@
 step3_sentiment_noapi.py
 Sentiment analýza bez API kľúčov, robustnejšia verzia.
 
-Zdroje:
- - Google News RSS: https://news.google.com/rss/search?q=<TICKER>+stock
- - Reddit search RSS: https://www.reddit.com/search.rss?q=<TICKER>
-
-Metodika:
- - Pokusí sa použiť Hugging Face model (cardiffnlp/twitter-roberta-base-sentiment).
- - Fallback na VADER alebo jednoduchý lexikón.
+Výstup: zachová pôvodné polia + news/social sentiment a percentuálne kombinované skóre
 """
 
 import json
@@ -117,6 +111,10 @@ def score_texts_lexicon(texts: List[str]) -> float:
     scores = [lexicon_score(t) for t in texts]
     return round(sum(scores)/len(scores),3) if scores else 0.0
 
+# Normalize -1..1 -> 0..100%
+def normalize_percent(score: float) -> float:
+    return round((score + 1) * 50, 1)
+
 # ---------- MAIN PROCESS ----------
 def process_tickers():
     try_init_transformers()
@@ -162,29 +160,26 @@ def process_tickers():
             continue
 
         tickers_with_sentiment += 1
-        out_item = dict(item)
+        out_item = dict(item)  # zachovanie všetkých pôvodných dát
+
+        # pridanie sentimentov v percentách
         out_item.update({
-            "news_sentiment": news_score,
-            "combined_sentiment": combined,
+            "news_sentiment_percent": normalize_percent(news_score),
+            "social_sentiment_percent": normalize_percent(social_score) if reddit_titles else None,
+            "combined_sentiment_percent": normalize_percent(combined),
             "news_mentions": len(news_titles),
+            "social_mentions": len(reddit_titles) if reddit_titles else 0,
             "total_mentions": len(news_titles) + len(reddit_titles),
             "sentiment_date": str(date.today())
         })
 
-        # zahrnúť social len ak je relevantný
-        if social_score != 0 and reddit_titles:
-            out_item.update({
-                "social_sentiment": social_score,
-                "social_mentions": len(reddit_titles)
-            })
-
         out.append(out_item)
 
         # print in single line
-        line = f"📡 [{idx}] Processing {ticker}: news:{len(news_titles)} score:{news_score}"
-        if social_score != 0 and reddit_titles:
-            line += f" | social:{len(reddit_titles)} score:{social_score}"
-        line += f" -> combined:{combined}"
+        line = f"📡 [{idx}] Processing {ticker}: news:{len(news_titles)} score:{normalize_percent(news_score)}%"
+        if reddit_titles:
+            line += f" | social:{len(reddit_titles)} score:{normalize_percent(social_score)}%"
+        line += f" -> combined:{normalize_percent(combined)}%"
         print(line)
 
         time.sleep(0.7)
