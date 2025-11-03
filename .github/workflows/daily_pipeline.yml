@@ -24,17 +24,26 @@ jobs:
       # Inštalácia dependencies
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       # Spustenie pipeline
       - name: Run full pipeline
         run: python main.py
 
-      # Upload HTML report
+      # Skontroluj, že HTML report existuje
+      - name: Check HTML report exists
+        run: |
+          if [ ! -f docs/ai_report.html ]; then
+            echo "❌ docs/ai_report.html not found!"
+            exit 1
+          else
+            echo "✅ docs/ai_report.html found"
+          fi
+
+      # Upload HTML report ako artefakt
       - name: Upload AI HTML report
         uses: actions/upload-artifact@v4
         with:
           name: ai_stock_report
-          path: data/ai_report.html
-
+          path: docs/ai_report.html
