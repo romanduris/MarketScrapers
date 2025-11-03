@@ -9,7 +9,7 @@ from pathlib import Path
 from datetime import datetime
 
 INPUT_FILE = "data/step5_ai_report.json"
-OUTPUT_FILE = "data/ai_report.html"
+OUTPUT_FILE = "docs/ai_report.html"  # <-- Zmenené na docs/ pre GitHub Pages
 
 def generate_html(data):
     """Generuje HTML report ako string"""
@@ -112,6 +112,9 @@ def generate_html(data):
 def run_html_report():
     print("🧾 Step 6: Generujem HTML report...")
 
+    # Vytvorenie priečinka docs/, ak neexistuje
+    Path("docs").mkdir(exist_ok=True)
+
     try:
         with open(INPUT_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -124,12 +127,11 @@ def run_html_report():
 
     html = generate_html(data)
 
-    Path("data").mkdir(exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html)
 
     print(f"✅ HTML report uložený do: {OUTPUT_FILE}")
-    print("📬 Pripravené na odoslanie e-mailom alebo otvorenie v prehliadači.")
+    print("📬 Report je pripravený na GitHub Pages alebo na lokálne otvorenie v prehliadači.")
 
 if __name__ == "__main__":
     run_html_report()
