@@ -31,8 +31,8 @@ def generate_html(data):
         ticker = stock.get("ticker", "")
         name = stock.get("name", "")
         price = round(stock.get("price", 0))
-        SL10 = round(stock.get("SL10", 0), 2)
-        TP10 = round(stock.get("TP10", 0), 2)
+        SL = round(stock.get("SL", 0), 2)
+        TP = round(stock.get("TP", 0), 2)
         ai_score = stock.get("AIScore", 0)
         overall = stock.get("OverallRating", 0)
         ff_rating = stock.get("FundamentalFilterRating", "N/A")
@@ -45,8 +45,8 @@ def generate_html(data):
         <tr>
             <td rowspan="2" style="text-align:center; vertical-align:middle;"><b>{ticker}</b><br><small>{name}</small></td>
             <td style="text-align:center;">{price}</td>
-            <td style="text-align:center;">{SL10}</td>
-            <td style="text-align:center;">{TP10}</td>
+            <td style="text-align:center;">{SL}</td>
+            <td style="text-align:center;">{TP}</td>
             <td style="text-align:center;">{colorize_rating(ai_score)}</td>
             <td style="text-align:center;">{colorize_rating(overall)}</td>
             <td style="text-align:center;">{ff_rating}</td>
@@ -125,8 +125,8 @@ def generate_html(data):
             <tr>
                 <th>Ticker / Name</th>
                 <th>Price</th>
-                <th>SL10</th>
-                <th>TP10</th>
+                <th>SL</th>
+                <th>TP</th>
                 <th>AIScore</th>
                 <th>OverallRating</th>
                 <th>FundamentalFilterRating</th>
