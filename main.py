@@ -9,13 +9,13 @@ from pathlib import Path
 
 # Zoznam skriptov podľa poradia
 pipeline_steps = [
-    "step1_Sraper.py",
-    "step2_techAnalyze.py",
-    "step3_sentiment.py",
-    "step4_ranking.py",
-    "step5_AI_comment.py",
-    "step6_report_html.py",
-    "step7_send_report.py"
+    "step1_DataCollection.py",
+    "step2_Filter_Fundamental.py",
+    "step3_IdicatorsColletion.py",
+    "step4_FilterIndicators.py",
+    "step5_Sentiment.py",
+    "step6_TopX.py",
+    "step7_AI_Analyze.py"
 ]
 
 def check_and_install_module(module_name):

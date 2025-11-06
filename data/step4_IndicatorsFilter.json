@@ -8,18 +8,14 @@
     "trailingPE": 26.165606,
     "momentum_2m": 0.045798215237248696,
     "momentum_1w": -0.0018829955014240118,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ABT",
-    "name": "Abbott Laboratories",
-    "marketCap": 216559108096,
-    "revenueGrowth": 0.069,
-    "debtToEquity": 25.31,
-    "trailingPE": 15.645729,
-    "momentum_2m": -0.04523131154724669,
-    "momentum_1w": 0.0008840360852027107,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 164.32000732421875,
+    "RSI (14)": 66.69,
+    "EMA (20)": 161.99,
+    "MACD (12,26,9)": 2.3188,
+    "MACD_Signal (12,26,9)": 2.4752,
+    "percent_change": 2.32,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "ACN",
@@ -30,7 +26,14 @@
     "trailingPE": 20.39671,
     "momentum_2m": 0.041829622950676715,
     "momentum_1w": 0.0002825724489152748,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 247.82000732421875,
+    "RSI (14)": 64.85,
+    "EMA (20)": 247.37,
+    "MACD (12,26,9)": 0.2174,
+    "MACD_Signal (12,26,9)": 0.2007,
+    "percent_change": 2.03,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "AES",
@@ -41,7 +44,14 @@
     "trailingPE": 10.938462,
     "momentum_2m": 0.1154748593906656,
     "momentum_1w": 0.002142029507597343,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 14.220000267028809,
+    "RSI (14)": 42.38,
+    "EMA (20)": 14.06,
+    "MACD (12,26,9)": -0.0861,
+    "MACD_Signal (12,26,9)": -0.0369,
+    "percent_change": 5.8,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AFL",
@@ -52,7 +62,14 @@
     "trailingPE": 25.054052,
     "momentum_2m": 0.08012454978602257,
     "momentum_1w": 0.05241249834888917,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 111.23999786376953,
+    "RSI (14)": 69.06,
+    "EMA (20)": 108.78,
+    "MACD (12,26,9)": -0.8826,
+    "MACD_Signal (12,26,9)": -1.2766,
+    "percent_change": 2.23,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "A",
@@ -63,29 +80,14 @@
     "trailingPE": 34.292057,
     "momentum_2m": 0.2535350290456162,
     "momentum_1w": 0.024930219275836274,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "ALLE",
-    "name": "Allegion",
-    "marketCap": 14264957952,
-    "revenueGrowth": 0.107,
-    "debtToEquity": 116.084,
-    "trailingPE": 22.437077,
-    "momentum_2m": -0.00372526073707935,
-    "momentum_1w": 0.0013285900451027732,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "LNT",
-    "name": "Alliant Energy",
-    "marketCap": 17184030720,
-    "revenueGrowth": 0.075,
-    "debtToEquity": 158.251,
-    "trailingPE": 20.632715,
-    "momentum_2m": 0.03939336712821273,
-    "momentum_1w": -0.006450918658622573,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 146.77000427246094,
+    "RSI (14)": 65.18,
+    "EMA (20)": 144.22,
+    "MACD (12,26,9)": 1.2581,
+    "MACD_Signal (12,26,9)": 1.0815,
+    "percent_change": 0.47,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "GOOGL",
@@ -96,7 +98,14 @@
     "trailingPE": 28.06614,
     "momentum_2m": 0.3994506008705605,
     "momentum_1w": 0.03547361319357001,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 284.30999755859375,
+    "RSI (14)": 76.68,
+    "EMA (20)": 266.08,
+    "MACD (12,26,9)": 8.7581,
+    "MACD_Signal (12,26,9)": 5.9786,
+    "percent_change": 2.44,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "GOOG",
@@ -107,18 +116,14 @@
     "trailingPE": 28.081854,
     "momentum_2m": 0.39598599089968034,
     "momentum_1w": 0.03481479123735087,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "AMZN",
-    "name": "Amazon",
-    "marketCap": 2674691932160,
-    "revenueGrowth": 0.134,
-    "debtToEquity": 43.405,
-    "trailingPE": 35.28914,
-    "momentum_2m": 0.12972409612671898,
-    "momentum_1w": 0.08640900405030405,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 284.75,
+    "RSI (14)": 77.62,
+    "EMA (20)": 266.73,
+    "MACD (12,26,9)": 8.6402,
+    "MACD_Signal (12,26,9)": 5.8722,
+    "percent_change": 2.41,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AMCR",
@@ -129,7 +134,14 @@
     "trailingPE": 25.21875,
     "momentum_2m": -0.17400211702022572,
     "momentum_1w": 0.008749961853027344,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 8.069999694824219,
+    "RSI (14)": 47.11,
+    "EMA (20)": 8.04,
+    "MACD (12,26,9)": -0.0271,
+    "MACD_Signal (12,26,9)": -0.0049,
+    "percent_change": 2.54,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AEP",
@@ -140,7 +152,14 @@
     "trailingPE": 17.508772,
     "momentum_2m": 0.06938123422337039,
     "momentum_1w": -0.019244930491973844,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 119.76000213623047,
+    "RSI (14)": 58.0,
+    "EMA (20)": 118.42,
+    "MACD (12,26,9)": 0.9923,
+    "MACD_Signal (12,26,9)": 0.7427,
+    "percent_change": -0.45,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AXP",
@@ -151,29 +170,14 @@
     "trailingPE": 24.550335,
     "momentum_2m": 0.20948140321038133,
     "momentum_1w": 0.021160143337712434,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "AMT",
-    "name": "American Tower",
-    "marketCap": 83999547392,
-    "revenueGrowth": 0.077,
-    "debtToEquity": 418.09,
-    "trailingPE": 28.617224,
-    "momentum_2m": -0.1153763112927767,
-    "momentum_1w": 0.001954382628702067,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "AWK",
-    "name": "American Water Works",
-    "marketCap": 25555333120,
-    "revenueGrowth": 0.097,
-    "debtToEquity": 140.983,
-    "trailingPE": 23.017574,
-    "momentum_2m": -0.07826022523601239,
-    "momentum_1w": 0.006996799009621801,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 365.79998779296875,
+    "RSI (14)": 86.62,
+    "EMA (20)": 351.45,
+    "MACD (12,26,9)": 8.4346,
+    "MACD_Signal (12,26,9)": 7.2914,
+    "percent_change": 1.47,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AME",
@@ -184,7 +188,14 @@
     "trailingPE": 31.239746,
     "momentum_2m": 0.0726926924842275,
     "momentum_1w": 0.07530264907618833,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 198.05999755859375,
+    "RSI (14)": 67.66,
+    "EMA (20)": 190.54,
+    "MACD (12,26,9)": 3.8084,
+    "MACD_Signal (12,26,9)": 2.4731,
+    "percent_change": 0.0,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AMGN",
@@ -195,18 +206,14 @@
     "trailingPE": 26.132353,
     "momentum_2m": 0.1314996739745311,
     "momentum_1w": 0.09627445383553268,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "ADI",
-    "name": "Analog Devices",
-    "marketCap": 116101480448,
-    "revenueGrowth": 0.246,
-    "debtToEquity": 25.541,
-    "trailingPE": 60.20408,
-    "momentum_2m": 0.021088437709529062,
-    "momentum_1w": 0.004084439845513765,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 319.8599853515625,
+    "RSI (14)": 72.57,
+    "EMA (20)": 297.33,
+    "MACD (12,26,9)": 2.1345,
+    "MACD_Signal (12,26,9)": 0.4655,
+    "percent_change": 7.81,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AON",
@@ -217,7 +224,14 @@
     "trailingPE": 27.31415,
     "momentum_2m": -0.06077344080683644,
     "momentum_1w": 0.04793450649164188,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 341.70001220703125,
+    "RSI (14)": 48.47,
+    "EMA (20)": 343.92,
+    "MACD (12,26,9)": -5.9919,
+    "MACD_Signal (12,26,9)": -6.8239,
+    "percent_change": -0.73,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "APO",
@@ -228,18 +242,14 @@
     "trailingPE": 25.0,
     "momentum_2m": -0.07163798897544693,
     "momentum_1w": 0.07102821061552556,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "AAPL",
-    "name": "Apple Inc.",
-    "marketCap": 3991684251648,
-    "revenueGrowth": 0.079,
-    "debtToEquity": 152.411,
-    "trailingPE": 36.260406,
-    "momentum_2m": 0.17631187384313263,
-    "momentum_1w": 0.0016314513218060878,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 133.75,
+    "RSI (14)": 73.69,
+    "EMA (20)": 126.07,
+    "MACD (12,26,9)": 0.7745,
+    "MACD_Signal (12,26,9)": -0.0883,
+    "percent_change": 2.48,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "AMAT",
@@ -250,7 +260,14 @@
     "trailingPE": 28.71156,
     "momentum_2m": 0.2819336702892514,
     "momentum_1w": 0.02180275456902847,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 240.88999938964844,
+    "RSI (14)": 60.52,
+    "EMA (20)": 229.54,
+    "MACD (12,26,9)": 3.5358,
+    "MACD_Signal (12,26,9)": 2.3664,
+    "percent_change": 4.65,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "AIZ",
@@ -261,29 +278,14 @@
     "trailingPE": 15.831037,
     "momentum_2m": 0.04633284543543903,
     "momentum_1w": 0.049012526636525555,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "ATO",
-    "name": "Atmos Energy",
-    "marketCap": 27704762368,
-    "revenueGrowth": 0.196,
-    "debtToEquity": 67.241,
-    "trailingPE": 23.838398,
-    "momentum_2m": 0.04687002664549511,
-    "momentum_1w": 0.005417643341146805,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "ADSK",
-    "name": "Autodesk",
-    "marketCap": 64104476672,
-    "revenueGrowth": 0.171,
-    "debtToEquity": 100.7,
-    "trailingPE": 62.699997,
-    "momentum_2m": 0.0633501492884605,
-    "momentum_1w": 0.01306047212261019,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 218.30999755859375,
+    "RSI (14)": 74.15,
+    "EMA (20)": 213.76,
+    "MACD (12,26,9)": -1.2988,
+    "MACD_Signal (12,26,9)": -2.214,
+    "percent_change": 1.73,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "BALL",
@@ -294,7 +296,14 @@
     "trailingPE": 24.20297,
     "momentum_2m": -0.08268301165400593,
     "momentum_1w": 0.02323149097342636,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 48.88999938964844,
+    "RSI (14)": 56.26,
+    "EMA (20)": 48.44,
+    "MACD (12,26,9)": -0.2892,
+    "MACD_Signal (12,26,9)": -0.2469,
+    "percent_change": 2.22,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "BAC",
@@ -305,7 +314,14 @@
     "trailingPE": 14.330601,
     "momentum_2m": 0.11035233567666025,
     "momentum_1w": -0.0024724432025114984,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 52.45000076293945,
+    "RSI (14)": 64.38,
+    "EMA (20)": 52.11,
+    "MACD (12,26,9)": 0.7414,
+    "MACD_Signal (12,26,9)": 0.6366,
+    "percent_change": -2.04,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "BIIB",
@@ -316,7 +332,14 @@
     "trailingPE": 13.999087,
     "momentum_2m": 0.1900256060791834,
     "momentum_1w": 0.03767071582873882,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 153.42999267578125,
+    "RSI (14)": 70.39,
+    "EMA (20)": 149.96,
+    "MACD (12,26,9)": 0.1579,
+    "MACD_Signal (12,26,9)": -0.6067,
+    "percent_change": 2.75,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "BK",
@@ -327,29 +350,14 @@
     "trailingPE": 15.683984,
     "momentum_2m": 0.05420387576477825,
     "momentum_1w": 0.015319937813131235,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "CHRW",
-    "name": "C.H. Robinson",
-    "marketCap": 18090346496,
-    "revenueGrowth": -0.109,
-    "debtToEquity": 80.904,
-    "trailingPE": 30.997976,
-    "momentum_2m": 0.2955820459204481,
-    "momentum_1w": 0.18356777789204637,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "COF",
-    "name": "Capital One",
-    "marketCap": 140743966720,
-    "revenueGrowth": 0.679,
-    "debtToEquity": null,
-    "trailingPE": 75.56313,
-    "momentum_2m": 0.02432752004243688,
-    "momentum_1w": 0.012855105931975697,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 108.69000244140625,
+    "RSI (14)": 61.8,
+    "EMA (20)": 107.28,
+    "MACD (12,26,9)": 0.58,
+    "MACD_Signal (12,26,9)": 0.4404,
+    "percent_change": 0.64,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "CAH",
@@ -360,7 +368,14 @@
     "trailingPE": 29.637049,
     "momentum_2m": 0.34950610058720044,
     "momentum_1w": 0.19650995212226774,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 196.7899932861328,
+    "RSI (14)": 95.95,
+    "EMA (20)": 172.23,
+    "MACD (12,26,9)": 9.6269,
+    "MACD_Signal (12,26,9)": 5.549,
+    "percent_change": 0.74,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CAT",
@@ -371,7 +386,14 @@
     "trailingPE": 29.247177,
     "momentum_2m": 0.38301770464202356,
     "momentum_1w": -0.02790818988002086,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 569.1500244140625,
+    "RSI (14)": 58.6,
+    "EMA (20)": 540.19,
+    "MACD (12,26,9)": 17.5021,
+    "MACD_Signal (12,26,9)": 14.4749,
+    "percent_change": 3.94,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "CBOE",
@@ -382,7 +404,14 @@
     "trailingPE": 27.00322,
     "momentum_2m": 0.011588562588571438,
     "momentum_1w": 0.08045384996546634,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 251.39999389648438,
+    "RSI (14)": 68.84,
+    "EMA (20)": 241.29,
+    "MACD (12,26,9)": 2.3612,
+    "MACD_Signal (12,26,9)": 0.8814,
+    "percent_change": 0.46,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "COR",
@@ -393,7 +422,14 @@
     "trailingPE": 36.307693,
     "momentum_2m": 0.22656593488512544,
     "momentum_1w": 0.06252059228848861,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 354.0,
+    "RSI (14)": 83.5,
+    "EMA (20)": 331.69,
+    "MACD (12,26,9)": 9.2148,
+    "MACD_Signal (12,26,9)": 7.5431,
+    "percent_change": 2.75,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CF",
@@ -404,7 +440,14 @@
     "trailingPE": 11.14679,
     "momentum_2m": 0.0319861175848708,
     "momentum_1w": 0.010695205104685801,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 85.05000305175781,
+    "RSI (14)": 58.79,
+    "EMA (20)": 85.86,
+    "MACD (12,26,9)": -1.4865,
+    "MACD_Signal (12,26,9)": -1.6221,
+    "percent_change": 0.59,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CB",
@@ -415,7 +458,14 @@
     "trailingPE": 11.837025,
     "momentum_2m": 0.05000563925318424,
     "momentum_1w": 0.0189208984375,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 283.260009765625,
+    "RSI (14)": 70.4,
+    "EMA (20)": 279.98,
+    "MACD (12,26,9)": -0.587,
+    "MACD_Signal (12,26,9)": -1.6297,
+    "percent_change": -0.84,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CHD",
@@ -426,7 +476,14 @@
     "trailingPE": 27.340693,
     "momentum_2m": -0.05748522012015067,
     "momentum_1w": 0.059017620322381115,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 86.66999816894531,
+    "RSI (14)": 48.17,
+    "EMA (20)": 86.44,
+    "MACD (12,26,9)": -0.6959,
+    "MACD_Signal (12,26,9)": -0.8119,
+    "percent_change": 0.08,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CINF",
@@ -437,7 +494,14 @@
     "trailingPE": 11.907738,
     "momentum_2m": 0.06306154454758328,
     "momentum_1w": 0.0540735780548407,
-    "FundamentalFilterRating": 100
+    "FundamentalFilterRating": 100,
+    "price": 160.0399932861328,
+    "RSI (14)": 68.07,
+    "EMA (20)": 157.0,
+    "MACD (12,26,9)": -1.6104,
+    "MACD_Signal (12,26,9)": -2.273,
+    "percent_change": 1.68,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "CSCO",
@@ -448,7 +512,14 @@
     "trailingPE": 28.27451,
     "momentum_2m": 0.016186109669019455,
     "momentum_1w": 0.010794849618680047,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 72.0999984741211,
+    "RSI (14)": 63.45,
+    "EMA (20)": 71.27,
+    "MACD (12,26,9)": 0.9935,
+    "MACD_Signal (12,26,9)": 0.8091,
+    "percent_change": -0.3,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "C",
@@ -459,7 +530,14 @@
     "trailingPE": 14.282304,
     "momentum_2m": 0.06848050676362205,
     "momentum_1w": 0.032045196333245096,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 101.69000244140625,
+    "RSI (14)": 66.97,
+    "EMA (20)": 99.05,
+    "MACD (12,26,9)": 1.069,
+    "MACD_Signal (12,26,9)": 0.6445,
+    "percent_change": 0.67,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "CFG",
@@ -470,29 +548,14 @@
     "trailingPE": 14.408963,
     "momentum_2m": 0.0782125643264473,
     "momentum_1w": 0.020027727848923815,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "CMS",
-    "name": "CMS Energy",
-    "marketCap": 22084485120,
-    "revenueGrowth": 0.16,
-    "debtToEquity": 191.634,
-    "trailingPE": 20.913544,
-    "momentum_2m": -0.003296221285770451,
-    "momentum_1w": 0.003873271209721807,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "KO",
-    "name": "Coca-Cola Company (The)",
-    "marketCap": 294703235072,
-    "revenueGrowth": 0.051,
-    "debtToEquity": 144.771,
-    "trailingPE": 22.68543,
-    "momentum_2m": -0.02368236020780723,
-    "momentum_1w": 0.0023409460962893203,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 51.439998626708984,
+    "RSI (14)": 74.8,
+    "EMA (20)": 51.03,
+    "MACD (12,26,9)": -0.3261,
+    "MACD_Signal (12,26,9)": -0.5166,
+    "percent_change": 1.4,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CTSH",
@@ -503,18 +566,14 @@
     "trailingPE": 17.282408,
     "momentum_2m": 0.09047713129950252,
     "momentum_1w": 0.041428387774579356,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "CPRT",
-    "name": "Copart",
-    "marketCap": 40581296128,
-    "revenueGrowth": 0.052,
-    "debtToEquity": 1.127,
-    "trailingPE": 26.371069,
-    "momentum_2m": -0.11165255026651555,
-    "momentum_1w": -0.01341175752527568,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 74.66000366210938,
+    "RSI (14)": 89.04,
+    "EMA (20)": 70.01,
+    "MACD (12,26,9)": 1.511,
+    "MACD_Signal (12,26,9)": 0.8047,
+    "percent_change": 2.54,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CTVA",
@@ -525,51 +584,14 @@
     "trailingPE": 29.341011,
     "momentum_2m": -0.10143811179293882,
     "momentum_1w": 0.007436667726774315,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "CTRA",
-    "name": "Coterra",
-    "marketCap": 19650854912,
-    "revenueGrowth": 0.413,
-    "debtToEquity": 26.633,
-    "trailingPE": 11.866359,
-    "momentum_2m": 0.08365476754073975,
-    "momentum_1w": 0.10325620529804902,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "DAY",
-    "name": "Dayforce",
-    "marketCap": 10968796160,
-    "revenueGrowth": 0.095,
-    "debtToEquity": 45.53,
-    "trailingPE": null,
-    "momentum_2m": 0.3293250405348567,
-    "momentum_1w": 0.0026331232236491697,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "DELL",
-    "name": "Dell Technologies",
-    "marketCap": 102145212416,
-    "revenueGrowth": 0.19,
-    "debtToEquity": null,
-    "trailingPE": 22.249636,
-    "momentum_2m": 0.0798718901500417,
-    "momentum_1w": -0.0683985453785737,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "DG",
-    "name": "Dollar General",
-    "marketCap": 22144868352,
-    "revenueGrowth": 0.051,
-    "debtToEquity": 213.026,
-    "trailingPE": 18.631481,
-    "momentum_2m": -0.12129030684647923,
-    "momentum_1w": 0.007006274873230245,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 63.66999816894531,
+    "RSI (14)": 67.41,
+    "EMA (20)": 62.85,
+    "MACD (12,26,9)": -0.2429,
+    "MACD_Signal (12,26,9)": -0.3252,
+    "percent_change": 1.87,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "DLTR",
@@ -580,18 +602,14 @@
     "trailingPE": 20.333334,
     "momentum_2m": -0.08013325955888373,
     "momentum_1w": 0.035428760219269995,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "D",
-    "name": "Dominion Energy",
-    "marketCap": 50970083328,
-    "revenueGrowth": 0.149,
-    "debtToEquity": 154.315,
-    "trailingPE": 19.506536,
-    "momentum_2m": -0.015233711970788155,
-    "momentum_1w": 0.011866365965839787,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 104.91999816894531,
+    "RSI (14)": 74.78,
+    "EMA (20)": 98.28,
+    "MACD (12,26,9)": 3.3273,
+    "MACD_Signal (12,26,9)": 3.1274,
+    "percent_change": 2.79,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EIX",
@@ -602,7 +620,14 @@
     "trailingPE": 7.441677,
     "momentum_2m": 0.03021941969810471,
     "momentum_1w": 0.02509477170906438,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 56.779998779296875,
+    "RSI (14)": 50.31,
+    "EMA (20)": 55.81,
+    "MACD (12,26,9)": 0.3362,
+    "MACD_Signal (12,26,9)": 0.5059,
+    "percent_change": 1.94,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EW",
@@ -613,40 +638,14 @@
     "trailingPE": 36.17467,
     "momentum_2m": 0.07682303404744983,
     "momentum_1w": 0.001813930246170381,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ELV",
-    "name": "Elevance Health",
-    "marketCap": 70689701888,
-    "revenueGrowth": 0.123,
-    "debtToEquity": 72.823,
-    "trailingPE": 12.956415,
-    "momentum_2m": 0.09346144811782398,
-    "momentum_1w": -0.05434653221366592,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "EME",
-    "name": "Emcor",
-    "marketCap": 30235758592,
-    "revenueGrowth": 0.164,
-    "debtToEquity": 12.915,
-    "trailingPE": 27.179878,
-    "momentum_2m": 0.06813566903210111,
-    "momentum_1w": -0.1307336127282417,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ETR",
-    "name": "Entergy",
-    "marketCap": 42998349824,
-    "revenueGrowth": 0.125,
-    "debtToEquity": 179.362,
-    "trailingPE": 23.714285,
-    "momentum_2m": 0.06634176324102148,
-    "momentum_1w": 0.008589982219658232,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 66,
+    "price": 82.83999633789062,
+    "RSI (14)": 81.16,
+    "EMA (20)": 79.55,
+    "MACD (12,26,9)": 2.0553,
+    "MACD_Signal (12,26,9)": 1.3254,
+    "percent_change": -1.56,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EPAM",
@@ -657,7 +656,14 @@
     "trailingPE": 22.987143,
     "momentum_2m": 0.05218081062258406,
     "momentum_1w": -0.01191281773838615,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 160.91000366210938,
+    "RSI (14)": 75.02,
+    "EMA (20)": 156.67,
+    "MACD (12,26,9)": 2.9149,
+    "MACD_Signal (12,26,9)": 2.2038,
+    "percent_change": 1.55,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EQT",
@@ -668,7 +674,14 @@
     "trailingPE": 18.237785,
     "momentum_2m": 0.09206165747143835,
     "momentum_1w": 0.08088807921079066,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 55.9900016784668,
+    "RSI (14)": 60.92,
+    "EMA (20)": 54.62,
+    "MACD (12,26,9)": -0.3377,
+    "MACD_Signal (12,26,9)": -0.6952,
+    "percent_change": 0.25,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EQIX",
@@ -679,29 +692,14 @@
     "trailingPE": 75.35472,
     "momentum_2m": 0.0505708772315423,
     "momentum_1w": 0.03057427355821063,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "EQR",
-    "name": "Equity Residential",
-    "marketCap": 23438120960,
-    "revenueGrowth": 0.046,
-    "debtToEquity": 76.237,
-    "trailingPE": 19.661184,
-    "momentum_2m": -0.03648307877793977,
-    "momentum_1w": 0.01459855054454473,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ERIE",
-    "name": "Erie Indemnity",
-    "marketCap": 15067848704,
-    "revenueGrowth": 0.067,
-    "debtToEquity": 2.353,
-    "trailingPE": 23.276253,
-    "momentum_2m": -0.20201367079253651,
-    "momentum_1w": -0.04541687374313519,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 822.1199951171875,
+    "RSI (14)": 53.05,
+    "EMA (20)": 821.17,
+    "MACD (12,26,9)": 8.0769,
+    "MACD_Signal (12,26,9)": 8.7589,
+    "percent_change": -0.94,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "ESS",
@@ -712,51 +710,14 @@
     "trailingPE": 19.799238,
     "momentum_2m": 0.03507188653013005,
     "momentum_1w": 0.05332143808689671,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "ES",
-    "name": "Eversource Energy",
-    "marketCap": 27058008064,
-    "revenueGrowth": 0.12,
-    "debtToEquity": 188.224,
-    "trailingPE": 31.83843,
-    "momentum_2m": 0.12030901971817776,
-    "momentum_1w": -0.012193387430610825,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "EXC",
-    "name": "Exelon",
-    "marketCap": 46610915328,
-    "revenueGrowth": 0.09,
-    "debtToEquity": 177.573,
-    "trailingPE": 17.54753,
-    "momentum_2m": 0.03452142780670564,
-    "momentum_1w": -0.02224574618831332,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "EXE",
-    "name": "Expand Energy",
-    "marketCap": 26210576384,
-    "revenueGrowth": 3.193,
-    "debtToEquity": 27.95,
-    "trailingPE": 35.385853,
-    "momentum_2m": 0.16536846214551315,
-    "momentum_1w": 0.09600636428704945,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "EXPE",
-    "name": "Expedia Group",
-    "marketCap": 26451628032,
-    "revenueGrowth": 0.064,
-    "debtToEquity": 311.457,
-    "trailingPE": 26.298893,
-    "momentum_2m": 0.05425350383262262,
-    "momentum_1w": -0.027074977689158564,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 260.3599853515625,
+    "RSI (14)": 53.57,
+    "EMA (20)": 257.75,
+    "MACD (12,26,9)": -1.3761,
+    "MACD_Signal (12,26,9)": -1.2376,
+    "percent_change": 1.48,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "EXPD",
@@ -767,7 +728,14 @@
     "trailingPE": 22.462542,
     "momentum_2m": 0.14247843583762676,
     "momentum_1w": 0.17308836035505215,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 137.9199981689453,
+    "RSI (14)": 82.49,
+    "EMA (20)": 123.08,
+    "MACD (12,26,9)": 2.181,
+    "MACD_Signal (12,26,9)": 0.0807,
+    "percent_change": 1.61,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "FICO",
@@ -778,18 +746,14 @@
     "trailingPE": 63.69038,
     "momentum_2m": 0.23545917304696284,
     "momentum_1w": 0.03975998837648209,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "FRT",
-    "name": "Federal Realty Investment Trust",
-    "marketCap": 8350086656,
-    "revenueGrowth": 0.06,
-    "debtToEquity": 138.76,
-    "trailingPE": 24.416243,
-    "momentum_2m": 0.048104951421415354,
-    "momentum_1w": 0.00764633621247679,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 1629.199951171875,
+    "RSI (14)": 50.96,
+    "EMA (20)": 1656.35,
+    "MACD (12,26,9)": -39.785,
+    "MACD_Signal (12,26,9)": -47.1388,
+    "percent_change": 1.44,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "FDX",
@@ -800,7 +764,14 @@
     "trailingPE": 15.020529,
     "momentum_2m": 0.11857116836639525,
     "momentum_1w": 0.025877290216557602,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 256.1000061035156,
+    "RSI (14)": 78.36,
+    "EMA (20)": 246.58,
+    "MACD (12,26,9)": 2.9234,
+    "MACD_Signal (12,26,9)": 1.1144,
+    "percent_change": 1.68,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "FITB",
@@ -811,7 +782,14 @@
     "trailingPE": 12.689552,
     "momentum_2m": 0.015337658641085161,
     "momentum_1w": 0.017716012824031235,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 42.5099983215332,
+    "RSI (14)": 68.96,
+    "EMA (20)": 42.27,
+    "MACD (12,26,9)": -0.3132,
+    "MACD_Signal (12,26,9)": -0.3913,
+    "percent_change": 0.85,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "FSLR",
@@ -822,18 +800,14 @@
     "trailingPE": 21.304916,
     "momentum_2m": 0.5015970392678621,
     "momentum_1w": 0.14761493915644053,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "FE",
-    "name": "FirstEnergy",
-    "marketCap": 26393538560,
-    "revenueGrowth": 0.112,
-    "debtToEquity": 193.669,
-    "trailingPE": 19.865217,
-    "momentum_2m": 0.047695436533970126,
-    "momentum_1w": -0.0024017600913528447,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 277.3900146484375,
+    "RSI (14)": 68.1,
+    "EMA (20)": 245.36,
+    "MACD (12,26,9)": 9.1819,
+    "MACD_Signal (12,26,9)": 4.8945,
+    "percent_change": 5.59,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "F",
@@ -844,7 +818,14 @@
     "trailingPE": 11.205129,
     "momentum_2m": 0.1653333028157553,
     "momentum_1w": -0.009818739931136689,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 13.109999656677246,
+    "RSI (14)": 66.04,
+    "EMA (20)": 12.74,
+    "MACD (12,26,9)": 0.1989,
+    "MACD_Signal (12,26,9)": 0.1377,
+    "percent_change": 2.5,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "FTNT",
@@ -855,40 +836,14 @@
     "trailingPE": 34.258965,
     "momentum_2m": 0.09583275807420755,
     "momentum_1w": 0.02101634549289577,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "FOXA",
-    "name": "Fox Corporation (Class A)",
-    "marketCap": 27247388672,
-    "revenueGrowth": 0.049,
-    "debtToEquity": 60.136,
-    "trailingPE": 14.557303,
-    "momentum_2m": 0.15942408158912436,
-    "momentum_1w": 0.06528527078359114,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "FOX",
-    "name": "Fox Corporation (Class B)",
-    "marketCap": 27244994560,
-    "revenueGrowth": 0.049,
-    "debtToEquity": 60.136,
-    "trailingPE": 13.114608,
-    "momentum_2m": 0.14673073903216105,
-    "momentum_1w": 0.07378109013452572,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "GRMN",
-    "name": "Garmin",
-    "marketCap": 39520952320,
-    "revenueGrowth": 0.117,
-    "debtToEquity": 2.342,
-    "trailingPE": 25.336622,
-    "momentum_2m": -0.1146183529249638,
-    "momentum_1w": -0.06434135441711053,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 85.98999786376953,
+    "RSI (14)": 62.15,
+    "EMA (20)": 85.36,
+    "MACD (12,26,9)": 0.097,
+    "MACD_Signal (12,26,9)": -0.1262,
+    "percent_change": 0.9,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "GD",
@@ -899,7 +854,14 @@
     "trailingPE": 22.238003,
     "momentum_2m": 0.09683514550119421,
     "momentum_1w": -0.0016595065389160002,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 342.9100036621094,
+    "RSI (14)": 63.69,
+    "EMA (20)": 342.71,
+    "MACD (12,26,9)": 0.6124,
+    "MACD_Signal (12,26,9)": 0.2827,
+    "percent_change": -0.16,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "GILD",
@@ -910,7 +872,14 @@
     "trailingPE": 18.975233,
     "momentum_2m": 0.028422426267712186,
     "momentum_1w": 0.03443039519877367,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 122.58000183105469,
+    "RSI (14)": 62.79,
+    "EMA (20)": 119.78,
+    "MACD (12,26,9)": 1.5162,
+    "MACD_Signal (12,26,9)": 1.4745,
+    "percent_change": -0.34,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "GDDY",
@@ -921,7 +890,14 @@
     "trailingPE": 22.90878,
     "momentum_2m": -0.0520618002132166,
     "momentum_1w": 0.0515920551823974,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 133.10000610351562,
+    "RSI (14)": 60.79,
+    "EMA (20)": 132.45,
+    "MACD (12,26,9)": -0.589,
+    "MACD_Signal (12,26,9)": -1.1673,
+    "percent_change": -1.54,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "GS",
@@ -932,7 +908,14 @@
     "trailingPE": 16.103352,
     "momentum_2m": 0.07258141069442492,
     "momentum_1w": 0.012808762199763013,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 793.0900268554688,
+    "RSI (14)": 65.29,
+    "EMA (20)": 781.94,
+    "MACD (12,26,9)": 1.4428,
+    "MACD_Signal (12,26,9)": -2.0656,
+    "percent_change": 0.29,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "HIG",
@@ -943,18 +926,14 @@
     "trailingPE": 10.493453,
     "momentum_2m": -0.002201674997007963,
     "momentum_1w": 0.04797315370960287,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "HCA",
-    "name": "HCA Healthcare",
-    "marketCap": 107981357056,
-    "revenueGrowth": 0.096,
-    "debtToEquity": null,
-    "trailingPE": 18.305609,
-    "momentum_2m": 0.21453873030571313,
-    "momentum_1w": 0.010247690805067933,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 66,
+    "price": 128.22999572753906,
+    "RSI (14)": 68.15,
+    "EMA (20)": 126.45,
+    "MACD (12,26,9)": -1.3182,
+    "MACD_Signal (12,26,9)": -1.8337,
+    "percent_change": 0.23,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "HSIC",
@@ -965,7 +944,14 @@
     "trailingPE": 23.154343,
     "momentum_2m": 0.06681484646267366,
     "momentum_1w": 0.1554878448147845,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 72.01000213623047,
+    "RSI (14)": 84.51,
+    "EMA (20)": 65.27,
+    "MACD (12,26,9)": 0.7677,
+    "MACD_Signal (12,26,9)": -0.1931,
+    "percent_change": 0.56,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "HPE",
@@ -976,40 +962,14 @@
     "trailingPE": 27.894115,
     "momentum_2m": 0.1179782177649713,
     "momentum_1w": -0.023073809753962227,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "HOLX",
-    "name": "Hologic",
-    "marketCap": 16521112576,
-    "revenueGrowth": 0.062,
-    "debtToEquity": 49.682,
-    "trailingPE": 29.811247,
-    "momentum_2m": 0.0924209961845166,
-    "momentum_1w": 0.0033792915471200224,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "HRL",
-    "name": "Hormel Foods",
-    "marketCap": 11852466176,
-    "revenueGrowth": 0.046,
-    "debtToEquity": 35.301,
-    "trailingPE": 15.729926,
-    "momentum_2m": -0.2413533131316834,
-    "momentum_1w": 0.002791971455626596,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "HST",
-    "name": "Host Hotels & Resorts",
-    "marketCap": 11289127936,
-    "revenueGrowth": 0.083,
-    "debtToEquity": 83.267,
-    "trailingPE": 17.24468,
-    "momentum_2m": 0.041152988838980775,
-    "momentum_1w": -0.006131231437410012,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 23.709999084472656,
+    "RSI (14)": 66.67,
+    "EMA (20)": 24.08,
+    "MACD (12,26,9)": -0.1628,
+    "MACD_Signal (12,26,9)": -0.2027,
+    "percent_change": 0.64,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "HWM",
@@ -1020,7 +980,14 @@
     "trailingPE": 57.952248,
     "momentum_2m": 0.14046436992501854,
     "momentum_1w": 0.013908010077040123,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 206.30999755859375,
+    "RSI (14)": 67.35,
+    "EMA (20)": 199.16,
+    "MACD (12,26,9)": 4.016,
+    "MACD_Signal (12,26,9)": 3.0191,
+    "percent_change": 0.63,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "HUBB",
@@ -1031,18 +998,14 @@
     "trailingPE": 29.272045,
     "momentum_2m": 0.08633782710335813,
     "momentum_1w": -0.009543580201294422,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "HBAN",
-    "name": "Huntington Bancshares",
-    "marketCap": 23932960768,
-    "revenueGrowth": 0.148,
-    "debtToEquity": null,
-    "trailingPE": 10.692308,
-    "momentum_2m": -0.06331569106430135,
-    "momentum_1w": 0.008575205524366192,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 468.05999755859375,
+    "RSI (14)": 70.03,
+    "EMA (20)": 445.71,
+    "MACD (12,26,9)": 13.3815,
+    "MACD_Signal (12,26,9)": 10.5515,
+    "percent_change": 1.88,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "HII",
@@ -1053,7 +1016,14 @@
     "trailingPE": 21.135767,
     "momentum_2m": 0.14996802748583438,
     "momentum_1w": 0.027679039194357324,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 306.67999267578125,
+    "RSI (14)": 66.16,
+    "EMA (20)": 300.69,
+    "MACD (12,26,9)": 7.0193,
+    "MACD_Signal (12,26,9)": 4.7346,
+    "percent_change": -2.92,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "IEX",
@@ -1064,18 +1034,14 @@
     "trailingPE": 26.58294,
     "momentum_2m": 0.03473829134154016,
     "momentum_1w": -0.02958471628947068,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "IDXX",
-    "name": "Idexx Laboratories",
-    "marketCap": 57620185088,
-    "revenueGrowth": 0.133,
-    "debtToEquity": 71.29,
-    "trailingPE": 57.2504,
-    "momentum_2m": 0.10415932115081872,
-    "momentum_1w": 0.14745252650803264,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 168.27000427246094,
+    "RSI (14)": 56.37,
+    "EMA (20)": 167.81,
+    "MACD (12,26,9)": 0.9299,
+    "MACD_Signal (12,26,9)": 0.8136,
+    "percent_change": 0.24,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "INCY",
@@ -1086,7 +1052,14 @@
     "trailingPE": 17.915253,
     "momentum_2m": 0.2951843665938536,
     "momentum_1w": 0.1721002061493191,
-    "FundamentalFilterRating": 100
+    "FundamentalFilterRating": 100,
+    "price": 105.69999694824219,
+    "RSI (14)": 84.07,
+    "EMA (20)": 93.02,
+    "MACD (12,26,9)": 3.684,
+    "MACD_Signal (12,26,9)": 1.9248,
+    "percent_change": 2.7,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "IBKR",
@@ -1097,7 +1070,14 @@
     "trailingPE": 34.432693,
     "momentum_2m": 0.06034878392355769,
     "momentum_1w": 0.03512068535094559,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 71.62000274658203,
+    "RSI (14)": 57.81,
+    "EMA (20)": 69.55,
+    "MACD (12,26,9)": 0.4374,
+    "MACD_Signal (12,26,9)": -0.0339,
+    "percent_change": 1.32,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "ISRG",
@@ -1108,7 +1088,14 @@
     "trailingPE": 72.559525,
     "momentum_2m": 0.14713813545314314,
     "momentum_1w": 0.020387210308956405,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 548.5499877929688,
+    "RSI (14)": 82.23,
+    "EMA (20)": 509.8,
+    "MACD (12,26,9)": 25.6855,
+    "MACD_Signal (12,26,9)": 22.0692,
+    "percent_change": 1.81,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "IVZ",
@@ -1119,29 +1106,14 @@
     "trailingPE": 15.89796,
     "momentum_2m": 0.12168729902617104,
     "momentum_1w": -0.030290436957736255,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "INVH",
-    "name": "Invitation Homes",
-    "marketCap": 17397524480,
-    "revenueGrowth": 0.065,
-    "debtToEquity": 85.691,
-    "trailingPE": 29.873684,
-    "momentum_2m": -0.04546839930082369,
-    "momentum_1w": 0.03312704296172719,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "IQV",
-    "name": "IQVIA",
-    "marketCap": 35783434240,
-    "revenueGrowth": 0.052,
-    "debtToEquity": 242.366,
-    "trailingPE": 28.902338,
-    "momentum_2m": 0.13022425355377698,
-    "momentum_1w": -0.03539460427424013,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 23.3700008392334,
+    "RSI (14)": 58.72,
+    "EMA (20)": 23.46,
+    "MACD (12,26,9)": -0.0746,
+    "MACD_Signal (12,26,9)": -0.1281,
+    "percent_change": 0.56,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "JBHT",
@@ -1152,7 +1124,14 @@
     "trailingPE": 29.506065,
     "momentum_2m": 0.19197646024942872,
     "momentum_1w": 0.008112239919332964,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 170.25,
+    "RSI (14)": 51.15,
+    "EMA (20)": 162.4,
+    "MACD (12,26,9)": 6.8234,
+    "MACD_Signal (12,26,9)": 6.5214,
+    "percent_change": -1.38,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "JKHY",
@@ -1163,18 +1142,14 @@
     "trailingPE": 25.613783,
     "momentum_2m": 0.0038473429518344204,
     "momentum_1w": 0.06631531444313765,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "JNJ",
-    "name": "Johnson & Johnson",
-    "marketCap": 448128876544,
-    "revenueGrowth": 0.068,
-    "debtToEquity": 57.766,
-    "trailingPE": 17.953669,
-    "momentum_2m": 0.08441524763226393,
-    "momentum_1w": -0.0032154666875132687,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 159.8300018310547,
+    "RSI (14)": 64.24,
+    "EMA (20)": 152.81,
+    "MACD (12,26,9)": 1.0362,
+    "MACD_Signal (12,26,9)": 1.0821,
+    "percent_change": 4.86,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "JPM",
@@ -1185,7 +1160,14 @@
     "trailingPE": 15.429702,
     "momentum_2m": 0.06947342010691249,
     "momentum_1w": 0.02019568168941377,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 311.67999267578125,
+    "RSI (14)": 68.59,
+    "EMA (20)": 305.85,
+    "MACD (12,26,9)": 0.9817,
+    "MACD_Signal (12,26,9)": -0.4706,
+    "percent_change": 0.79,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "K",
@@ -1196,7 +1178,14 @@
     "trailingPE": 22.732239,
     "momentum_2m": 0.04516089830325565,
     "momentum_1w": 0.002168156016070011,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 83.19999694824219,
+    "RSI (14)": 66.67,
+    "EMA (20)": 83.01,
+    "MACD (12,26,9)": 0.1014,
+    "MACD_Signal (12,26,9)": 0.0938,
+    "percent_change": 0.01,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "KEY",
@@ -1207,7 +1196,14 @@
     "trailingPE": 21.9,
     "momentum_2m": -0.01130641191083126,
     "momentum_1w": 0.006896600107140438,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 17.520000457763672,
+    "RSI (14)": 66.23,
+    "EMA (20)": 17.63,
+    "MACD (12,26,9)": -0.1845,
+    "MACD_Signal (12,26,9)": -0.214,
+    "percent_change": 1.21,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "KEYS",
@@ -1218,18 +1214,14 @@
     "trailingPE": 59.0,
     "momentum_2m": 0.11227488285826737,
     "momentum_1w": 0.09022118127928214,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "KMI",
-    "name": "Kinder Morgan",
-    "marketCap": 57665785856,
-    "revenueGrowth": 0.121,
-    "debtToEquity": 102.138,
-    "trailingPE": 21.245901,
-    "momentum_2m": -0.0130549101181745,
-    "momentum_1w": 0.012095052536492679,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 185.85000610351562,
+    "RSI (14)": 75.07,
+    "EMA (20)": 173.77,
+    "MACD (12,26,9)": 3.1426,
+    "MACD_Signal (12,26,9)": 0.8813,
+    "percent_change": 3.77,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "LHX",
@@ -1240,18 +1232,14 @@
     "trailingPE": 30.9042,
     "momentum_2m": 0.06719812780477619,
     "momentum_1w": 0.0008017952042498333,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "LH",
-    "name": "Labcorp",
-    "marketCap": 20782200832,
-    "revenueGrowth": 0.086,
-    "debtToEquity": 75.557,
-    "trailingPE": 24.625736,
-    "momentum_2m": -0.06673380291595055,
-    "momentum_1w": 0.010276469162690649,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 287.1000061035156,
+    "RSI (14)": 53.07,
+    "EMA (20)": 291.97,
+    "MACD (12,26,9)": -2.704,
+    "MACD_Signal (12,26,9)": -2.85,
+    "percent_change": -1.38,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "LRCX",
@@ -1262,7 +1250,14 @@
     "trailingPE": 36.43488,
     "momentum_2m": 0.5708199169841268,
     "momentum_1w": 0.02726087591167392,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 165.0500030517578,
+    "RSI (14)": 71.58,
+    "EMA (20)": 152.95,
+    "MACD (12,26,9)": 4.1007,
+    "MACD_Signal (12,26,9)": 2.3865,
+    "percent_change": 5.95,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "LVS",
@@ -1273,7 +1268,14 @@
     "trailingPE": 28.171171,
     "momentum_2m": 0.16051218452120564,
     "momentum_1w": 0.06396737349975568,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 62.540000915527344,
+    "RSI (14)": 87.26,
+    "EMA (20)": 56.48,
+    "MACD (12,26,9)": 2.6929,
+    "MACD_Signal (12,26,9)": 1.7343,
+    "percent_change": 2.06,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "LDOS",
@@ -1284,7 +1286,14 @@
     "trailingPE": 18.40283,
     "momentum_2m": 0.09816492727596504,
     "momentum_1w": 0.036724083373840255,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 195.07000732421875,
+    "RSI (14)": 64.38,
+    "EMA (20)": 192.12,
+    "MACD (12,26,9)": -0.1356,
+    "MACD_Signal (12,26,9)": -1.2884,
+    "percent_change": -2.25,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "LLY",
@@ -1295,18 +1304,14 @@
     "trailingPE": 45.29403,
     "momentum_2m": 0.45104774390032154,
     "momentum_1w": 0.13801576366979473,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "LMT",
-    "name": "Lockheed Martin",
-    "marketCap": 109483556864,
-    "revenueGrowth": 0.088,
-    "debtToEquity": 358.987,
-    "trailingPE": 26.3441,
-    "momentum_2m": 0.10434665419088751,
-    "momentum_1w": -0.025116873593412414,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 925.8099975585938,
+    "RSI (14)": 78.91,
+    "EMA (20)": 850.71,
+    "MACD (12,26,9)": 14.8277,
+    "MACD_Signal (12,26,9)": 2.3444,
+    "percent_change": 2.09,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "L",
@@ -1317,7 +1322,14 @@
     "trailingPE": 16.009523,
     "momentum_2m": 0.0700409904202437,
     "momentum_1w": 0.03128831761870532,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 100.86000061035156,
+    "RSI (14)": 67.63,
+    "EMA (20)": 100.17,
+    "MACD (12,26,9)": -0.4739,
+    "MACD_Signal (12,26,9)": -0.6698,
+    "percent_change": 0.22,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "MTB",
@@ -1328,7 +1340,14 @@
     "trailingPE": 11.31092,
     "momentum_2m": -0.033263437637299664,
     "momentum_1w": 0.011084205394378266,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 183.35000610351562,
+    "RSI (14)": 61.11,
+    "EMA (20)": 183.53,
+    "MACD (12,26,9)": -1.3585,
+    "MACD_Signal (12,26,9)": -1.6218,
+    "percent_change": 1.35,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "MAR",
@@ -1339,7 +1358,14 @@
     "trailingPE": 31.841394,
     "momentum_2m": 0.07087096517224545,
     "momentum_1w": 0.07582096601265897,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 283.07000732421875,
+    "RSI (14)": 73.13,
+    "EMA (20)": 268.23,
+    "MACD (12,26,9)": 0.5483,
+    "MACD_Signal (12,26,9)": -0.8366,
+    "percent_change": 3.98,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "MCD",
@@ -1350,29 +1376,14 @@
     "trailingPE": 26.170378,
     "momentum_2m": 0.0191133967458601,
     "momentum_1w": 0.010980675565397835,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "MCK",
-    "name": "McKesson Corporation",
-    "marketCap": 105012764672,
-    "revenueGrowth": 0.234,
-    "debtToEquity": null,
-    "trailingPE": 33.851643,
-    "momentum_2m": 0.2826351874006776,
-    "momentum_1w": 0.045354933151756205,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "MRK",
-    "name": "Merck & Co.",
-    "marketCap": 210787926016,
-    "revenueGrowth": 0.037,
-    "debtToEquity": 72.161,
-    "trailingPE": 11.162699,
-    "momentum_2m": 0.06131509368716492,
-    "momentum_1w": -0.02529455295784866,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 305.6700134277344,
+    "RSI (14)": 50.45,
+    "EMA (20)": 302.35,
+    "MACD (12,26,9)": 0.7735,
+    "MACD_Signal (12,26,9)": 1.5784,
+    "percent_change": 2.16,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "MET",
@@ -1383,7 +1394,14 @@
     "trailingPE": 13.358234,
     "momentum_2m": 0.0276907368624133,
     "momentum_1w": 0.0045965348793961525,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 78.68000030517578,
+    "RSI (14)": 56.54,
+    "EMA (20)": 79.6,
+    "MACD (12,26,9)": -0.6778,
+    "MACD_Signal (12,26,9)": -0.7801,
+    "percent_change": -0.98,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "MTD",
@@ -1394,7 +1412,14 @@
     "trailingPE": 36.550648,
     "momentum_2m": 0.11357498639220376,
     "momentum_1w": 0.03267889503242305,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 1439.72998046875,
+    "RSI (14)": 66.07,
+    "EMA (20)": 1387.69,
+    "MACD (12,26,9)": 22.2677,
+    "MACD_Signal (12,26,9)": 17.4951,
+    "percent_change": 1.36,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "MU",
@@ -1405,29 +1430,14 @@
     "trailingPE": 31.332455,
     "momentum_2m": 0.8602639935570575,
     "momentum_1w": 0.04796361859855325,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "MPWR",
-    "name": "Monolithic Power Systems",
-    "marketCap": 47912185856,
-    "revenueGrowth": 0.189,
-    "debtToEquity": null,
-    "trailingPE": 25.677792,
-    "momentum_2m": 0.1919588597289268,
-    "momentum_1w": -0.08585289504739813,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "MNST",
-    "name": "Monster Beverage",
-    "marketCap": 66270183424,
-    "revenueGrowth": 0.111,
-    "debtToEquity": 0.911,
-    "trailingPE": 42.15528,
-    "momentum_2m": 0.05997195128054211,
-    "momentum_1w": 0.01968156905106655,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 237.5,
+    "RSI (14)": 69.23,
+    "EMA (20)": 213.92,
+    "MACD (12,26,9)": 9.944,
+    "MACD_Signal (12,26,9)": 7.7412,
+    "percent_change": 8.93,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "MS",
@@ -1438,7 +1448,14 @@
     "trailingPE": 16.941538,
     "momentum_2m": 0.12828844615085888,
     "momentum_1w": 0.01314144493937297,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 165.17999267578125,
+    "RSI (14)": 64.16,
+    "EMA (20)": 161.34,
+    "MACD (12,26,9)": 2.0599,
+    "MACD_Signal (12,26,9)": 1.6163,
+    "percent_change": 0.71,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "MSCI",
@@ -1449,51 +1466,14 @@
     "trailingPE": 36.313015,
     "momentum_2m": 0.042888586834641806,
     "momentum_1w": 0.007735163721322991,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "NTAP",
-    "name": "NetApp",
-    "marketCap": 23093852160,
-    "revenueGrowth": 0.012,
-    "debtToEquity": 281.538,
-    "trailingPE": 20.476107,
-    "momentum_2m": 0.07805913637507933,
-    "momentum_1w": 0.013757445294762194,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "NEM",
-    "name": "Newmont",
-    "marketCap": 89079791616,
-    "revenueGrowth": 0.2,
-    "debtToEquity": 16.914,
-    "trailingPE": 12.695179,
-    "momentum_2m": 0.18818336129050528,
-    "momentum_1w": 0.02460147018349801,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "NEE",
-    "name": "NextEra Energy",
-    "marketCap": 171065556992,
-    "revenueGrowth": 0.053,
-    "debtToEquity": 144.161,
-    "trailingPE": 26.076189,
-    "momentum_2m": 0.1518950612621246,
-    "momentum_1w": 0.0046477157961029025,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "NI",
-    "name": "NiSource",
-    "marketCap": 20287477760,
-    "revenueGrowth": 0.183,
-    "debtToEquity": 140.579,
-    "trailingPE": 22.563158,
-    "momentum_2m": 0.018810730386028096,
-    "momentum_1w": 0.016411286628266186,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 571.9299926757812,
+    "RSI (14)": 64.87,
+    "EMA (20)": 564.14,
+    "MACD (12,26,9)": 5.3857,
+    "MACD_Signal (12,26,9)": 1.8051,
+    "percent_change": -0.52,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "NDSN",
@@ -1504,7 +1484,14 @@
     "trailingPE": 29.345913,
     "momentum_2m": 0.08512099101083104,
     "momentum_1w": 0.0005146684095811427,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 233.3000030517578,
+    "RSI (14)": 52.48,
+    "EMA (20)": 233.25,
+    "MACD (12,26,9)": -0.4656,
+    "MACD_Signal (12,26,9)": -0.1018,
+    "percent_change": 1.29,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "NTRS",
@@ -1515,7 +1502,14 @@
     "trailingPE": 14.923166,
     "momentum_2m": 0.012614988113520464,
     "momentum_1w": 0.007307875919884355,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 128.19000244140625,
+    "RSI (14)": 62.08,
+    "EMA (20)": 127.92,
+    "MACD (12,26,9)": -0.7291,
+    "MACD_Signal (12,26,9)": -1.0562,
+    "percent_change": 0.51,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "NUE",
@@ -1526,18 +1520,14 @@
     "trailingPE": 20.400282,
     "momentum_2m": 0.031177644217592837,
     "momentum_1w": -0.05944436386171581,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ORLY",
-    "name": "O’Reilly Automotive",
-    "marketCap": 80322314240,
-    "revenueGrowth": 0.078,
-    "debtToEquity": null,
-    "trailingPE": 32.85121,
-    "momentum_2m": -0.06821078604254338,
-    "momentum_1w": 0.0044435655232395455,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 145.25,
+    "RSI (14)": 64.64,
+    "EMA (20)": 142.95,
+    "MACD (12,26,9)": 3.1588,
+    "MACD_Signal (12,26,9)": 2.7145,
+    "percent_change": 0.67,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "ODFL",
@@ -1548,29 +1538,14 @@
     "trailingPE": 28.383064,
     "momentum_2m": -0.054858549291110004,
     "momentum_1w": 0.03415847887824075,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "OKE",
-    "name": "Oneok",
-    "marketCap": 41699172352,
-    "revenueGrowth": 0.719,
-    "debtToEquity": 152.218,
-    "trailingPE": 12.181985,
-    "momentum_2m": -0.09109143852588009,
-    "momentum_1w": 0.00155777410568958,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "OTIS",
-    "name": "Otis Worldwide",
-    "marketCap": 35557670912,
-    "revenueGrowth": 0.04,
-    "debtToEquity": null,
-    "trailingPE": 26.914454,
-    "momentum_2m": 0.04004378634095418,
-    "momentum_1w": -0.022917107009982396,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 140.77999877929688,
+    "RSI (14)": 54.78,
+    "EMA (20)": 139.1,
+    "MACD (12,26,9)": -0.4501,
+    "MACD_Signal (12,26,9)": -0.9259,
+    "percent_change": -0.41,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "PCAR",
@@ -1581,18 +1556,14 @@
     "trailingPE": 19.752941,
     "momentum_2m": 0.021438602991942002,
     "momentum_1w": 0.02576111193240882,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "PKG",
-    "name": "Packaging Corporation of America",
-    "marketCap": 17916575744,
-    "revenueGrowth": 0.06,
-    "debtToEquity": 60.681,
-    "trailingPE": 20.113132,
-    "momentum_2m": 0.00665271084409369,
-    "momentum_1w": 0.01256039307076362,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 100.73999786376953,
+    "RSI (14)": 66.41,
+    "EMA (20)": 98.22,
+    "MACD (12,26,9)": 0.3829,
+    "MACD_Signal (12,26,9)": 0.2535,
+    "percent_change": 3.94,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "PANW",
@@ -1603,18 +1574,14 @@
     "trailingPE": 133.23749,
     "momentum_2m": 0.21539338708069433,
     "momentum_1w": -0.01832755074235881,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "PAYC",
-    "name": "Paycom",
-    "marketCap": 10334899200,
-    "revenueGrowth": 0.105,
-    "debtToEquity": 4.506,
-    "trailingPE": 24.792173,
-    "momentum_2m": -0.14499783046986126,
-    "momentum_1w": -0.014748470990993856,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 213.17999267578125,
+    "RSI (14)": 61.22,
+    "EMA (20)": 215.16,
+    "MACD (12,26,9)": 1.2724,
+    "MACD_Signal (12,26,9)": 1.2721,
+    "percent_change": -0.62,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "PCG",
@@ -1625,18 +1592,14 @@
     "trailingPE": 13.672269,
     "momentum_2m": 0.0541432274716489,
     "momentum_1w": 0.03236042014436058,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "PM",
-    "name": "Philip Morris International",
-    "marketCap": 231005175808,
-    "revenueGrowth": 0.094,
-    "debtToEquity": null,
-    "trailingPE": 21.169756,
-    "momentum_2m": -0.11153947696571787,
-    "momentum_1w": 0.01110574079562987,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 16.270000457763672,
+    "RSI (14)": 44.93,
+    "EMA (20)": 16.19,
+    "MACD (12,26,9)": -0.0302,
+    "MACD_Signal (12,26,9)": 0.005,
+    "percent_change": 0.68,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "PNC",
@@ -1647,7 +1610,14 @@
     "trailingPE": 11.895995,
     "momentum_2m": -0.028185036335799496,
     "momentum_1w": 0.017290849354485438,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 184.14999389648438,
+    "RSI (14)": 65.57,
+    "EMA (20)": 184.36,
+    "MACD (12,26,9)": -1.8834,
+    "MACD_Signal (12,26,9)": -2.3322,
+    "percent_change": 0.66,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "PFG",
@@ -1658,29 +1628,14 @@
     "trailingPE": 11.900293,
     "momentum_2m": 0.061073283731216454,
     "momentum_1w": -0.015406971228491662,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "PGR",
-    "name": "Progressive Corporation",
-    "marketCap": 122522419200,
-    "revenueGrowth": 0.142,
-    "debtToEquity": 19.455,
-    "trailingPE": 11.473916,
-    "momentum_2m": -0.1399571658459582,
-    "momentum_1w": 0.004664140092367042,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "PLD",
-    "name": "Prologis",
-    "marketCap": 115012313088,
-    "revenueGrowth": 0.087,
-    "debtToEquity": 62.789,
-    "trailingPE": 35.994186,
-    "momentum_2m": 0.19191078766058123,
-    "momentum_1w": 0.0028346843011322065,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 81.16000366210938,
+    "RSI (14)": 65.17,
+    "EMA (20)": 81.62,
+    "MACD (12,26,9)": -0.0854,
+    "MACD_Signal (12,26,9)": -0.4352,
+    "percent_change": -1.1,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "PWR",
@@ -1691,7 +1646,14 @@
     "trailingPE": 67.0784,
     "momentum_2m": 0.15830999222786013,
     "momentum_1w": 0.010608682475038211,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 453.45001220703125,
+    "RSI (14)": 56.72,
+    "EMA (20)": 440.0,
+    "MACD (12,26,9)": 5.2395,
+    "MACD_Signal (12,26,9)": 3.9097,
+    "percent_change": 3.37,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "QCOM",
@@ -1702,51 +1664,14 @@
     "trailingPE": 17.34749,
     "momentum_2m": 0.1757156408682552,
     "momentum_1w": 0.005876773171312966,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "DGX",
-    "name": "Quest Diagnostics",
-    "marketCap": 19830063104,
-    "revenueGrowth": 0.132,
-    "debtToEquity": 86.524,
-    "trailingPE": 20.94712,
-    "momentum_2m": 0.0020794798238219503,
-    "momentum_1w": 0.019910720630759382,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "RL",
-    "name": "Ralph Lauren Corporation",
-    "marketCap": 19195987968,
-    "revenueGrowth": 0.137,
-    "debtToEquity": 128.776,
-    "trailingPE": 25.271132,
-    "momentum_2m": 0.06065842219156603,
-    "momentum_1w": -0.032602701976804704,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "RJF",
-    "name": "Raymond James Financial",
-    "marketCap": 31606855680,
-    "revenueGrowth": 0.074,
-    "debtToEquity": 36.906,
-    "trailingPE": 15.490292,
-    "momentum_2m": -0.04963148263763384,
-    "momentum_1w": 0.008214869205420694,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "REG",
-    "name": "Regency Centers",
-    "marketCap": 12692605952,
-    "revenueGrowth": 0.077,
-    "debtToEquity": 73.076,
-    "trailingPE": 31.844034,
-    "momentum_2m": -0.024685620106421502,
-    "momentum_1w": 0.001009368368628527,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 179.72000122070312,
+    "RSI (14)": 63.95,
+    "EMA (20)": 173.65,
+    "MACD (12,26,9)": 3.2666,
+    "MACD_Signal (12,26,9)": 2.4941,
+    "percent_change": 3.98,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "RF",
@@ -1757,29 +1682,14 @@
     "trailingPE": 10.7400875,
     "momentum_2m": -0.028101782518616614,
     "momentum_1w": 0.01287908059296905,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ROL",
-    "name": "Rollins, Inc.",
-    "marketCap": 28917798912,
-    "revenueGrowth": 0.12,
-    "debtToEquity": 59.534,
-    "trailingPE": 55.76635,
-    "momentum_2m": 0.030926003244601707,
-    "momentum_1w": 0.10766659276147905,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "ROST",
-    "name": "Ross Stores",
-    "marketCap": 52761456640,
-    "revenueGrowth": 0.046,
-    "debtToEquity": 88.407,
-    "trailingPE": 25.750792,
-    "momentum_2m": 0.09908542085103167,
-    "momentum_1w": 0.024567383349860306,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 66,
+    "price": 24.3799991607666,
+    "RSI (14)": 68.46,
+    "EMA (20)": 24.45,
+    "MACD (12,26,9)": -0.2942,
+    "MACD_Signal (12,26,9)": -0.3545,
+    "percent_change": 0.95,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "CRM",
@@ -1790,18 +1700,14 @@
     "trailingPE": 36.780205,
     "momentum_2m": 0.0926357044115278,
     "momentum_1w": 0.004851610313135302,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "SBAC",
-    "name": "SBA Communications",
-    "marketCap": 21023735808,
-    "revenueGrowth": 0.097,
-    "debtToEquity": null,
-    "trailingPE": 24.65869,
-    "momentum_2m": -0.09736088729136227,
-    "momentum_1w": 0.028200793870521546,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 252.67999267578125,
+    "RSI (14)": 56.07,
+    "EMA (20)": 252.75,
+    "MACD (12,26,9)": 2.8381,
+    "MACD_Signal (12,26,9)": 2.7241,
+    "percent_change": -0.69,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "STX",
@@ -1812,7 +1718,14 @@
     "trailingPE": 35.446014,
     "momentum_2m": 0.7780014493286869,
     "momentum_1w": 0.03821246172377335,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 275.7699890136719,
+    "RSI (14)": 66.52,
+    "EMA (20)": 243.4,
+    "MACD (12,26,9)": 8.0979,
+    "MACD_Signal (12,26,9)": 2.7516,
+    "percent_change": 10.14,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "SRE",
@@ -1823,7 +1736,14 @@
     "trailingPE": 22.370459,
     "momentum_2m": 0.1335979762177124,
     "momentum_1w": 0.0020607640747851708,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 92.38999938964844,
+    "RSI (14)": 59.78,
+    "EMA (20)": 92.3,
+    "MACD (12,26,9)": 0.0478,
+    "MACD_Signal (12,26,9)": 0.0081,
+    "percent_change": -0.1,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "SPG",
@@ -1834,18 +1754,14 @@
     "trailingPE": 26.404657,
     "momentum_2m": 0.08475299124796098,
     "momentum_1w": 0.044690132078510914,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "SWKS",
-    "name": "Skyworks Solutions",
-    "marketCap": 10922014720,
-    "revenueGrowth": 0.066,
-    "debtToEquity": 21.368,
-    "trailingPE": 29.266932,
-    "momentum_2m": 0.034256115464007975,
-    "momentum_1w": -0.06705612042855225,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 181.39999389648438,
+    "RSI (14)": 59.84,
+    "EMA (20)": 178.09,
+    "MACD (12,26,9)": 0.0763,
+    "MACD_Signal (12,26,9)": -0.3535,
+    "percent_change": -0.65,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "SNA",
@@ -1856,7 +1772,14 @@
     "trailingPE": 17.992126,
     "momentum_2m": 0.05981874274934196,
     "momentum_1w": 0.016609835992567268,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 342.75,
+    "RSI (14)": 48.34,
+    "EMA (20)": 340.02,
+    "MACD (12,26,9)": 0.114,
+    "MACD_Signal (12,26,9)": 0.2494,
+    "percent_change": 1.19,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "STT",
@@ -1867,7 +1790,14 @@
     "trailingPE": 12.409766,
     "momentum_2m": 0.05683564076525682,
     "momentum_1w": 0.0012848096435023049,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 116.9000015258789,
+    "RSI (14)": 60.26,
+    "EMA (20)": 115.93,
+    "MACD (12,26,9)": 0.1407,
+    "MACD_Signal (12,26,9)": -0.0852,
+    "percent_change": 0.65,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "STLD",
@@ -1878,7 +1808,14 @@
     "trailingPE": 20.41457,
     "momentum_2m": 0.2315836973539711,
     "momentum_1w": -0.057135843079126,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 154.1300048828125,
+    "RSI (14)": 62.56,
+    "EMA (20)": 152.05,
+    "MACD (12,26,9)": 3.3458,
+    "MACD_Signal (12,26,9)": 3.4234,
+    "percent_change": 1.66,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "SYF",
@@ -1889,29 +1826,14 @@
     "trailingPE": 8.154606,
     "momentum_2m": 0.027777807065730187,
     "momentum_1w": 0.015844880161395958,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "TROW",
-    "name": "T. Rowe Price",
-    "marketCap": 22343102464,
-    "revenueGrowth": 0.06,
-    "debtToEquity": 4.09,
-    "trailingPE": 11.164667,
-    "momentum_2m": -0.037291875628319815,
-    "momentum_1w": -0.010916866578026818,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "TTWO",
-    "name": "Take-Two Interactive",
-    "marketCap": 46995628032,
-    "revenueGrowth": 0.124,
-    "debtToEquity": 100.747,
-    "trailingPE": null,
-    "momentum_2m": 0.09545922420578323,
-    "momentum_1w": 0.012036701349553924,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 74.37000274658203,
+    "RSI (14)": 67.52,
+    "EMA (20)": 73.16,
+    "MACD (12,26,9)": 0.7241,
+    "MACD_Signal (12,26,9)": 0.6662,
+    "percent_change": 1.46,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "TRGP",
@@ -1922,7 +1844,14 @@
     "trailingPE": 23.308023,
     "momentum_2m": -0.025405512327801416,
     "momentum_1w": 0.08185257471438145,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 162.69000244140625,
+    "RSI (14)": 77.48,
+    "EMA (20)": 154.79,
+    "MACD (12,26,9)": -0.4934,
+    "MACD_Signal (12,26,9)": -1.7189,
+    "percent_change": 5.25,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TEL",
@@ -1933,7 +1862,14 @@
     "trailingPE": 40.356564,
     "momentum_2m": 0.2240902023359519,
     "momentum_1w": 0.034224977908155374,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 249.0,
+    "RSI (14)": 85.9,
+    "EMA (20)": 235.7,
+    "MACD (12,26,9)": 6.2963,
+    "MACD_Signal (12,26,9)": 4.5372,
+    "percent_change": 2.24,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TER",
@@ -1944,7 +1880,14 @@
     "trailingPE": 68.21455,
     "momentum_2m": 0.6821529602012362,
     "momentum_1w": 0.07847530013162185,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 187.58999633789062,
+    "RSI (14)": 79.39,
+    "EMA (20)": 159.99,
+    "MACD (12,26,9)": 9.7357,
+    "MACD_Signal (12,26,9)": 5.0208,
+    "percent_change": 6.8,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TSLA",
@@ -1955,18 +1898,14 @@
     "trailingPE": 318.66895,
     "momentum_2m": 0.3556801205517768,
     "momentum_1w": 0.0012134028444543699,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "TXN",
-    "name": "Texas Instruments",
-    "marketCap": 148623474688,
-    "revenueGrowth": 0.142,
-    "debtToEquity": 84.477,
-    "trailingPE": 29.794174,
-    "momentum_2m": -0.14478937143671344,
-    "momentum_1w": 0.029764119346970652,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 462.07000732421875,
+    "RSI (14)": 59.7,
+    "EMA (20)": 449.32,
+    "MACD (12,26,9)": 3.0801,
+    "MACD_Signal (12,26,9)": 0.981,
+    "percent_change": 4.01,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "TPL",
@@ -1977,7 +1916,14 @@
     "trailingPE": 45.79223,
     "momentum_2m": 0.07448318863666503,
     "momentum_1w": -0.005787577325611748,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 919.0499877929688,
+    "RSI (14)": 41.45,
+    "EMA (20)": 931.09,
+    "MACD (12,26,9)": -8.4774,
+    "MACD_Signal (12,26,9)": -9.2695,
+    "percent_change": 0.51,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TXT",
@@ -1988,18 +1934,14 @@
     "trailingPE": 17.56455,
     "momentum_2m": 0.022275496089543045,
     "momentum_1w": 0.0035004223874808282,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "TMO",
-    "name": "Thermo Fisher Scientific",
-    "marketCap": 213266923520,
-    "revenueGrowth": 0.049,
-    "debtToEquity": 69.75,
-    "trailingPE": 32.830536,
-    "momentum_2m": 0.19006629732380076,
-    "momentum_1w": 0.016711176820480622,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 80.2699966430664,
+    "RSI (14)": 44.29,
+    "EMA (20)": 81.6,
+    "MACD (12,26,9)": -1.498,
+    "MACD_Signal (12,26,9)": -1.5404,
+    "percent_change": 0.64,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TJX",
@@ -2010,7 +1952,14 @@
     "trailingPE": 32.733486,
     "momentum_2m": 0.08071730764971563,
     "momentum_1w": 0.014185859779818566,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 143.6999969482422,
+    "RSI (14)": 53.8,
+    "EMA (20)": 142.42,
+    "MACD (12,26,9)": -0.1928,
+    "MACD_Signal (12,26,9)": -0.1672,
+    "percent_change": 1.16,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "TT",
@@ -2021,18 +1970,14 @@
     "trailingPE": 33.345566,
     "momentum_2m": -0.004090158672819921,
     "momentum_1w": 0.02030502585548688,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "TRV",
-    "name": "Travelers Companies (The)",
-    "marketCap": 61710495744,
-    "revenueGrowth": 0.048,
-    "debtToEquity": 29.318,
-    "trailingPE": 10.891732,
-    "momentum_2m": 0.05242659903472169,
-    "momentum_1w": 0.03262285885150429,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 66,
+    "price": 436.1600036621094,
+    "RSI (14)": 61.63,
+    "EMA (20)": 429.78,
+    "MACD (12,26,9)": 4.4773,
+    "MACD_Signal (12,26,9)": 2.5026,
+    "percent_change": 0.73,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "TSN",
@@ -2043,18 +1988,14 @@
     "trailingPE": 23.831818,
     "momentum_2m": -0.06269802452169282,
     "momentum_1w": 0.03371449217896827,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "USB",
-    "name": "U.S. Bancorp",
-    "marketCap": 72727445504,
-    "revenueGrowth": 0.072,
-    "debtToEquity": null,
-    "trailingPE": 10.695653,
-    "momentum_2m": 0.032148578179249876,
-    "momentum_1w": 0.0021441314349706087,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 66,
+    "price": 52.43000030517578,
+    "RSI (14)": 52.23,
+    "EMA (20)": 52.21,
+    "MACD (12,26,9)": -0.4344,
+    "MACD_Signal (12,26,9)": -0.5154,
+    "percent_change": 0.75,
+    "TechFilterRating": 100.0
   },
   {
     "ticker": "ULTA",
@@ -2065,18 +2006,14 @@
     "trailingPE": 20.04687,
     "momentum_2m": 0.011239850341925539,
     "momentum_1w": 0.031122176323540973,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "UNH",
-    "name": "UnitedHealth Group",
-    "marketCap": 296879521792,
-    "revenueGrowth": 0.122,
-    "debtToEquity": 75.734,
-    "trailingPE": 17.078686,
-    "momentum_2m": 0.26087718645298774,
-    "momentum_1w": -0.0774644451240254,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 521.8200073242188,
+    "RSI (14)": 40.14,
+    "EMA (20)": 527.83,
+    "MACD (12,26,9)": -10.7944,
+    "MACD_Signal (12,26,9)": -11.428,
+    "percent_change": 1.0,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "UHS",
@@ -2087,7 +2024,14 @@
     "trailingPE": 10.849595,
     "momentum_2m": 0.3024446735268158,
     "momentum_1w": 0.011762067734529147,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 227.9499969482422,
+    "RSI (14)": 76.52,
+    "EMA (20)": 214.72,
+    "MACD (12,26,9)": 4.8328,
+    "MACD_Signal (12,26,9)": 3.0635,
+    "percent_change": 1.68,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "VTR",
@@ -2098,62 +2042,14 @@
     "trailingPE": 141.47171,
     "momentum_2m": 0.10208326231158305,
     "momentum_1w": 0.07451998665238602,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "VLTO",
-    "name": "Veralto",
-    "marketCap": 24809869312,
-    "revenueGrowth": 0.068,
-    "debtToEquity": 100.772,
-    "trailingPE": 27.375341,
-    "momentum_2m": -0.08073972553125874,
-    "momentum_1w": 0.004221087125078515,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "VRSN",
-    "name": "Verisign",
-    "marketCap": 22621581312,
-    "revenueGrowth": 0.073,
-    "debtToEquity": null,
-    "trailingPE": 28.441725,
-    "momentum_2m": -0.06952290500037006,
-    "momentum_1w": 0.0481487462521526,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "VRSK",
-    "name": "Verisk Analytics",
-    "marketCap": 29832699904,
-    "revenueGrowth": 0.059,
-    "debtToEquity": 1295.046,
-    "trailingPE": 32.880184,
-    "momentum_2m": -0.17531538291684778,
-    "momentum_1w": 0.029086553133450987,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "VRTX",
-    "name": "Vertex Pharmaceuticals",
-    "marketCap": 106914906112,
-    "revenueGrowth": 0.11,
-    "debtToEquity": 10.594,
-    "trailingPE": 29.304287,
-    "momentum_2m": 0.07537976587790429,
-    "momentum_1w": -0.0005033231690970696,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "VICI",
-    "name": "Vici Properties",
-    "marketCap": 32246040576,
-    "revenueGrowth": 0.044,
-    "debtToEquity": 62.925,
-    "trailingPE": 11.471482,
-    "momentum_2m": -0.06929455639393622,
-    "momentum_1w": 0.015824892299025395,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 74.9800033569336,
+    "RSI (14)": 69.92,
+    "EMA (20)": 71.62,
+    "MACD (12,26,9)": 1.379,
+    "MACD_Signal (12,26,9)": 0.8463,
+    "percent_change": 0.08,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WRB",
@@ -2164,18 +2060,14 @@
     "trailingPE": 15.697478,
     "momentum_2m": 0.0685865006571671,
     "momentum_1w": 0.04649859417189073,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "GWW",
-    "name": "W. W. Grainger",
-    "marketCap": 45761007616,
-    "revenueGrowth": 0.061,
-    "debtToEquity": 68.67,
-    "trailingPE": 26.987942,
-    "momentum_2m": 0.0017591364837434842,
-    "momentum_1w": 0.003566372305490395,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 74.72000122070312,
+    "RSI (14)": 54.98,
+    "EMA (20)": 74.26,
+    "MACD (12,26,9)": -0.9945,
+    "MACD_Signal (12,26,9)": -0.9896,
+    "percent_change": 0.9,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WAB",
@@ -2186,18 +2078,14 @@
     "trailingPE": 29.901308,
     "momentum_2m": 0.06933437539179166,
     "momentum_1w": 0.022178125294075146,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "WM",
-    "name": "Waste Management",
-    "marketCap": 80790953984,
-    "revenueGrowth": 0.149,
-    "debtToEquity": 245.399,
-    "trailingPE": 31.531445,
-    "momentum_2m": -0.1360068238070664,
-    "momentum_1w": 0.015238163951993178,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 206.02000427246094,
+    "RSI (14)": 72.84,
+    "EMA (20)": 200.59,
+    "MACD (12,26,9)": 1.5514,
+    "MACD_Signal (12,26,9)": 0.391,
+    "percent_change": 0.76,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WAT",
@@ -2208,18 +2096,14 @@
     "trailingPE": 33.541027,
     "momentum_2m": 0.30278094541006606,
     "momentum_1w": 0.08297667889105331,
-    "FundamentalFilterRating": 83
-  },
-  {
-    "ticker": "WEC",
-    "name": "WEC Energy Group",
-    "marketCap": 36384161792,
-    "revenueGrowth": 0.129,
-    "debtToEquity": 151.448,
-    "trailingPE": 21.18371,
-    "momentum_2m": 0.03048478196462212,
-    "momentum_1w": -0.023826176586721592,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 83,
+    "price": 371.9700012207031,
+    "RSI (14)": 73.19,
+    "EMA (20)": 347.22,
+    "MACD (12,26,9)": 7.7021,
+    "MACD_Signal (12,26,9)": 5.7549,
+    "percent_change": 1.26,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WFC",
@@ -2230,7 +2114,14 @@
     "trailingPE": 14.324546,
     "momentum_2m": 0.09398582380227016,
     "momentum_1w": 0.011046476142350992,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 86.94999694824219,
+    "RSI (14)": 62.93,
+    "EMA (20)": 85.1,
+    "MACD (12,26,9)": 1.5274,
+    "MACD_Signal (12,26,9)": 1.404,
+    "percent_change": -0.21,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WELL",
@@ -2241,7 +2132,14 @@
     "trailingPE": 127.636986,
     "momentum_2m": 0.13083326473560275,
     "momentum_1w": 0.053062833597375736,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 186.35000610351562,
+    "RSI (14)": 73.2,
+    "EMA (20)": 178.44,
+    "MACD (12,26,9)": 2.8655,
+    "MACD_Signal (12,26,9)": 1.8291,
+    "percent_change": 1.08,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "WDC",
@@ -2252,29 +2150,14 @@
     "trailingPE": 22.549297,
     "momentum_2m": 1.1115317031704328,
     "momentum_1w": 0.13240911426067514,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "WMB",
-    "name": "Williams Companies",
-    "marketCap": 70266552320,
-    "revenueGrowth": 0.083,
-    "debtToEquity": 188.338,
-    "trailingPE": 29.813473,
-    "momentum_2m": 0.004657904480488195,
-    "momentum_1w": 0.009828034008247277,
-    "FundamentalFilterRating": 66
-  },
-  {
-    "ticker": "WDAY",
-    "name": "Workday, Inc.",
-    "marketCap": 61970702336,
-    "revenueGrowth": 0.126,
-    "debtToEquity": 41.169,
-    "trailingPE": 108.45794,
-    "momentum_2m": 0.08154706198637585,
-    "momentum_1w": 0.003198502296040129,
-    "FundamentalFilterRating": 66
+    "FundamentalFilterRating": 66,
+    "price": 160.10000610351562,
+    "RSI (14)": 73.46,
+    "EMA (20)": 136.06,
+    "MACD (12,26,9)": 7.9912,
+    "MACD_Signal (12,26,9)": 4.0913,
+    "percent_change": 5.2,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "XEL",
@@ -2285,7 +2168,14 @@
     "trailingPE": 24.75305,
     "momentum_2m": 0.13034765585126618,
     "momentum_1w": 0.018822938311526594,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 81.19000244140625,
+    "RSI (14)": 50.8,
+    "EMA (20)": 80.95,
+    "MACD (12,26,9)": 0.033,
+    "MACD_Signal (12,26,9)": -0.0543,
+    "percent_change": -0.49,
+    "TechFilterRating": 75.0
   },
   {
     "ticker": "YUM",
@@ -2296,6 +2186,13 @@
     "trailingPE": 29.465483,
     "momentum_2m": 0.05647961454727923,
     "momentum_1w": 0.07328110330722937,
-    "FundamentalFilterRating": 83
+    "FundamentalFilterRating": 83,
+    "price": 149.38999938964844,
+    "RSI (14)": 61.14,
+    "EMA (20)": 144.37,
+    "MACD (12,26,9)": -0.7081,
+    "MACD_Signal (12,26,9)": -1.282,
+    "percent_change": -0.11,
+    "TechFilterRating": 75.0
   }
 ]
