@@ -1,16 +1,8 @@
-"""
-STEP 6 – AI Analyze (rozdelené na dva kroky)
-- Vstup: step5_SentimentFilter.json
-- Krok 1: AI doplní "AIComment" pre každú akciu
-- Krok 2: AI doplní "AIScore" pre každú akciu
-- Výstup uložený do data/step6_AIAnalyze.json
-"""
-
 import json
 from pathlib import Path
 import openai
 import os
-import re
+import time
 
 # ---------- SETTINGS ----------
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -20,110 +12,112 @@ openai.api_key = OPENAI_API_KEY
 INPUT_FILE = "data/step6_TopX.json"
 OUTPUT_FILE = "data/step7_AIAnalyze.json"
 
+# ✅ Rate limiting settings
+SLEEP_BETWEEN_REQUESTS = 1.2
+SLEEP_BETWEEN_STOCKS = 0.7
+
 # ---------- FUNKCIE ----------
-def parse_ai_json(ai_text):
-    """Skúsi parsovať JSON z textu, ak model pridá extra text."""
-    try:
-        return json.loads(ai_text)
-    except json.JSONDecodeError:
-        match = re.search(r'(\[.*\])', ai_text, re.DOTALL)
-        if match:
-            try:
-                return json.loads(match.group(1))
-            except:
-                return []
-        return []
 
-def add_ai_comment(stocks):
-    """Pošle zoznam akcií do OpenAI a vráti ich s doplneným AIComment."""
-    prompt = f"""
-Máme zoznam akcií s ich údajmi vo formáte JSON:
-{json.dumps(stocks, indent=2)}
+def build_prompt(stock):
+    """Vytvorí textový prompt (nie JSON)."""
 
-Úloha:
-1. Pre každú akciu doplniť nové pole "AIComment" s krátkym odôvodnením (2-3 vety), prečo je na danom mieste.
-2. Zachovať všetky pôvodné polia.
-3. Vráť **len platný JSON** – pole objektov, žiadny text pred alebo za JSON.
-Pri analyze ignoruj polia FundamentalFilterRating, TechFilterRating, OverallRating
+    return f"""
+Analyzuj túto akciu na obchod 2–10 dní a vytvor AIComment a AIScore:
+
+Ticker: {stock.get("ticker")}
+Názov: {stock.get("name")}
+MarketCap: {stock.get("marketCap")}
+RevenueGrowth: {stock.get("revenueGrowth")}
+DebtToEquity: {stock.get("debtToEquity")}
+TrailingPE: {stock.get("trailingPE")}
+
+Momentum 2m: {stock.get("momentum_2m")}
+Momentum 1w: {stock.get("momentum_1w")}
+
+Cena: {stock.get("price")}
+RSI (14): {stock.get("RSI (14)")}
+EMA(20): {stock.get("EMA (20)")}
+MACD: {stock.get("MACD (12,26,9)")}
+MACD Signal: {stock.get("MACD_Signal (12,26,9)")}
+
+Percent Change: {stock.get("percent_change")}
+News Sentiment: {stock.get("news_sentiment_percent")}
+
+ÚLOHY:
+1. Doplň pole "AIComment" – 2–3 vety o tom, či je akcia vhodná / nevhodná na obchod 2–10 dní.
+2. Doplň pole "AIScore" – hodnota 0–100, kde 100 = ideálna krátkodobá príležitosť.
+3. Vráť **čistý JSON objekt**:
+
+{{
+    "AIComment": "...",
+    "AIScore": číslo
+}}
+
+Bez ďalšieho textu.
 """
+
+def ask_openai(prompt):
+    """Odošle prompt do OpenAI a vráti JSON odpoveď."""
     try:
         response = openai.chat.completions.create(
             model=AI_MODEL,
             messages=[
-                {"role": "system", "content": "Si skúsený finančný analytik a tvoríš JSON výstupy."},
+                {"role": "system", "content": "Si skúsený finančný analytik. Vždy vraciaš čistný JSON."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0,
-            max_tokens=4000
+            max_tokens=500
         )
-        ai_text = response.choices[0].message.content.strip()
-        return parse_ai_json(ai_text)
-    except Exception as e:
-        print(f"⚠️ Chyba pri generovaní AIComment: {e}")
-        return []
+        text = response.choices[0].message.content.strip()
+        return json.loads(text)
 
-def add_ai_score(stocks):
-    """Pošle zoznam akcií do OpenAI a vráti ich s doplneným AIScore (0–100)."""
-    prompt = f"""
-Máme zoznam akcií s ich údajmi vo formáte JSON (už obsahujú AIComment):
-{json.dumps(stocks, indent=2)}
-
-Úloha:
-1. Pre každú akciu doplniť nové pole "AIScore" (0–100), kde 100 = top kúpa, 0 = veľmi nevhodná.
-2. Zohľadni všetky dostupné údaje (fundamentálne, technické, sentiment).
-3. Zachovať všetky pôvodné polia vrátane AIComment.
-4. Vráť **len platný JSON** – pole objektov.
-Pri analyze ignoruj polia FundamentalFilterRating, TechFilterRating, OverallRating
-"""
-    try:
-        response = openai.chat.completions.create(
-            model=AI_MODEL,
-            messages=[
-                {"role": "system", "content": "Si skúsený finančný analytik a tvoríš JSON výstupy."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0,
-            max_tokens=4000
-        )
-        ai_text = response.choices[0].message.content.strip()
-        return parse_ai_json(ai_text)
     except Exception as e:
-        print(f"⚠️ Chyba pri generovaní AIScore: {e}")
-        return []
+        print(f"❌ AI chyba: {e}")
+        return None
 
 # ---------- HLAVNÁ ČASŤ ----------
+
 if not Path(INPUT_FILE).exists():
-    print(f"⚠️ Vstupný súbor {INPUT_FILE} neexistuje.")
+    print(f"⚠️ Súbor {INPUT_FILE} neexistuje.")
     exit(1)
 
+# Načítame pôvodný JSON
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
     stocks = json.load(f)
 
-print(f"📡 Krok 1: Posielam {len(stocks)} akcií do AI na doplnenie AIComment...")
-stocks_with_comment = add_ai_comment(stocks)
+results = []
 
-if not stocks_with_comment:
-    print("⚠️ AI nevrátila žiadny výsledok pri AIComment.")
-    exit(1)
+for stock in stocks:
 
-print(f"📡 Krok 2: Posielam {len(stocks_with_comment)} akcií do AI na doplnenie AIScore...")
-stocks_with_score = add_ai_score(stocks_with_comment)
+    prompt = build_prompt(stock)
 
-if not stocks_with_score:
-    print("⚠️ AI nevrátila žiadny výsledok pri AIScore.")
-    exit(1)
+    ai_data = ask_openai(prompt)
 
-# ---------- ZORADENIE PODĽA AISCORE ----------
-stocks_sorted = sorted(
-    stocks_with_score,
+    time.sleep(SLEEP_BETWEEN_REQUESTS)
+
+    if ai_data:
+        stock["AIComment"] = ai_data.get("AIComment")
+        stock["AIScore"] = ai_data.get("AIScore")
+        print(f"✅ {stock['ticker']} – AIScore {stock['AIScore']}")
+    else:
+        stock["AIComment"] = "Error"
+        stock["AIScore"] = 0
+        print(f"⚠️ {stock['ticker']} – AI ERROR, priradené AIScore = 0")
+
+    results.append(stock)
+
+    time.sleep(SLEEP_BETWEEN_STOCKS)
+
+# ✅ ZORADENIE PODĽA AIScore
+results_sorted = sorted(
+    results,
     key=lambda x: x.get("AIScore", 0),
-    reverse=True  # od najlepšieho po najslabšie
+    reverse=True
 )
 
-# ---------- ULOŽENIE VÝSLEDKU ----------
+# ✅ uložíme výstup — presne ako vstup + 2 polia, len zoradené
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(stocks_sorted, f, indent=2, ensure_ascii=False)
+    json.dump(results_sorted, f, indent=2, ensure_ascii=False)
 
-print(f"💾 Výstup uložený do {OUTPUT_FILE} ({len(stocks_sorted)} akcií).")
-
+print(f"💾 Výstup uložený do {OUTPUT_FILE} ({len(results_sorted)} akcií, zoradené podľa AIScore).")
