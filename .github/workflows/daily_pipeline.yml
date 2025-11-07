@@ -11,8 +11,10 @@ jobs:
 
     env:
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-      EMAIL_USER: ${{ secrets.EMAIL_USER }}
-      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      SENDER_EMAIL: ${{ secrets.EMAIL_SENDER }}
+      RECEIVER_EMAI: ${{ secrets.RECEIVER_EMAI }}
+
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
   
     steps:
       - name: Checkout repository

@@ -15,8 +15,9 @@ from datetime import datetime
 # ---------- SETTINGS ----------
 SENDER_EMAIL = "roman.duris@gmail.com"
 RECEIVER_EMAIL = "roman.duris@gmail.com"
-#EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-#EMAIL_USER = os.getenv("EMAIL_USER")
+
+#SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+#RECEIVER_EMAI: ${{ secrets.RECEIVER_EMAIL }}
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
 REPORT_FILE = Path("docs/ai_report.html")
