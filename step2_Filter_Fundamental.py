@@ -124,8 +124,8 @@ def run_filtering():
             info["FundamentalFilterRating"] = fundamental_rating
             results.append(info)
 
-        if idx % progress_step == 0 or idx == total:
-            print(f"⏳ Spracovaných {int(idx/total*100)}% ({idx}/{total})")
+       # if idx % progress_step == 0 or idx == total:
+       #     print(f"⏳ Spracovaných {int(idx/total*100)}% ({idx}/{total})")
 
     # Uloženie výsledkov
     Path("data").mkdir(exist_ok=True)

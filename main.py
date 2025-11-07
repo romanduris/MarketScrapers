@@ -17,7 +17,8 @@ pipeline_steps = [
     "step6_TopX.py",
     "step7_AI_Analyze.py",
     "step8_SL&TP.py",
-    "step9_report_html.py"
+    "step9_report_html.py",
+    "step10_send_report.py"
 ]
 
 def check_and_install_module(module_name):
