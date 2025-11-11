@@ -1,9 +1,3 @@
-"""
-STEP 7 – Odoslanie krátkeho emailového súhrnu
-- Pošle pekný e-mail s linkom na online report
-- Do tela vloží prehľad TOP 3 akcií (Ticker, názov, AIComment, AIScore, Overall, cena, SL, TP)
-"""
-
 import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
@@ -15,17 +9,14 @@ from datetime import datetime
 # ---------- SETTINGS ----------
 SENDER_EMAIL = "roman.duris@gmail.com"
 RECEIVER_EMAIL = "roman.duris@gmail.com"
-
-#SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-#RECEIVER_EMAI: ${{ secrets.RECEIVER_EMAIL }}
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
 REPORT_FILE = Path("docs/ai_report.html")
 REPORT_LINK = "https://romanduris.github.io/MarketScrapers/ai_report.html"
+YAHOO_FINANCE_URL = "https://finance.yahoo.com/quote/{ticker}"
 
 
 def extract_top3_from_html():
-    """Načíta ai_report.html a extrahuje TOP 3 akcie + ich údaje."""
     if not REPORT_FILE.exists():
         print(f"⚠️ Súbor {REPORT_FILE} neexistuje.")
         return []
@@ -33,30 +24,39 @@ def extract_top3_from_html():
     with open(REPORT_FILE, "r", encoding="utf-8") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
-    rows = soup.find_all("tr")[1:]  # preskočí hlavičku tabuľky
-
+    rows = soup.find_all("tr")[1:]
     extracted = []
     i = 0
 
-    # HTML má 2 riadky na 1 akciu → vezmi prvých 6 <tr> (3 akcie)
     while i < 6 and i < len(rows):
         row1 = rows[i]
         row2 = rows[i + 1]
-
         cols = row1.find_all("td")
         comment = row2.find("td").get_text(strip=True)
 
+        ticker_cell = cols[0] if len(cols) > 0 else None
+
+        # ---------------- FIXED TICKER EXTRACTION ----------------
+        ticker_text = ""
+        name_text = ""
+        if ticker_cell:
+            small_tag = ticker_cell.find("small")
+            name_text = small_tag.get_text(strip=True) if small_tag else ""
+            # iba ticker pred <small>
+            all_text = ticker_cell.get_text(separator="\n", strip=True)
+            ticker_text = all_text.split("\n")[0]
+
         stock_data = {
-            "ticker": cols[0].get_text(strip=True).split("\n")[0],
-            "name": cols[0].find("small").get_text(strip=True),
-            "price": cols[1].get_text(strip=True),
-            "SL": cols[2].get_text(strip=True),
-            "TP": cols[3].get_text(strip=True),
-            "AIScore": cols[4].get_text(strip=True),
-            "OverallRating": cols[5].get_text(strip=True),
-            "FundamentalFilterRating": cols[6].get_text(strip=True),
-            "TechFilterRating": cols[7].get_text(strip=True),
-            "NewsSentiment": cols[8].get_text(strip=True),
+            "ticker": ticker_text,
+            "name": name_text,
+            "price": cols[1].get_text(strip=True) if len(cols) > 1 else "",
+            "SL": cols[2].get_text(strip=True) if len(cols) > 2 else "",
+            "TP": cols[3].get_text(strip=True) if len(cols) > 3 else "",
+            "AIScore": cols[4].get_text(strip=True) if len(cols) > 4 else "",
+            "OverallRating": cols[5].get_text(strip=True) if len(cols) > 5 else "",
+            "FundamentalFilterRating": cols[6].get_text(strip=True) if len(cols) > 6 else "",
+            "TechFilterRating": cols[7].get_text(strip=True) if len(cols) > 7 else "",
+            "NewsSentiment": cols[8].get_text(strip=True) if len(cols) > 8 else "",
             "AIComment": comment
         }
 
@@ -68,20 +68,23 @@ def extract_top3_from_html():
 
 def send_email():
     print("📨 Generujem email...")
-
     top3 = extract_top3_from_html()
-
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # ---------- BUILD SHORT SUMMARY ----------
     if not top3:
         summary_html = "<p>⚠️ Nepodarilo sa načítať TOP 3 akcie z reportu.</p>"
     else:
         summary_html = "<h3>🔥 TOP 3 akcie podľa AI</h3>"
         for stock in top3:
+            yahoo_link = YAHOO_FINANCE_URL.format(ticker=stock['ticker'])
             summary_html += f"""
-            <div style="margin-bottom:18px; padding:10px; border-left:4px solid #2c3e50;">
-                <b>{stock['ticker']} – {stock['name']}</b><br>
+            <div style="margin-bottom:18px; padding:12px; border-left:4px solid #2c3e50;">
+                <div style="font-size:15px; margin-bottom:6px;">
+                    <b style="color:#2c3e50;">{stock['ticker']}</b> – 
+                    <a href="{yahoo_link}" target="_blank" style="color:#1a3d7c; text-decoration:none;">
+                        {stock['name']}
+                    </a>
+                </div>
                 Cena: <b>{stock['price']}$</b><br>
                 AI Score: <b>{stock['AIScore']}</b>, Overall: <b>{stock['OverallRating']}</b><br>
                 SL: <b>{stock['SL']}$</b>, TP: <b>{stock['TP']}$</b><br><br>
@@ -89,20 +92,16 @@ def send_email():
             </div>
             """
 
-    # ---------- FINAL EMAIL HTML ----------
     email_html = f"""
     <html>
     <body style="font-family:Arial; font-size:14px; color:#333;">
         <p>✅ Tvoj denný AI Stock report bol úspešne vygenerovaný.</p>
         <p>📅 <b>{now_str}</b></p>
-
         <p>🔗 Kompletný prehľad nájdeš tu:<br>
         <a href="{REPORT_LINK}" target="_blank">{REPORT_LINK}</a></p>
-
         <hr>
         {summary_html}
         <hr>
-
         <p style="font-size:12px; color:#777;">Automaticky odoslané MarketScraper systémom 🤖</p>
     </body>
     </html>
@@ -112,7 +111,6 @@ def send_email():
     msg["Subject"] = "📊 Denný AI Stock Report – TOP 3 inside"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECEIVER_EMAIL
-
     msg.attach(MIMEText(email_html, "html", "utf-8"))
 
     try:
