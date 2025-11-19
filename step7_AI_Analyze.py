@@ -9,7 +9,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 AI_MODEL = "gpt-4-turbo"
 openai.api_key = OPENAI_API_KEY
 
-INPUT_FILE = "data/step7_TopX.json"
+INPUT_FILE = "data/step6_TopX.json"
 OUTPUT_FILE = "data/step7_AIAnalyze.json"
 
 # Rate limiting
