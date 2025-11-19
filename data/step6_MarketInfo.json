@@ -17,7 +17,17 @@
     "percent_change": 0.88,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "AKAM",
@@ -37,7 +47,17 @@
     "percent_change": 4.01,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "AMCR",
@@ -57,7 +77,17 @@
     "percent_change": 0.36,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "AEP",
@@ -77,7 +107,17 @@
     "percent_change": 0.14,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "AXP",
@@ -97,7 +137,17 @@
     "percent_change": 0.62,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "AMT",
@@ -117,7 +167,17 @@
     "percent_change": 2.82,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Real Estate",
+    "sector_name": "XLRE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.36873531158705397,
+    "sector_change_5d": -2.086328335653098,
+    "sector_change_20d": -3.5891303372660888,
+    "sector_trend": "down"
   },
   {
     "ticker": "AME",
@@ -137,7 +197,17 @@
     "percent_change": -0.19,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "AMGN",
@@ -157,7 +227,17 @@
     "percent_change": 4.57,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "APO",
@@ -177,7 +257,17 @@
     "percent_change": 1.5,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "AAPL",
@@ -197,7 +287,17 @@
     "percent_change": 2.16,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "ATO",
@@ -217,7 +317,17 @@
     "percent_change": 0.51,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "BKR",
@@ -237,7 +347,17 @@
     "percent_change": 0.31,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "BIIB",
@@ -257,7 +377,17 @@
     "percent_change": 2.11,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "BMY",
@@ -277,7 +407,17 @@
     "percent_change": 3.09,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "BG",
@@ -297,7 +437,17 @@
     "percent_change": 1.45,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "CAT",
@@ -317,7 +467,17 @@
     "percent_change": -0.51,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "CNP",
@@ -337,7 +497,17 @@
     "percent_change": 0.53,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "SCHW",
@@ -357,7 +527,17 @@
     "percent_change": 0.56,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "CB",
@@ -377,7 +557,17 @@
     "percent_change": 1.45,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "C",
@@ -397,7 +587,17 @@
     "percent_change": -0.72,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "CFG",
@@ -417,7 +617,17 @@
     "percent_change": -0.21,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "CME",
@@ -437,7 +647,17 @@
     "percent_change": 0.56,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 94.4,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "CMS",
@@ -457,7 +677,17 @@
     "percent_change": 1.05,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "KO",
@@ -477,7 +707,17 @@
     "percent_change": 1.55,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "CPAY",
@@ -497,7 +737,17 @@
     "percent_change": 3.41,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "CTVA",
@@ -517,7 +767,17 @@
     "percent_change": 0.24,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Basic Materials",
+    "sector_name": "XLB",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.08191889681004039,
+    "sector_change_5d": -2.296358007839805,
+    "sector_change_20d": -3.4654022143933205,
+    "sector_trend": "down"
   },
   {
     "ticker": "CTRA",
@@ -537,7 +797,17 @@
     "percent_change": 1.52,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "DDOG",
@@ -557,7 +827,17 @@
     "percent_change": -0.93,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "DVN",
@@ -577,7 +857,17 @@
     "percent_change": 3.66,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "FANG",
@@ -597,7 +887,17 @@
     "percent_change": 2.36,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "DG",
@@ -617,7 +917,17 @@
     "percent_change": 3.66,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "DLTR",
@@ -637,7 +947,17 @@
     "percent_change": -0.29,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "DTE",
@@ -657,7 +977,17 @@
     "percent_change": 0.47,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "EIX",
@@ -677,7 +1007,17 @@
     "percent_change": 0.92,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "ESS",
@@ -697,7 +1037,17 @@
     "percent_change": 0.6,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Real Estate",
+    "sector_name": "XLRE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.36873531158705397,
+    "sector_change_5d": -2.086328335653098,
+    "sector_change_20d": -3.5891303372660888,
+    "sector_trend": "down"
   },
   {
     "ticker": "EXE",
@@ -717,7 +1067,17 @@
     "percent_change": 3.32,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "EXPE",
@@ -737,7 +1097,17 @@
     "percent_change": -1.01,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "FICO",
@@ -757,7 +1127,17 @@
     "percent_change": 2.35,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "FDX",
@@ -777,7 +1157,17 @@
     "percent_change": 5.45,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "FTV",
@@ -797,7 +1187,17 @@
     "percent_change": 1.07,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 100.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "BEN",
@@ -817,7 +1217,17 @@
     "percent_change": 1.33,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "GE",
@@ -837,7 +1247,17 @@
     "percent_change": -0.39,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "GEN",
@@ -857,7 +1277,17 @@
     "percent_change": 3.0,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "GD",
@@ -877,7 +1307,17 @@
     "percent_change": 0.84,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "GS",
@@ -897,7 +1337,17 @@
     "percent_change": 1.64,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "HII",
@@ -917,7 +1367,17 @@
     "percent_change": 1.74,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "IBM",
@@ -937,7 +1397,17 @@
     "percent_change": 1.48,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "INCY",
@@ -957,7 +1427,17 @@
     "percent_change": 2.06,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "IBKR",
@@ -977,7 +1457,17 @@
     "percent_change": -0.37,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "IVZ",
@@ -997,7 +1487,17 @@
     "percent_change": 1.02,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "JCI",
@@ -1017,7 +1517,17 @@
     "percent_change": -0.52,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "KEY",
@@ -1037,7 +1547,17 @@
     "percent_change": -0.22,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "LH",
@@ -1057,7 +1577,17 @@
     "percent_change": 2.71,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "LDOS",
@@ -1077,7 +1607,17 @@
     "percent_change": 0.7,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "L",
@@ -1097,7 +1637,17 @@
     "percent_change": 0.7,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "MTB",
@@ -1117,7 +1667,17 @@
     "percent_change": -0.79,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "MDT",
@@ -1137,7 +1697,17 @@
     "percent_change": 2.96,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "MRK",
@@ -1157,7 +1727,17 @@
     "percent_change": 4.84,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "MTD",
@@ -1177,7 +1757,17 @@
     "percent_change": 0.87,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "MNST",
@@ -1197,7 +1787,17 @@
     "percent_change": 2.68,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "NEM",
@@ -1217,7 +1817,17 @@
     "percent_change": 1.91,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Basic Materials",
+    "sector_name": "XLB",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.08191889681004039,
+    "sector_change_5d": -2.296358007839805,
+    "sector_change_20d": -3.4654022143933205,
+    "sector_trend": "down"
   },
   {
     "ticker": "NEE",
@@ -1237,7 +1847,17 @@
     "percent_change": 1.17,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "NI",
@@ -1257,7 +1877,17 @@
     "percent_change": 0.5,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "ORLY",
@@ -1277,7 +1907,17 @@
     "percent_change": 1.14,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "PNR",
@@ -1297,7 +1937,17 @@
     "percent_change": -0.41,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "PCG",
@@ -1317,7 +1967,17 @@
     "percent_change": 0.18,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "PM",
@@ -1337,7 +1997,17 @@
     "percent_change": 1.12,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "PFG",
@@ -1357,7 +2027,17 @@
     "percent_change": 0.96,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "PG",
@@ -1377,7 +2057,17 @@
     "percent_change": 2.09,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 86.1,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Defensive",
+    "sector_name": "XLP",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.4298578161843647,
+    "sector_change_5d": -0.4261937617900613,
+    "sector_change_20d": -2.762015911362392,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "PGR",
@@ -1397,7 +2087,17 @@
     "percent_change": 1.09,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "PLD",
@@ -1417,7 +2117,17 @@
     "percent_change": 1.09,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Real Estate",
+    "sector_name": "XLRE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.36873531158705397,
+    "sector_change_5d": -2.086328335653098,
+    "sector_change_20d": -3.5891303372660888,
+    "sector_trend": "down"
   },
   {
     "ticker": "PEG",
@@ -1437,7 +2147,17 @@
     "percent_change": 0.61,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 79.2,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Utilities",
+    "sector_name": "XLU",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.37962968642131223,
+    "sector_change_5d": -0.5462020608295148,
+    "sector_change_20d": -1.5340463307420338,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "QCOM",
@@ -1457,7 +2177,17 @@
     "percent_change": 1.4,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "REGN",
@@ -1477,7 +2207,17 @@
     "percent_change": 3.03,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "ROST",
@@ -1497,7 +2237,17 @@
     "percent_change": 0.5,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "SLB",
@@ -1517,7 +2267,17 @@
     "percent_change": 1.9,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "STX",
@@ -1537,7 +2297,17 @@
     "percent_change": -2.04,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 100.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "SHW",
@@ -1557,7 +2327,17 @@
     "percent_change": 0.74,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Basic Materials",
+    "sector_name": "XLB",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.08191889681004039,
+    "sector_change_5d": -2.296358007839805,
+    "sector_change_20d": -3.4654022143933205,
+    "sector_trend": "down"
   },
   {
     "ticker": "SPG",
@@ -1577,7 +2357,17 @@
     "percent_change": 1.13,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Real Estate",
+    "sector_name": "XLRE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.36873531158705397,
+    "sector_change_5d": -2.086328335653098,
+    "sector_change_20d": -3.5891303372660888,
+    "sector_trend": "down"
   },
   {
     "ticker": "STE",
@@ -1597,7 +2387,17 @@
     "percent_change": 1.02,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "TROW",
@@ -1617,7 +2417,17 @@
     "percent_change": 0.65,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "TRGP",
@@ -1637,7 +2447,17 @@
     "percent_change": 2.21,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "TER",
@@ -1657,7 +2477,17 @@
     "percent_change": -3.72,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Technology",
+    "sector_name": "XLK",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.6253051865247503,
+    "sector_change_5d": -4.771171809970099,
+    "sector_change_20d": -3.2288262734399997,
+    "sector_trend": "down"
   },
   {
     "ticker": "TPL",
@@ -1677,7 +2507,17 @@
     "percent_change": -0.47,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "TXT",
@@ -1697,7 +2537,17 @@
     "percent_change": 0.48,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "TJX",
@@ -1717,7 +2567,17 @@
     "percent_change": -0.38,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "TSCO",
@@ -1737,7 +2597,17 @@
     "percent_change": 0.87,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 94.4,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Consumer Cyclical",
+    "sector_name": "XLY",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -1.8450512408973996,
+    "sector_change_5d": -6.282614427062261,
+    "sector_change_20d": -6.1337117034983235,
+    "sector_trend": "down"
   },
   {
     "ticker": "TRV",
@@ -1757,7 +2627,17 @@
     "percent_change": 1.29,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "TFC",
@@ -1777,7 +2657,17 @@
     "percent_change": 0.42,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Financial Services",
+    "sector_name": "XLF",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.15549432433111798,
+    "sector_change_5d": -3.4579969634407015,
+    "sector_change_20d": -2.579178119017833,
+    "sector_trend": "down"
   },
   {
     "ticker": "UPS",
@@ -1797,7 +2687,17 @@
     "percent_change": 2.12,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 100.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   },
   {
     "ticker": "UHS",
@@ -1817,7 +2717,17 @@
     "percent_change": 0.8,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "VRTX",
@@ -1837,7 +2747,17 @@
     "percent_change": 1.9,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "VICI",
@@ -1857,7 +2777,17 @@
     "percent_change": 0.66,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Real Estate",
+    "sector_name": "XLRE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.36873531158705397,
+    "sector_change_5d": -2.086328335653098,
+    "sector_change_20d": -3.5891303372660888,
+    "sector_trend": "down"
   },
   {
     "ticker": "WAT",
@@ -1877,7 +2807,17 @@
     "percent_change": 2.54,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Healthcare",
+    "sector_name": "XLV",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.586683854682013,
+    "sector_change_5d": 1.2675894312121017,
+    "sector_change_20d": 5.140213053187592,
+    "sector_trend": "up"
   },
   {
     "ticker": "WMB",
@@ -1897,7 +2837,17 @@
     "percent_change": 0.0,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Energy",
+    "sector_name": "XLE",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": 0.7969905356318252,
+    "sector_change_5d": -0.5134941843891183,
+    "sector_change_20d": 5.040944738859809,
+    "sector_trend": "neutral"
   },
   {
     "ticker": "XYL",
@@ -1917,6 +2867,16 @@
     "percent_change": -0.84,
     "TechFilterRating": 100.0,
     "news_sentiment_percent": 91.7,
-    "social_sentiment_percent": null
+    "social_sentiment_percent": null,
+    "sector": "Industrials",
+    "sector_name": "XLI",
+    "market_change_1d": -0.8256436690967983,
+    "market_change_5d": -3.3489572743467533,
+    "market_change_20d": -1.7523999751486108,
+    "market_trend": "down",
+    "sector_change_1d": -0.4451223424977613,
+    "sector_change_5d": -2.846213195864422,
+    "sector_change_20d": -3.2476747292865538,
+    "sector_trend": "down"
   }
 ]

@@ -31,10 +31,8 @@ def compute_sl_tp(stock):
 
 def compute_sl_tp_10e(price, SL, TP):
     fraction = 10 / price
-
     SL10 = SL * fraction
     TP10 = TP * fraction
-
     return SL10, TP10
 
 
@@ -58,6 +56,10 @@ for stock in stocks:
     SL10, TP10 = compute_sl_tp_10e(price, SL, TP)
     stock["SL10"] = round(SL10, 2)
     stock["TP10"] = round(TP10, 2)
+
+    # --- ZACHOVANIE NOVÝCH FIELDOV ---
+    # Nie je potrebné nič meniť, všetky polia z AIAnalyze (OverallRating, AIScore, AIComment, AITicker, market/sector info) zostanú
+    # Skript ich automaticky neprepíše, len pridá SL/TP
 
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

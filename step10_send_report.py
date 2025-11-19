@@ -1,74 +1,72 @@
-import smtplib
+import smtplib 
 import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
-from bs4 import BeautifulSoup
 from datetime import datetime
+import json
 
 # ---------- SETTINGS ----------
 SENDER_EMAIL = "roman.duris@gmail.com"
 RECEIVER_EMAIL = "roman.duris@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
-REPORT_FILE = Path("docs/ai_report.html")
+INPUT_FILE = Path("data/step8_SLTP.json")
 REPORT_LINK = "https://romanduris.github.io/MarketScrapers/ai_report.html"
 YAHOO_FINANCE_URL = "https://finance.yahoo.com/quote/{ticker}"
 
+# ---------- Helper funkcie ----------
+def colorize_rating(value):
+    try:
+        value = float(value)
+    except:
+        return f"<b>{value}</b>"
+    if value >= 90:
+        color = "#2ecc71"
+    elif value >= 80:
+        color = "#27ae60"
+    elif value >= 70:
+        color = "#f39c12"
+    elif value >= 60:
+        color = "#e67e22"
+    elif value >= 50:
+        color = "#e74c3c"
+    else:
+        color = "#c0392b"
+    return f"<b style='color:{color}'>{value}</b>"
 
-def extract_top3_from_html():
-    if not REPORT_FILE.exists():
-        print(f"⚠️ Súbor {REPORT_FILE} neexistuje.")
+def colorize_trend(trend):
+    if not trend:
+        color = "#f39c12"
+        text = "→ N/A"
+    else:
+        t = trend.strip().lower()
+        if t == "up":
+            color = "#2ecc71"
+            text = "▲ UP"
+        elif t == "down":
+            color = "#e74c3c"
+            text = "▼ DOWN"
+        else:
+            color = "#f39c12"
+            text = f"→ {trend.strip().upper()}"
+    return f"<b style='color:{color}'>{text}</b>"
+
+def extract_top3_from_json():
+    if not INPUT_FILE.exists():
+        print(f"⚠️ Súbor {INPUT_FILE} neexistuje.")
         return []
 
-    with open(REPORT_FILE, "r", encoding="utf-8") as f:
-        soup = BeautifulSoup(f.read(), "html.parser")
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-    rows = soup.find_all("tr")[1:]
-    extracted = []
-    i = 0
+    top3 = sorted(data, key=lambda x: x.get("AIScore", 0), reverse=True)[:3]
+    return top3
 
-    while i < 6 and i < len(rows):
-        row1 = rows[i]
-        row2 = rows[i + 1]
-        cols = row1.find_all("td")
-        comment = row2.find("td").get_text(strip=True)
-
-        ticker_cell = cols[0] if len(cols) > 0 else None
-
-        # ---------------- FIXED TICKER EXTRACTION ----------------
-        ticker_text = ""
-        name_text = ""
-        if ticker_cell:
-            small_tag = ticker_cell.find("small")
-            name_text = small_tag.get_text(strip=True) if small_tag else ""
-            # iba ticker pred <small>
-            all_text = ticker_cell.get_text(separator="\n", strip=True)
-            ticker_text = all_text.split("\n")[0]
-
-        stock_data = {
-            "ticker": ticker_text,
-            "name": name_text,
-            "price": cols[1].get_text(strip=True) if len(cols) > 1 else "",
-            "SL": cols[2].get_text(strip=True) if len(cols) > 2 else "",
-            "TP": cols[3].get_text(strip=True) if len(cols) > 3 else "",
-            "AIScore": cols[4].get_text(strip=True) if len(cols) > 4 else "",
-            "OverallRating": cols[5].get_text(strip=True) if len(cols) > 5 else "",
-            "FundamentalFilterRating": cols[6].get_text(strip=True) if len(cols) > 6 else "",
-            "TechFilterRating": cols[7].get_text(strip=True) if len(cols) > 7 else "",
-            "NewsSentiment": cols[8].get_text(strip=True) if len(cols) > 8 else "",
-            "AIComment": comment
-        }
-
-        extracted.append(stock_data)
-        i += 2
-
-    return extracted[:3]
-
-
+# ---------- SEND EMAIL ----------
 def send_email():
     print("📨 Generujem email...")
-    top3 = extract_top3_from_html()
+    top3 = extract_top3_from_json()
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     if not top3:
@@ -85,9 +83,11 @@ def send_email():
                         {stock['name']}
                     </a>
                 </div>
-                Cena: <b>{stock['price']}$</b><br>
-                AI Score: <b>{stock['AIScore']}</b>, Overall: <b>{stock['OverallRating']}</b><br>
-                SL: <b>{stock['SL']}$</b>, TP: <b>{stock['TP']}$</b><br><br>
+                Cena: <b>{round(float(stock['price']),1)}$</b><br>
+                SL: <b>{stock['SL']}$</b>, TP: <b>{stock['TP']}$</b><br>
+                AI Score: {colorize_rating(stock['AIScore'])}, Overall: {colorize_rating(stock['OverallRating'])}
+                , Market: {colorize_trend(stock.get('market_trend'))}, Sector: {colorize_trend(stock.get('sector_trend'))}<br><br>
+                <i>{stock['AITicker']}</i><br><br>
                 <i>{stock['AIComment']}</i>
             </div>
             """
@@ -121,7 +121,6 @@ def send_email():
         print(f"✅ Email odoslaný na {RECEIVER_EMAIL}")
     except Exception as e:
         print(f"❌ Chyba pri odosielaní e-mailu: {e}")
-
 
 if __name__ == "__main__":
     send_email()

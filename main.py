@@ -14,6 +14,7 @@ pipeline_steps = [
     "step3_IdicatorsColletion.py",
     "step4_FilterIndicators.py",
     "step5_Sentiment.py",
+    "step6_MarketTrend.py",
     "step6_TopX.py",
     "step7_AI_Analyze.py",
     "step8_SL&TP.py",
