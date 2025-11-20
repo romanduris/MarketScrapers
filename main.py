@@ -19,7 +19,10 @@ pipeline_steps = [
     "step7_AI_Analyze.py",
     "step8_SL&TP.py",
     "step9_report_html.py",
-    "step10_send_report.py"
+    "step10_send_report.py",
+    "step11_Archive.py",
+    "step12_Analyze.py",
+    "step13_AnalyzeHtml.py"
 ]
 
 def check_and_install_module(module_name):

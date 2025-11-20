@@ -13,6 +13,8 @@ EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
 INPUT_FILE = Path("data/step8_SLTP.json")
 REPORT_LINK = "https://romanduris.github.io/MarketScrapers/ai_report.html"
+ANALYZE_LINK = "https://romanduris.github.io/MarketScrapers/ai_analyze.html"
+
 YAHOO_FINANCE_URL = "https://finance.yahoo.com/quote/{ticker}"
 
 # ---------- Helper funkcie ----------
@@ -99,6 +101,8 @@ def send_email():
         <p>📅 <b>{now_str}</b></p>
         <p>🔗 Kompletný prehľad nájdeš tu:<br>
         <a href="{REPORT_LINK}" target="_blank">{REPORT_LINK}</a></p>
+        <p>🔗 Analýza všetkých akcií:<br>
+        <a href="{ANALYZE_LINK}" target="_blank">{ANALYZE_LINK}</a></p>
         <hr>
         {summary_html}
         <hr>

@@ -18,7 +18,7 @@ INPUT_FILE = "data/step4_IndicatorsFilter.json"
 OUTPUT_FILE = "data/step5_SentimentFilter.json"
 MAX_ITEMS = 6
 USER_AGENT = "Mozilla/5.0 (compatible; scraper/1.0; +https://example.com)"
-NEWS_SENTIMENT_THRESHOLD = 70  # percent, filtrovanie podľa potreby
+NEWS_SENTIMENT_THRESHOLD = 80  # percent, filtrovanie podľa potreby
 
 # Lexicon pre jednoduché bodovanie sentimentu
 POS_WORDS = {"gain","up","rise","beat","positive","growth","profit","upgrade","buy","surge"}

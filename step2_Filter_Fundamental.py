@@ -24,7 +24,7 @@ ENABLE_MOMENTUM_2M_FILTER = True
 ENABLE_MOMENTUM_1W_FILTER = True
 
 # Percentuálna hodnota (0-100) pod ktorou sa akcia NEULOŽÍ
-MIN_FUNDAMENTAL_RATING = 60  # % filtrov splnenych
+MIN_FUNDAMENTAL_RATING = 80  # % filtrov splnenych
 
 FILTERS = {
     # ===========================================

@@ -1,19 +1,9 @@
-"""
-STEP 7 – Top X podľa kombinovaného skóre (vrátane trhu a sektora)
-- Vstup: step6_MarketInfo.json
-- Vypočíta OverallRating = priemer(Fundamental, Tech, news_sentiment) * trend_multiplier
-- Vyberie top X akcií
-- Zachová všetky pôvodné polia (vrátane market/sector info)
-- Výstup: step6_TopX.json
-"""
-
 import json
 from pathlib import Path
 
 # ---------- SETTINGS ----------
 INPUT_FILE = "data/step6_MarketInfo.json"
 OUTPUT_FILE = "data/step6_TopX.json"
-TOP_X = 20  # počet najlepších akcií
 
 # ---------- LOAD ----------
 if not Path(INPUT_FILE).exists():
@@ -28,8 +18,8 @@ total_stocks = len(stocks)
 # ---------- CALCULATE OVERALL RATING ----------
 def calculate_overall(stock):
     """
-    OverallRating = priemer(Fundamental, Tech, news_sentiment) * trend_multiplier
-    Trend multiplier podľa market a sector trend
+    OverallRating = priemer(Fundamental, Tech, news_sentiment)
+    Trend multiplier sa NEPOUŽÍVA
     Výsledok je obmedzený na 100.
     """
     ratings = []
@@ -46,43 +36,27 @@ def calculate_overall(stock):
     else:
         base_score = sum(ratings) / len(ratings)
 
-    # trend multiplier
-    market_trend = stock.get("market_trend")
-    sector_trend = stock.get("sector_trend")
-
-    multiplier = 1.0
-
-    if market_trend == "up" and sector_trend == "up":
-        multiplier = 1.20
-    elif market_trend == "up" or sector_trend == "up":
-        multiplier = 1.10
-    elif market_trend == "down" and sector_trend == "down":
-        multiplier = 0.80
-    elif market_trend == "down" or sector_trend == "down":
-        multiplier = 0.90
-    else:
-        multiplier = 1.00  # oba neutral alebo unknown
-
-    overall = round(min(100, base_score * multiplier), 1)
+    overall = round(min(100, base_score), 1)
     return overall
 
+# Vypočítame OverallRating
 for stock in stocks:
     stock["OverallRating"] = calculate_overall(stock)
 
-# ---------- SORT ----------
-stocks_sorted = sorted(stocks, key=lambda x: x["OverallRating"], reverse=True)
+# ---------- FILTER NEGATIVE SECTOR TREND ----------
+filtered_stocks = [s for s in stocks if s.get("sector_trend") != "down"]
 
-# ---------- SELECT TOP X ----------
-top_stocks = stocks_sorted[:TOP_X]
+# ---------- SORT ----------
+stocks_sorted = sorted(filtered_stocks, key=lambda x: x["OverallRating"], reverse=True)
 
 # ---------- SAVE ----------
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(top_stocks, f, indent=2, ensure_ascii=False)
+    json.dump(stocks_sorted, f, indent=2, ensure_ascii=False)
 
 # ---------- SUMMARY ----------
-print("\n========== STEP 7 SUMMARY ==========")
+print("\n========== STEP 7 SUMMARY (MOD) ==========")
 print(f"📊 Vstupný počet akcií: {total_stocks}")
-print(f"📊 Počet vybraných TOP {TOP_X} akcií: {len(top_stocks)}")
+print(f"📊 Počet akcií po odfiltrovaní negatívneho sektoru: {len(filtered_stocks)}")
 print(f"💾 Výstup uložený do {OUTPUT_FILE}")
-print("====================================\n")
+print("===========================================\n")
