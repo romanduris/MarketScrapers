@@ -406,5 +406,157 @@
     "status": "SL",
     "hit_date": "2025-11-19 00:00:00-05:00",
     "profit": 3.92
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "LLY",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "HCA",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "REGN",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "DHR",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "FANG",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "MCK",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "BKR",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "JNJ",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "BIIB",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "UHS",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "IQV",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "CTRA",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "OKE",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "EW",
+    "status": "SL",
+    "hit_date": "2025-11-19 00:00:00-05:00",
+    "profit": -2.58
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "MRK",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "PODD",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "VRTX",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "INCY",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-20_12-19-29.json",
+    "purchase_dt": "2025-11-20 12:19:29",
+    "ticker": "ELV",
+    "status": "SL",
+    "hit_date": "2025-11-19 00:00:00-05:00",
+    "profit": 3.92
   }
 ]

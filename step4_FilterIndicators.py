@@ -15,7 +15,7 @@ INPUT_FILE = "data/step3_IndicatorsData.json"
 OUTPUT_FILE = "data/step4_IndicatorsFilter.json"
 
 # ---------- SETTINGS ----------
-TECHFILTER_THRESHOLD = 80.0  # percento, nad ktorým sa akcia uloží do výstupu
+TECHFILTER_THRESHOLD = 60.0  # percento, nad ktorým sa akcia uloží do výstupu
 
 # Váhy a aktivované filtre
 ENABLE_PERCENT_CHANGE_FILTER = True
