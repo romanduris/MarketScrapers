@@ -36,7 +36,7 @@
     "MACD_Signal (12,26,9)": 6.5743,
     "percent_change": 3.0,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 91.7,
+    "news_sentiment_percent": 83.3,
     "social_sentiment_percent": null
   },
   {
@@ -156,7 +156,7 @@
     "MACD_Signal (12,26,9)": 3.7169,
     "percent_change": -0.53,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 83.3,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -216,7 +216,7 @@
     "MACD_Signal (12,26,9)": -0.1183,
     "percent_change": -0.95,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -440,6 +440,26 @@
     "social_sentiment_percent": null
   },
   {
+    "ticker": "XOM",
+    "name": "ExxonMobil",
+    "marketCap": 500292026368,
+    "revenueGrowth": -0.051,
+    "debtToEquity": 15.672,
+    "trailingPE": 17.056686,
+    "momentum_2m": 0.0617671241566895,
+    "momentum_1w": 0.0021707086853042235,
+    "FundamentalFilterRating": 66,
+    "price": 117.3499984741211,
+    "RSI (14)": 61.22,
+    "EMA (20)": 115.96,
+    "MACD (12,26,9)": 1.5155,
+    "MACD_Signal (12,26,9)": 1.2653,
+    "percent_change": -1.41,
+    "TechFilterRating": 100.0,
+    "news_sentiment_percent": 66.7,
+    "social_sentiment_percent": null
+  },
+  {
     "ticker": "FDX",
     "name": "FedEx",
     "marketCap": 61954826240,
@@ -456,7 +476,7 @@
     "MACD_Signal (12,26,9)": 5.6614,
     "percent_change": -0.19,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 83.3,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -536,7 +556,7 @@
     "MACD_Signal (12,26,9)": 4.4561,
     "percent_change": -2.47,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -576,7 +596,7 @@
     "MACD_Signal (12,26,9)": 0.9541,
     "percent_change": 0.09,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -776,7 +796,7 @@
     "MACD_Signal (12,26,9)": 0.0394,
     "percent_change": 1.41,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 83.3,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -896,7 +916,7 @@
     "MACD_Signal (12,26,9)": 25.2162,
     "percent_change": -3.11,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -1076,7 +1096,7 @@
     "MACD_Signal (12,26,9)": -2.2013,
     "percent_change": 2.06,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 83.3,
+    "news_sentiment_percent": 91.7,
     "social_sentiment_percent": null
   },
   {
