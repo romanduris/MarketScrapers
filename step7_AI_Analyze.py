@@ -43,12 +43,15 @@ MACD: {stock.get("MACD (12,26,9)")}
 MACD Signal: {stock.get("MACD_Signal (12,26,9)")}
 Percent Change: {stock.get("percent_change")}
 News Sentiment: {stock.get("news_sentiment_percent")}
+Trend Market: {stock.get("market_trend")}
+Trend Sector: {stock.get("sector_trend")}
 
 ÚLOHY:
 1. Doplň pole "AITicker" – jednou vetou zhrň, čo je to za firmu a čomu sa venuje.
 2. Doplň pole "AIComment" – 2–3 vety o tom, či je akcia vhodná / nevhodná na obchod 2–10 dní, zohľadni trhový a sektorový trend.
 3. Doplň pole "AIScore" – hodnota 0–100, kde 100 = ideálna krátkodobá príležitosť.
 4. Vráť čistý JSON objekt:
+5. Odpovedaj po anglicky
 
 {{
     "AITicker": "...",

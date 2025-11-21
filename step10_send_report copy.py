@@ -5,8 +5,6 @@ from email.mime.text import MIMEText
 from pathlib import Path
 from datetime import datetime
 import json
-import yfinance as yf
-import time
 
 # ---------- SETTINGS ----------
 SENDER_EMAIL = "roman.duris@gmail.com"
@@ -18,28 +16,6 @@ REPORT_LINK = "https://romanduris.github.io/MarketScrapers/ai_report.html"
 ANALYZE_LINK = "https://romanduris.github.io/MarketScrapers/ai_analyze.html"
 
 YAHOO_FINANCE_URL = "https://finance.yahoo.com/quote/{ticker}"
-
-# ---------- Market/sector config ----------
-MARKET_INDEX = "^GSPC"  # S&P 500
-
-SECTOR_ETF = {
-    "Technology": "XLK",
-    "Healthcare": "XLV",
-    "Financial Services": "XLF",
-    "Financial": "XLF",
-    "Energy": "XLE",
-    "Industrials": "XLI",
-    "Utilities": "XLU",
-    "Real Estate": "XLRE",
-    "Consumer Defensive": "XLP",
-    "Consumer Staples": "XLP",
-    "Consumer Cyclical": "XLY",
-    "Basic Materials": "XLB",
-    "Materials": "XLB",
-    "Communication Services": "XLC"
-}
-
-THROTTLE_SECONDS = 0.25
 
 # ---------- Helper: count tickers in a file ----------
 def count_tickers(path):
@@ -87,66 +63,6 @@ def extract_top5_from_json():
         data = json.load(f)
     return sorted(data, key=lambda x: x.get("AIScore", 0), reverse=True)[:5]
 
-# ---------- Market Overview helpers ----------
-def throttled_sleep():
-    time.sleep(THROTTLE_SECONDS)
-
-def get_multi_trend(ticker):
-    throttled_sleep()
-    try:
-        t = yf.Ticker(ticker)
-        hist = t.history(period="30d")
-        if len(hist) < 21:
-            return None, None, None
-        close = hist["Close"]
-        change_1d = ((close.iloc[-1] / close.iloc[-2]) - 1) * 100
-        change_5d = ((close.iloc[-1] / close.iloc[-6]) - 1) * 100
-        change_20d = ((close.iloc[-1] / close.iloc[-21]) - 1) * 100
-        return change_1d, change_5d, change_20d
-    except Exception as e:
-        print(f"❌ Error fetching {ticker}: {e}")
-        return None, None, None
-
-def calculate_trend(change):
-    if change is None:
-        return "neutral"
-    if change > 1.0:
-        return "up"
-    elif change < -1.0:
-        return "down"
-    return "neutral"
-
-def generate_market_overview():
-    # Market trend
-    _, market_5d, _ = get_multi_trend(MARKET_INDEX)
-    market_trend = calculate_trend(market_5d)
-
-   # Sector trends
-    up_count = down_count = neutral_count = 0
-    for etf in SECTOR_ETF.values():
-        _, sec_5d, _ = get_multi_trend(etf)
-        trend = calculate_trend(sec_5d)
-        if trend == "up":
-            up_count += 1
-        elif trend == "down":
-            down_count += 1
-        else:
-            neutral_count += 1
-
-    # Colors and arrows
-    arrows = {"up": "▲", "down": "▼", "neutral": "→"}
-    colors = {"up": "#2ecc71", "down": "#e74c3c", "neutral": "#f39c12"}
-
-    market_html = f"""
-    <h3>📈 Market Overview</h3>
-    <p>
-    S&P 500 trend: <b style='color:{colors[market_trend]}'>{arrows[market_trend]} {market_trend.upper()}</b><br>
-    Sector distribution: 🟩 UP: {up_count} , 🟨 NEUTRAL: {neutral_count} , 🟥 DOWN: {down_count}
-    </p>
-    <hr>
-    """
-    return market_html
-
 # ---------- SEND EMAIL ----------
 def send_email():
     print("📨 Generujem email...")
@@ -167,7 +83,7 @@ def send_email():
 
     # ---- Statistics HTML ----
     stats_html = f"""
-        <h3>📊 MarketScraper Today's Pipeline Summary</h3>
+        <h3>📊 MarketScraper Daily Pipeline Summary</h3>
         <ul>
             <li><b>Raw tickers collected:</b> {raw}</li>
             <li><b>After Fundamental Analysis:</b> {fundamental} 
@@ -182,14 +98,11 @@ def send_email():
         <hr>
     """
 
-    # ---- Market Overview ----
-    market_html = generate_market_overview()
-
     # ---- Top 5 HTML ----
     if not top5:
         summary_html = "<p>⚠️ Failed to load Top 5 stocks.</p>"
     else:
-        summary_html = "<h3>🔥 Top 5 Stocks selected</h3>"
+        summary_html = "<h3>🔥 Top 5 Stocks selected by AI</h3>"
         for stock in top5:
             yahoo_link = YAHOO_FINANCE_URL.format(ticker=stock['ticker'])
             summary_html += f"""
@@ -221,7 +134,6 @@ def send_email():
         <p>✅ Your daily AI Stock Report has been generated : 📅 <b>{now_str}</b></p>
 
         <hr>
-        {market_html}
 
         {stats_html}
 
@@ -245,7 +157,7 @@ def send_email():
     msg.attach(MIMEText(email_html, "html", "utf-8"))
 
     try:
-        print("📡 Connecting to Gmail...")
+        print("📡 Pripájam sa na Gmail...")
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(SENDER_EMAIL, EMAIL_PASSWORD)
             server.send_message(msg)
