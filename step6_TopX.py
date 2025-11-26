@@ -5,6 +5,9 @@ from pathlib import Path
 INPUT_FILE = "data/step6_MarketInfo.json"
 OUTPUT_FILE = "data/step6_TopX.json"
 
+# 🆕 Prepínač — počet TOP akcií, ktoré ostanú vo výsledku
+TOP_X = 20  # default môžeš meniť
+
 # ---------- LOAD ----------
 if not Path(INPUT_FILE).exists():
     print(f"⚠️ Vstupný súbor {INPUT_FILE} neexistuje.")
@@ -49,6 +52,9 @@ filtered_stocks = [s for s in stocks if s.get("sector_trend") != "down"]
 # ---------- SORT ----------
 stocks_sorted = sorted(filtered_stocks, key=lambda x: x["OverallRating"], reverse=True)
 
+# 🆕 Apply TOP_X cutoff
+stocks_sorted = stocks_sorted[:TOP_X]
+
 # ---------- SAVE ----------
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -58,5 +64,6 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 print("\n========== STEP 7 SUMMARY (MOD) ==========")
 print(f"📊 Vstupný počet akcií: {total_stocks}")
 print(f"📊 Počet akcií po odfiltrovaní negatívneho sektoru: {len(filtered_stocks)}")
+print(f"🔥 Zobrazených TOP {TOP_X} podľa OverallRating")
 print(f"💾 Výstup uložený do {OUTPUT_FILE}")
 print("===========================================\n")

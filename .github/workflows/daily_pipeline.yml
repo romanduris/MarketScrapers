@@ -2,28 +2,38 @@ name: Daily MarketScraper
 
 on:
   schedule:
-    - cron: '0 15 * * 1-5'
+    - cron: '0 15 * * 1-5'   # každý pracovný deň o 15:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write   # ⬅️ NUTNÉ na git push!!
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
 
     env:
-      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-      SENDER_EMAIL: ${{ secrets.EMAIL_SENDER }}
-      RECEIVER_EMAI: ${{ secrets.RECEIVER_EMAI }}
-
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  
+      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+      RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
 
       - name: Install dependencies
         run: |
@@ -33,17 +43,41 @@ jobs:
       - name: Run full pipeline
         run: python main.py
 
-      - name: Check HTML report exists
+      # --- VALIDÁCIA HTML ----
+      - name: Check HTML reports exist
         run: |
           if [ ! -f docs/ai_report.html ]; then
-            echo "❌ docs/ai_report.html not found!"
+            echo "❌ docs/ai_report.html missing!"
             exit 1
+          fi
+          if [ ! -f docs/ai_analyze.html ]; then
+            echo "❌ docs/ai_analyze.html missing!"
+            exit 1
+          fi
+          echo "✅ HTML reports generated OK"
+
+      # --- GIT COMMIT ---
+      - name: Commit & Push outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add history/*.json
+          git add docs/*.html
+
+          if git diff --cached --quiet; then
+            echo "📭 No changes to commit."
           else
-            echo "✅ docs/ai_report.html found"
+            git commit -m "auto: MarketScraper archive & HTML update [skip ci]"
+            git push
+            echo "🚀 Changes committed & pushed"
           fi
 
-      - name: Upload AI HTML report
+      # --- OPTIONAL BACKUP ---
+      - name: Upload artifact (optional backup)
         uses: actions/upload-artifact@v4
         with:
-          name: ai_stock_report
-          path: docs/ai_report.html
+          name: ai_reports_backup
+          path: |
+            docs/ai_report.html
+            docs/ai_analyze.html

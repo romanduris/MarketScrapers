@@ -422,5 +422,117 @@
     "status": "OPEN",
     "hit_date": null,
     "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "FE",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "REGN",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "NEE",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "DHR",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "MDT",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "DGX",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "GEHC",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "WMT",
+    "status": "SL",
+    "hit_date": "2025-11-20 00:00:00-05:00",
+    "profit": -3.21
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "UHS",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "WAT",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "PG",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "AEP",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "IQV",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
+  },
+  {
+    "source_file": "2025-11-21_08-38-34.json",
+    "purchase_dt": "2025-11-21 08:38:34",
+    "ticker": "AMGN",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0
   }
 ]
