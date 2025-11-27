@@ -9,7 +9,7 @@ import yfinance as yf
 import time
 
 # ---------- SETTINGS ----------
-SENDER_EMAIL = "roman.duris@gmail.com"
+SENDER_EMAIL = "Rodu.Market.Scraper@gmail.com"
 RECEIVER_EMAIL = "roman.duris@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
