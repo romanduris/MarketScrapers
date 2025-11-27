@@ -60,6 +60,26 @@
     "social_sentiment_percent": null
   },
   {
+    "ticker": "LNT",
+    "name": "Alliant Energy",
+    "marketCap": 17603037184,
+    "revenueGrowth": 0.119,
+    "debtToEquity": 163.145,
+    "trailingPE": 21.534592,
+    "momentum_2m": 0.06704223952345378,
+    "momentum_1w": 0.005727816713450684,
+    "FundamentalFilterRating": 83,
+    "price": 68.4800033569336,
+    "RSI (14)": 63.61,
+    "EMA (20)": 67.8,
+    "MACD (12,26,9)": 0.0812,
+    "MACD_Signal (12,26,9)": -0.0686,
+    "percent_change": 0.1,
+    "TechFilterRating": 75.0,
+    "news_sentiment_percent": 66.7,
+    "social_sentiment_percent": null
+  },
+  {
     "ticker": "GOOGL",
     "name": "Alphabet Inc. (Class A)",
     "marketCap": 3917544685568,
@@ -76,27 +96,7 @@
     "MACD_Signal (12,26,9)": 5.5523,
     "percent_change": 1.53,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
-  },
-  {
-    "ticker": "AXP",
-    "name": "American Express",
-    "marketCap": 252354740224,
-    "revenueGrowth": 0.122,
-    "debtToEquity": 185.273,
-    "trailingPE": 24.338257,
-    "momentum_2m": 0.09776826617844891,
-    "momentum_1w": 0.06452184215946133,
-    "FundamentalFilterRating": 83,
-    "price": 362.6400146484375,
-    "RSI (14)": 47.54,
-    "EMA (20)": 357.05,
-    "MACD (12,26,9)": -2.4446,
-    "MACD_Signal (12,26,9)": -2.1887,
-    "percent_change": 1.89,
-    "TechFilterRating": 75.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 83.3,
     "social_sentiment_percent": null
   },
   {
@@ -676,7 +676,7 @@
     "MACD_Signal (12,26,9)": 1.199,
     "percent_change": 2.04,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -757,6 +757,26 @@
     "percent_change": 1.92,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 75.0,
+    "social_sentiment_percent": null
+  },
+  {
+    "ticker": "DHR",
+    "name": "Danaher Corporation",
+    "marketCap": 165243224064,
+    "revenueGrowth": 0.044,
+    "debtToEquity": 35.544,
+    "trailingPE": 47.38604,
+    "momentum_2m": 0.1343916968677461,
+    "momentum_1w": 0.023324951859131637,
+    "FundamentalFilterRating": 66,
+    "price": 230.77000427246094,
+    "RSI (14)": 78.89,
+    "EMA (20)": 221.39,
+    "MACD (12,26,9)": 2.3784,
+    "MACD_Signal (12,26,9)": 0.7878,
+    "percent_change": 1.67,
+    "TechFilterRating": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -896,7 +916,7 @@
     "MACD_Signal (12,26,9)": 0.7992,
     "percent_change": 1.63,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 77.8,
     "social_sentiment_percent": null
   },
   {
@@ -976,7 +996,7 @@
     "MACD_Signal (12,26,9)": -3.9563,
     "percent_change": 2.02,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -1035,6 +1055,26 @@
     "MACD (12,26,9)": -0.3192,
     "MACD_Signal (12,26,9)": -0.3843,
     "percent_change": -0.97,
+    "TechFilterRating": 75.0,
+    "news_sentiment_percent": 66.7,
+    "social_sentiment_percent": null
+  },
+  {
+    "ticker": "EXPE",
+    "name": "Expedia Group",
+    "marketCap": 31935942656,
+    "revenueGrowth": 0.087,
+    "debtToEquity": 250.289,
+    "trailingPE": 24.86898,
+    "momentum_2m": 0.2189843919947987,
+    "momentum_1w": 0.07737899863371434,
+    "FundamentalFilterRating": 83,
+    "price": 258.1400146484375,
+    "RSI (14)": 67.5,
+    "EMA (20)": 243.16,
+    "MACD (12,26,9)": 6.6349,
+    "MACD_Signal (12,26,9)": 6.8257,
+    "percent_change": 3.61,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
@@ -1116,7 +1156,7 @@
     "MACD_Signal (12,26,9)": -0.0728,
     "percent_change": 2.24,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 69.4,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -1420,26 +1460,6 @@
     "social_sentiment_percent": null
   },
   {
-    "ticker": "HWM",
-    "name": "Howmet Aerospace",
-    "marketCap": 81981194240,
-    "revenueGrowth": 0.138,
-    "debtToEquity": 65.176,
-    "trailingPE": 57.21348,
-    "momentum_2m": 0.17653199623040772,
-    "momentum_1w": 0.012225382368326043,
-    "FundamentalFilterRating": 66,
-    "price": 203.67999267578125,
-    "RSI (14)": 45.97,
-    "EMA (20)": 202.36,
-    "MACD (12,26,9)": -0.6629,
-    "MACD_Signal (12,26,9)": -0.1893,
-    "percent_change": 1.78,
-    "TechFilterRating": 75.0,
-    "news_sentiment_percent": 66.7,
-    "social_sentiment_percent": null
-  },
-  {
     "ticker": "HBAN",
     "name": "Huntington Bancshares",
     "marketCap": 25360381952,
@@ -1676,7 +1696,7 @@
     "MACD_Signal (12,26,9)": -1.9927,
     "percent_change": 1.7,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -1697,6 +1717,26 @@
     "percent_change": 2.98,
     "TechFilterRating": 75.0,
     "news_sentiment_percent": 83.3,
+    "social_sentiment_percent": null
+  },
+  {
+    "ticker": "LLY",
+    "name": "Lilly (Eli)",
+    "marketCap": 995013165056,
+    "revenueGrowth": 0.539,
+    "debtToEquity": 178.516,
+    "trailingPE": 54.35553,
+    "momentum_2m": 0.5119493029791509,
+    "momentum_1w": 0.07755923381491492,
+    "FundamentalFilterRating": 66,
+    "price": 1109.93994140625,
+    "RSI (14)": 90.08,
+    "EMA (20)": 990.56,
+    "MACD (12,26,9)": 60.5591,
+    "MACD_Signal (12,26,9)": 51.3769,
+    "percent_change": 3.72,
+    "TechFilterRating": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -1876,7 +1916,7 @@
     "MACD_Signal (12,26,9)": 2.1234,
     "percent_change": 2.44,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -2096,7 +2136,7 @@
     "MACD_Signal (12,26,9)": 0.8241,
     "percent_change": 0.15,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 61.1,
+    "news_sentiment_percent": 77.8,
     "social_sentiment_percent": null
   },
   {
@@ -2136,7 +2176,7 @@
     "MACD_Signal (12,26,9)": 2.2913,
     "percent_change": 0.59,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 83.3,
     "social_sentiment_percent": null
   },
   {
@@ -2196,7 +2236,7 @@
     "MACD_Signal (12,26,9)": 0.1046,
     "percent_change": 4.15,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 75.0,
     "social_sentiment_percent": null
   },
   {
@@ -2360,26 +2400,6 @@
     "social_sentiment_percent": null
   },
   {
-    "ticker": "SHW",
-    "name": "Sherwin-Williams",
-    "marketCap": 85434056704,
-    "revenueGrowth": 0.032,
-    "debtToEquity": 325.153,
-    "trailingPE": 33.429268,
-    "momentum_2m": -0.04840202006042349,
-    "momentum_1w": 0.05811693822251662,
-    "FundamentalFilterRating": 66,
-    "price": 342.6499938964844,
-    "RSI (14)": 56.8,
-    "EMA (20)": 336.31,
-    "MACD (12,26,9)": -0.662,
-    "MACD_Signal (12,26,9)": -0.8903,
-    "percent_change": 1.38,
-    "TechFilterRating": 100.0,
-    "news_sentiment_percent": 66.7,
-    "social_sentiment_percent": null
-  },
-  {
     "ticker": "SPG",
     "name": "Simon Property Group",
     "marketCap": 69832335360,
@@ -2476,7 +2496,7 @@
     "MACD_Signal (12,26,9)": -0.4607,
     "percent_change": 1.62,
     "TechFilterRating": 100.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 83.3,
     "social_sentiment_percent": null
   },
   {
@@ -2576,7 +2596,7 @@
     "MACD_Signal (12,26,9)": 1.1945,
     "percent_change": 2.37,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 69.4,
+    "news_sentiment_percent": 61.1,
     "social_sentiment_percent": null
   },
   {
@@ -2616,27 +2636,7 @@
     "MACD_Signal (12,26,9)": -2.9652,
     "percent_change": 1.26,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 75.0,
-    "social_sentiment_percent": null
-  },
-  {
-    "ticker": "ULTA",
-    "name": "Ulta Beauty",
-    "marketCap": 23417561088,
-    "revenueGrowth": 0.093,
-    "debtToEquity": 87.863,
-    "trailingPE": 20.000769,
-    "momentum_2m": -0.02159543224332272,
-    "momentum_1w": 0.026903491624312048,
-    "FundamentalFilterRating": 66,
-    "price": 521.02001953125,
-    "RSI (14)": 49.62,
-    "EMA (20)": 516.09,
-    "MACD (12,26,9)": -2.1503,
-    "MACD_Signal (12,26,9)": -1.9719,
-    "percent_change": 1.25,
-    "TechFilterRating": 75.0,
-    "news_sentiment_percent": 66.7,
+    "news_sentiment_percent": 83.3,
     "social_sentiment_percent": null
   },
   {
@@ -2656,7 +2656,7 @@
     "MACD_Signal (12,26,9)": 1.1694,
     "percent_change": 2.06,
     "TechFilterRating": 75.0,
-    "news_sentiment_percent": 75.0,
+    "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
   {
@@ -2780,6 +2780,26 @@
     "social_sentiment_percent": null
   },
   {
+    "ticker": "VMC",
+    "name": "Vulcan Materials Company",
+    "marketCap": 38677356544,
+    "revenueGrowth": 0.144,
+    "debtToEquity": 56.296,
+    "trailingPE": 34.60047,
+    "momentum_2m": 0.002496141813213004,
+    "momentum_1w": 0.03849294458959607,
+    "FundamentalFilterRating": 66,
+    "price": 292.7200012207031,
+    "RSI (14)": 60.28,
+    "EMA (20)": 287.9,
+    "MACD (12,26,9)": -0.8563,
+    "MACD_Signal (12,26,9)": -1.3299,
+    "percent_change": 1.93,
+    "TechFilterRating": 100.0,
+    "news_sentiment_percent": 75.0,
+    "social_sentiment_percent": null
+  },
+  {
     "ticker": "GWW",
     "name": "W. W. Grainger",
     "marketCap": 45046013952,
@@ -2860,6 +2880,26 @@
     "social_sentiment_percent": null
   },
   {
+    "ticker": "WST",
+    "name": "West Pharmaceutical Services",
+    "marketCap": 20204587008,
+    "revenueGrowth": 0.077,
+    "debtToEquity": 9.93,
+    "trailingPE": 41.667656,
+    "momentum_2m": 0.15312581976767614,
+    "momentum_1w": 0.07957246299623622,
+    "FundamentalFilterRating": 66,
+    "price": 280.8399963378906,
+    "RSI (14)": 48.05,
+    "EMA (20)": 272.67,
+    "MACD (12,26,9)": -3.7839,
+    "MACD_Signal (12,26,9)": -4.8888,
+    "percent_change": 2.5,
+    "TechFilterRating": 100.0,
+    "news_sentiment_percent": 66.7,
+    "social_sentiment_percent": null
+  },
+  {
     "ticker": "WDC",
     "name": "Western Digital",
     "marketCap": 53273853952,
@@ -2876,6 +2916,26 @@
     "MACD_Signal (12,26,9)": 5.7912,
     "percent_change": 2.97,
     "TechFilterRating": 75.0,
+    "news_sentiment_percent": 66.7,
+    "social_sentiment_percent": null
+  },
+  {
+    "ticker": "WDAY",
+    "name": "Workday, Inc.",
+    "marketCap": 62395232256,
+    "revenueGrowth": 0.126,
+    "debtToEquity": 42.719,
+    "trailingPE": 99.021194,
+    "momentum_2m": 0.0209707853753216,
+    "momentum_1w": 0.03567631215003053,
+    "FundamentalFilterRating": 66,
+    "price": 233.69000244140625,
+    "RSI (14)": 51.44,
+    "EMA (20)": 228.68,
+    "MACD (12,26,9)": -2.5992,
+    "MACD_Signal (12,26,9)": -3.1821,
+    "percent_change": 3.11,
+    "TechFilterRating": 100.0,
     "news_sentiment_percent": 66.7,
     "social_sentiment_percent": null
   },
