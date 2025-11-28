@@ -75,6 +75,7 @@ jobs:
             git commit -m "auto: MarketScraper archive & HTML update [skip ci]"
             git push origin main
             echo "🚀 Changes committed & pushed"
+          fi
 
       # --- OPTIONAL BACKUP ---
       - name: Upload artifact (optional backup)
