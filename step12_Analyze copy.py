@@ -95,6 +95,7 @@ def run():
     HISTORY_DIR.mkdir(exist_ok=True)
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
+    # ⚡ Úprava filtra: súbory začínajú dátumom
     files = sorted(HISTORY_DIR.glob("????-??-??_??-??-??.json"))
     print(f"🔍 Načítaných súborov: {len(files)}")
 
@@ -115,6 +116,7 @@ def run():
             print(f"⏳ Analyzujem {t['ticker']} z {purchase_dt.strftime('%Y-%m-%d %H:%M:%S')} ...")
             res = analyze_trade(t, purchase_dt)
 
+            # iba zvyšujeme ban_counter pri skutočných ERROR
             if res.get("count_for_ban", False):
                 ban_counter += 1
                 print(f"⚠️ History error ({ban_counter}/{BAN_LIMIT})")
@@ -124,16 +126,14 @@ def run():
             else:
                 ban_counter = 0
 
-            # ✅ uloženie výsledku s novými trendami
+            # uloženie len potrebných polí + source file
             all_results.append({
                 "source_file": file.name,
                 "purchase_dt": res["purchase_dt"],
                 "ticker": res["ticker"],
                 "status": res["status"],
                 "hit_date": res["hit_date"],
-                "profit": res["profit"],
-                "market_trend": t.get("market_trend"),
-                "sector_trend": t.get("sector_trend")
+                "profit": res["profit"]
             })
 
             # Update stats
@@ -156,6 +156,7 @@ def run():
     print(f" - SL (Stop Loss): {stats['SL']}")
     print(f" - OPEN (stále otvorené): {stats['OPEN']}")
     print(f" - ERROR (neúspešné načítanie histórie): {stats['ERROR']}")
+
     print(f"\n💾 Výsledky uložené do {OUTPUT_FILE}")
 
 if __name__ == "__main__":

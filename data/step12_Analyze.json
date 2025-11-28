@@ -1,163 +1,13 @@
 [
   {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "LLY",
-    "status": "TP",
-    "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 52.48
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "HCA",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 24.05
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "REGN",
-    "status": "TP",
-    "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": 35.14
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "DHR",
-    "status": "TP",
-    "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 8.9
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "FANG",
-    "status": "SL",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": -4.46
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "MCK",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 39.98
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "BKR",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 1.22
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "JNJ",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 3.79
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "BIIB",
-    "status": "TP",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 6.72
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "UHS",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 11.4
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "IQV",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 10.87
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "CTRA",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.3
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "OKE",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 1.64
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "EW",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.89
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "MRK",
-    "status": "TP",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 3.8
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "PODD",
-    "status": "SL",
-    "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": -10.39
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "VRTX",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 9.84
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "INCY",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 5.07
-  },
-  {
-    "source_file": "2025-11-20_12-19-29.json",
-    "purchase_dt": "2025-11-20 12:19:29",
-    "ticker": "ELV",
-    "status": "SL",
-    "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": 3.92
-  },
-  {
     "source_file": "2025-11-20_12-50-55.json",
     "purchase_dt": "2025-11-20 12:50:55",
     "ticker": "LLY",
     "status": "TP",
     "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 52.48
+    "profit": 52.48,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -165,7 +15,9 @@
     "ticker": "HCA",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 24.05
+    "profit": 24.05,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -173,7 +25,9 @@
     "ticker": "FANG",
     "status": "SL",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": -4.46
+    "profit": -4.46,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -181,15 +35,19 @@
     "ticker": "DHR",
     "status": "TP",
     "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 8.9
+    "profit": 8.9,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
     "purchase_dt": "2025-11-20 12:50:55",
     "ticker": "MCK",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 40.34
+    "status": "TP",
+    "hit_date": "2025-11-26 00:00:00-05:00",
+    "profit": 42.62,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -197,7 +55,9 @@
     "ticker": "BKR",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.22
+    "profit": 1.05,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -205,7 +65,9 @@
     "ticker": "JNJ",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.78
+    "profit": 5.05,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -213,7 +75,9 @@
     "ticker": "REGN",
     "status": "TP",
     "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": 35.14
+    "profit": 35.14,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -221,7 +85,9 @@
     "ticker": "UHS",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 11.4
+    "profit": 11.4,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -229,7 +95,9 @@
     "ticker": "PODD",
     "status": "SL",
     "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": -10.39
+    "profit": -10.39,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -237,7 +105,9 @@
     "ticker": "OKE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.64
+    "profit": 2.06,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -245,7 +115,9 @@
     "ticker": "EW",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.82
+    "profit": 0.73,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -253,7 +125,9 @@
     "ticker": "IQV",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 10.87
+    "profit": 10.87,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -261,15 +135,19 @@
     "ticker": "MRK",
     "status": "TP",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 3.8
+    "profit": 3.8,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
     "purchase_dt": "2025-11-20 12:50:55",
     "ticker": "CTRA",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.3
+    "status": "TP",
+    "hit_date": "2025-11-26 00:00:00-05:00",
+    "profit": 0.77,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -277,7 +155,9 @@
     "ticker": "XOM",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -2.97
+    "profit": -2.58,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -285,7 +165,9 @@
     "ticker": "INCY",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 5.07
+    "profit": 5.07,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -293,7 +175,9 @@
     "ticker": "BIIB",
     "status": "TP",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 6.72
+    "profit": 6.72,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -301,7 +185,9 @@
     "ticker": "VRTX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 10.34
+    "profit": 11.14,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-20_12-50-55.json",
@@ -309,119 +195,9 @@
     "ticker": "ELV",
     "status": "SL",
     "hit_date": "2025-11-20 00:00:00-05:00",
-    "profit": 3.92
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "WMT",
-    "status": "SL",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": -3.21
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "REGN",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 29.48
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "FE",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.49
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "DHR",
-    "status": "TP",
-    "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 8.89
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "NEE",
-    "status": "SL",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": -1.95
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "DGX",
-    "status": "TP",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 5.63
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "WAT",
-    "status": "TP",
-    "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 15.14
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "PG",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.23
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "AEP",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 1.15
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "MDT",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 2.98
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "GEHC",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 2.99
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "IQV",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 10.86
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "UHS",
-    "status": "TP",
-    "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 11.27
-  },
-  {
-    "source_file": "2025-11-21_07-42-19.json",
-    "purchase_dt": "2025-11-21 07:42:19",
-    "ticker": "AMGN",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 6.29
+    "profit": 3.92,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -429,7 +205,9 @@
     "ticker": "FE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.49
+    "profit": 0.79,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -437,7 +215,9 @@
     "ticker": "REGN",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 29.48
+    "profit": 29.48,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -445,7 +225,9 @@
     "ticker": "NEE",
     "status": "SL",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": -1.95
+    "profit": -1.95,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -453,7 +235,9 @@
     "ticker": "DHR",
     "status": "TP",
     "hit_date": "2025-11-25 00:00:00-05:00",
-    "profit": 8.89
+    "profit": 8.89,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -461,7 +245,9 @@
     "ticker": "MDT",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 2.98
+    "profit": 2.98,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -469,7 +255,9 @@
     "ticker": "DGX",
     "status": "TP",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 5.63
+    "profit": 5.63,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -477,7 +265,9 @@
     "ticker": "GEHC",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 2.99
+    "profit": 2.99,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -485,7 +275,9 @@
     "ticker": "WMT",
     "status": "SL",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": -3.21
+    "profit": -3.21,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -493,7 +285,9 @@
     "ticker": "UHS",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 11.27
+    "profit": 11.27,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -501,7 +295,9 @@
     "ticker": "WAT",
     "status": "TP",
     "hit_date": "2025-11-21 00:00:00-05:00",
-    "profit": 15.14
+    "profit": 15.14,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -509,7 +305,9 @@
     "ticker": "PG",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.22
+    "profit": 0.06,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -517,7 +315,9 @@
     "ticker": "AEP",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.08
+    "profit": 1.82,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -525,7 +325,9 @@
     "ticker": "IQV",
     "status": "TP",
     "hit_date": "2025-11-24 00:00:00-05:00",
-    "profit": 10.86
+    "profit": 10.86,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
     "source_file": "2025-11-21_08-38-34.json",
@@ -533,166 +335,428 @@
     "ticker": "AMGN",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 6.57
+    "profit": 8.5,
+    "market_trend": "down",
+    "sector_trend": "neutral"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "IEX",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "DLTR",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.72
+    "profit": 0.76,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "CFG",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.09
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "MCK",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 4.63
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "AVGO",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 1.94
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "IVZ",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.05
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "DOV",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.26
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "ELV",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.92
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "GEHC",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.06
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "EXPD",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.6
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "CINF",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 0.29
-  },
-  {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
     "ticker": "FDX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.18
+    "profit": 0.33,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "YUM",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "GEHC",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.12
+    "profit": -0.41,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "GS",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 2.69,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "IEX",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": -0.83,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "GOOGL",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 2.48,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "D",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.54,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "IVZ",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": -0.13,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
     "ticker": "CTSH",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.32
+    "profit": -0.03,
+    "market_trend": "up",
+    "sector_trend": "neutral"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "AIZ",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "WFC",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.0
+    "profit": -0.23,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "WYNN",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 1.08,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "LNT",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.21,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "AMCR",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.01,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "BK",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.36,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "CNP",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.23,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "WEC",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.19,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "PEG",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.05,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
     "ticker": "BBY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.59
+    "profit": -1.65,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "V",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "TRGP",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.11
+    "profit": -1.2,
+    "market_trend": "up",
+    "sector_trend": "neutral"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "CMS",
+    "source_file": "2025-11-26_15-44-13.json",
+    "purchase_dt": "2025-11-26 15:44:13",
+    "ticker": "TSCO",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.05
+    "profit": -0.2,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "DD",
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "DLTR",
+    "status": "SL",
+    "hit_date": "2025-11-26 00:00:00-05:00",
+    "profit": -3.29,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "FDX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.19
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
-    "ticker": "STX",
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "GEHC",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.06
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
   },
   {
-    "source_file": "2025-11-26_14-32-49.json",
-    "purchase_dt": "2025-11-26 14:32:49",
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "GS",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "ELV",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "IEX",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "IVZ",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "ROK",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "ATO",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "CNP",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "C",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "CTSH",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
     "ticker": "NI",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.2
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "BBY",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "WEC",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "UPS",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "PEG",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "TROW",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "WFC",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-27_15-43-39.json",
+    "purchase_dt": "2025-11-27 15:43:39",
+    "ticker": "MCK",
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": 0.0,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-28_06-23-10.json",
+    "purchase_dt": "2025-11-28 06:23:10",
+    "ticker": "DLTR",
+    "status": "ERROR",
+    "hit_date": null,
+    "profit": null,
+    "market_trend": "up",
+    "sector_trend": "up"
+  },
+  {
+    "source_file": "2025-11-28_06-23-10.json",
+    "purchase_dt": "2025-11-28 06:23:10",
+    "ticker": "UPS",
+    "status": "ERROR",
+    "hit_date": null,
+    "profit": null,
+    "market_trend": "up",
+    "sector_trend": "up"
   }
 ]

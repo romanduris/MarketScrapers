@@ -24,6 +24,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      # --- STIAHNUTIE NAJNOVŠÍCH ZMIEN Z MAIN ---
+      - name: Pull latest changes from main
+        run: git pull origin main
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -69,9 +73,8 @@ jobs:
             echo "📭 No changes to commit."
           else
             git commit -m "auto: MarketScraper archive & HTML update [skip ci]"
-            git push
+            git push origin main
             echo "🚀 Changes committed & pushed"
-          fi
 
       # --- OPTIONAL BACKUP ---
       - name: Upload artifact (optional backup)

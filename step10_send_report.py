@@ -212,7 +212,7 @@ def send_email():
     <html>
     <body style="font-family:Arial; font-size:14px; color:#333;">
         <p>Dear Trader,</p>
-        <p>✅ Your daily AI Stock Report has been generated : 📅 <b>{now_str}</b></p>
+        <p>✅ AI Stock Report has been generated: 📅 <b>{now_str}</b></p>
         <hr>
         {market_html}
         {stats_html}
@@ -227,7 +227,7 @@ def send_email():
 
     # ---- Send ----
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = "📊 Daily AI Stock Report – Top Picks Inside"
+    msg["Subject"] = "📊 Your Daily Stock Report – Top Picks"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECEIVER_EMAIL
     msg.attach(MIMEText(email_html, "html", "utf-8"))
