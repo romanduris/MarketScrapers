@@ -95,6 +95,7 @@ def run():
     HISTORY_DIR.mkdir(exist_ok=True)
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
+    # ⚡ Úprava filtra: súbory začínajú dátumom
     files = sorted(HISTORY_DIR.glob("????-??-??_??-??-??.json"))
     print(f"🔍 Načítaných súborov: {len(files)}")
 
@@ -124,7 +125,7 @@ def run():
             else:
                 ban_counter = 0
 
-            # ✅ uloženie výsledku s novými trendami
+            # ⚡ NOVÉ: ukladáme aj market_trend, sector_trend a price
             all_results.append({
                 "source_file": file.name,
                 "purchase_dt": res["purchase_dt"],
@@ -133,10 +134,10 @@ def run():
                 "hit_date": res["hit_date"],
                 "profit": res["profit"],
                 "market_trend": t.get("market_trend"),
-                "sector_trend": t.get("sector_trend")
+                "sector_trend": t.get("sector_trend"),
+                "price": t.get("price")
             })
 
-            # Update stats
             if res["status"] in stats:
                 stats[res["status"]] += 1
             else:
@@ -148,7 +149,7 @@ def run():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
-    # 🔹 Vypísanie štatistiky na konzolu
+    # 🔹 Štatistika
     print("\n📊 Štatistika analyzovaných obchodov:")
     print(f" - Počet analyzovaných súborov: {len(files)}")
     print(f" - Celkový počet obchodov: {len(all_results)}")
@@ -156,6 +157,7 @@ def run():
     print(f" - SL (Stop Loss): {stats['SL']}")
     print(f" - OPEN (stále otvorené): {stats['OPEN']}")
     print(f" - ERROR (neúspešné načítanie histórie): {stats['ERROR']}")
+
     print(f"\n💾 Výsledky uložené do {OUTPUT_FILE}")
 
 if __name__ == "__main__":

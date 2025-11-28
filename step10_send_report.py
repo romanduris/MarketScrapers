@@ -10,6 +10,7 @@ import time
 
 # ---------- SETTINGS ----------
 SENDER_EMAIL = "Rodu.Market.Scraper@gmail.com"
+alias_name = "RODU Market Scraper"  # alebo akýkoľvek názov chceš
 RECEIVER_EMAIL = "roman.duris@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
@@ -212,7 +213,7 @@ def send_email():
     <html>
     <body style="font-family:Arial; font-size:14px; color:#333;">
         <p>Dear Trader,</p>
-        <p>✅ AI Stock Report has been generated: 📅 <b>{now_str}</b></p>
+        <p>✅ Stock Report has been generated: 📅 <b>{now_str}</b></p>
         <hr>
         {market_html}
         {stats_html}
@@ -228,7 +229,7 @@ def send_email():
     # ---- Send ----
     msg = MIMEMultipart("alternative")
     msg["Subject"] = "📊 Your Daily Stock Report – Top Picks"
-    msg["From"] = SENDER_EMAIL
+    msg["From"] = f"{alias_name} <{SENDER_EMAIL}>"
     msg["To"] = RECEIVER_EMAIL
     msg.attach(MIMEText(email_html, "html", "utf-8"))
 
