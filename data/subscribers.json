@@ -1,0 +1,30 @@
+[
+    {
+        "email": "roman.duris@gmail.com",
+        "name": "Roman Duris",
+        "active": true,
+        "plan": "VIP",
+        "created": "2025-01-01"
+    },
+    {
+        "email": "ismaroik@gmail.com",
+        "name": "Ismaroik",
+        "active": true,
+        "plan": "EA",
+        "created": "2025-01-10"
+    },
+    {
+        "email": "info.rodus.art@gmail.com",
+        "name": "RodusArt",
+        "active": false,
+        "plan": "Demo",
+        "created": "Demo"
+    }
+      {
+        "email": "rodu.market.scraper@gmail.com",
+        "name": "Scraper",
+        "active": false,
+        "plan": "Premium",
+        "created": "2025-01-15"
+    }
+]
