@@ -16,14 +16,14 @@
     {
         "email": "info.rodus.art@gmail.com",
         "name": "RodusArt",
-        "active": false,
+        "active": true,
         "plan": "Demo",
         "created": "Demo"
-    }
+    },
       {
         "email": "rodu.market.scraper@gmail.com",
         "name": "Scraper",
-        "active": false,
+        "active": true,
         "plan": "Premium",
         "created": "2025-01-15"
     }
