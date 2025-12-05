@@ -8,7 +8,7 @@
     {
         "email": "aphex@tutamail.com",
         "name": "Igor",
-        "active": false,
+        "active": true,
         "plan": "EA"
     },
     {
@@ -20,7 +20,7 @@
     {
         "email": "info.rodus.art@gmail.com",
         "name": "RodusArt",
-        "active": true,
+        "active": false,
         "plan": "EA"
     },
       {
