@@ -27,12 +27,12 @@
         "email": "info.rodus.art@gmail.com",
         "name": "RodusArt",
         "active": false,
-        "plan": "EA"
+        "plan": "PREMIUM"
     },
       {
         "email": "rodu.market.scraper@gmail.com",
         "name": "Scraper",
-        "active": false,
-        "plan": "PREMIUM"
+        "active": true,
+        "plan": "EA"
     }
 ]
