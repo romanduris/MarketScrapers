@@ -8,7 +8,9 @@ def compute_sl_tp(stock):
     price = stock.get("price")
     ema20 = stock.get("EMA (20)")
     rsi = stock.get("RSI (14)")
-    momentum2m = stock.get("momentum_2m")
+
+    # Ak momentum chýba → nastavíme na 0 (žiadny rast)
+    momentum2m = stock.get("momentum_2m") or 0
 
     # --- STOP LOSS ---
     sl_ema_buffer = ema20 * 0.98                # 2% pod EMA
@@ -28,6 +30,7 @@ def compute_sl_tp(stock):
     TP = (tp_rsi + tp_mom) / 2
 
     return SL, TP
+
 
 def compute_sl_tp_10e(price, SL, TP):
     fraction = 10 / price
@@ -57,9 +60,7 @@ for stock in stocks:
     stock["SL10"] = round(SL10, 2)
     stock["TP10"] = round(TP10, 2)
 
-    # --- ZACHOVANIE NOVÝCH FIELDOV ---
-    # Nie je potrebné nič meniť, všetky polia z AIAnalyze (OverallRating, AIScore, AIComment, AITicker, market/sector info) zostanú
-    # Skript ich automaticky neprepíše, len pridá SL/TP
+    # Ostatné polia zostávajú bezo zmeny (AI ratingy atď.)
 
 Path("data").mkdir(exist_ok=True)
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
