@@ -8,19 +8,19 @@
     {
         "email": "aphex@tutamail.com",
         "name": "Igor",
-        "active": true,
+        "active": false,
         "plan": "EA"
     },
     {
         "email": "martin.pokryvka@gmail.com",
         "name": "Martin",
-        "active": true,
+        "active": false,
         "plan": "EA"
     },
     {
         "email": "viktor.kvapil@gmail.com",
         "name": "Viktor",
-        "active": true,
+        "active": false,
         "plan": "EA"
     },
     {

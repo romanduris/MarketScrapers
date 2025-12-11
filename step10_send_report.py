@@ -20,8 +20,7 @@ ANALYZE_LINK = "https://romanduris.github.io/MarketScrapers/ai_analyze.html"
 
 YAHOO_FINANCE_URL = "https://finance.yahoo.com/quote/{ticker}"
 
-# ---------- Market/sector config ----------
-MARKET_INDEX = "^GSPC"  # S&P 500
+MARKET_INDEX = "^GSPC"
 
 SECTOR_ETF = {
     "Technology": "XLK",
@@ -42,7 +41,7 @@ SECTOR_ETF = {
 
 THROTTLE_SECONDS = 0.25
 
-# ---------- Helper: count tickers in a file ----------
+# ---------- Helper functions ----------
 def count_tickers(path):
     if not path.exists():
         return 0
@@ -50,7 +49,6 @@ def count_tickers(path):
         data = json.load(f)
         return len(data)
 
-# ---------- Helper: colorizers ----------
 def colorize_rating(value):
     try:
         value = float(value)
@@ -78,9 +76,8 @@ def colorize_trend(trend):
         return "<b style='color:#2ecc71'>▲ UP</b>"
     elif t == "down":
         return "<b style='color:#e74c3c'>▼ DOWN</b>"
-    return f"<b style='color:#f39c12'>→ {trend.strip().upper()}</b>"
+    return f"<b style='color:#f39c12'>→ NEUTRAL</b>"
 
-# ---------- Helper: Top 5 ----------
 def extract_top5_from_json():
     if not INPUT_FILE.exists():
         return []
@@ -88,7 +85,6 @@ def extract_top5_from_json():
         data = json.load(f)
     return sorted(data, key=lambda x: x.get("AIScore", 0), reverse=True)[:5]
 
-# ---------- Market Overview helpers ----------
 def throttled_sleep():
     time.sleep(THROTTLE_SECONDS)
 
@@ -136,15 +132,14 @@ def generate_market_overview():
     colors = {"up": "#2ecc71", "down": "#e74c3c", "neutral": "#f39c12"}
 
     return f"""
-    <h3>📈 Market Overview</h3>
-    <p>
-    S&P 500: <b style='color:{colors[market_trend]}'>{arrows[market_trend]} {market_trend.upper()}</b><br>
-    Sectors: 🟩 UP: {up_count} , 🟨 NEUTRAL: {neutral_count} , 🟥 DOWN: {down_count}
-    </p>
-    <hr>
+    <div style="padding:10px; background:#f9f9f9; border-radius:4px; margin-bottom:10px;">
+        <h3 style="color:#2c3e50; margin-top:0;">📈 Market Overview</h3>
+        <p>
+        S&P 500: <b style='color:{colors[market_trend]}'>{arrows[market_trend]} {market_trend.upper()}</b><br>
+        Sectors: 🟩 UP: {up_count} , 🟨 NEUTRAL: {neutral_count} , 🟥 DOWN: {down_count}
+    </div>
     """
 
-# ---------- Helper: load subscribers ----------
 def load_subscribers():
     if not SUBSCRIBER_FILE.exists():
         print("⚠️ subscribers.json not found.")
@@ -170,22 +165,22 @@ def send_email():
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     stats_html = f"""
-        <h3>📊 MarketScraper Today's Pipeline Summary</h3>
+    <div style="padding:10px; background:#f9f9f9; border-radius:4px; margin-bottom:10px;">
+        <h3 style="color:#2c3e50; margin-top:0;">📊 Today's Pipeline Summary</h3>
         <ul>
-            <li><b>Raw tickers:</b> {raw}</li>
-            <li><b>Fundamental Analysis:</b> {fundamental} 
-                <span style="color:#c0392b;">(filtered out: {removed_fundamental})</span></li>
-            <li><b>Technical Analysis:</b> {technical}
-                <span style="color:#c0392b;">(filtered out: {removed_technical})</span></li>
-            <li><b>Sentiment Filter:</b> {sentiment}
-                <span style="color:#c0392b;">(filtered out: {removed_sentiment})</span></li>
+            <li>Analyzed: <b>{raw}</b></li>
+            <li>Fundamentals: <b>{fundamental}</b>
+                <span style="color:#e74c3c;">(filtered: {removed_fundamental})</span></li>
+            <li>Technicals: <b>{technical}</b>
+                <span style="color:#e74c3c;">(filtered: {removed_technical})</span></li>
+            <li>Sentiments: <b>{sentiment}</b>
+                <span style="color:#e74c3c;">(filtered: {removed_sentiment})</span></li>
         </ul>
-        <p>The remaining {sentiment} tickers were analyzed using <b>advanced AI ranking</b>, from which the <b>Top 20</b> were selected — and below you will find today's <b>Top 5</b>.</p>
-        <hr>
+        <p>The remaining {sentiment} tickers were analyzed using <b>advanced AI ranking</b>, from which the <b>Top 20</b> were selected — and below you will find today's <b>Top 5</b>.
+    </div>
     """
 
     market_html = generate_market_overview()
-
     subscribers = load_subscribers()
     if not subscribers:
         print("⚠️ No active subscribers found. Aborting email send.")
@@ -201,69 +196,76 @@ def send_email():
                 recipient_name = sub.get("name", "").strip() or "Trader"
                 plan = sub.get("plan", "").upper()
 
-                # Personalizované oslovenie
-                email_html = f"<html><body style='font-family:Arial; font-size:14px; color:#333;'>"
-                email_html += f"<p>Dear {recipient_name},</p><p>✅ Stock Report has been generated: 📅 <b>{now_str}</b></p><hr>"
+                email_html = f"""
+                <html>
+                <body style="font-family:Arial, sans-serif; font-size:14px; color:#333; margin:0; padding:0;">
+                <div style="max-width:600px; margin:auto; padding:10px;">
+                    <p>Dear {recipient_name},</p>
+                    <p>Report has been generated: <b>{now_str}</b></p>
+                    <p>You received this email based on your subscription to 
+                    <a href='https://roduanalytics.gumroad.com/l/RodusDailyStockPicks' target='_blank' style="color:#1a3d7c;">🚀 Rodu’s Daily Stock Picks</a> on Gumroad.</p>
+                    <hr style="border:0; border-top:1px solid #ddd;">
+                    {market_html}
+                    <hr style="border:0; border-top:1px solid #ddd;">
+                    {stats_html}
+                    <hr style="border:0; border-top:1px solid #ddd;">
+                """
 
-                # Základný obsah pre všetkých
-                email_html += market_html + stats_html
-
-                # --- Extra links a hlášky podľa plánu ---
                 if plan == "VIP":
-                    email_html += f'<p>🔗 Full report: <a href="{REPORT_LINK}" target="_blank">{REPORT_LINK}</a></p>'
-                    email_html += f'<p>🔗 Analysis of all tickers: <a href="{ANALYZE_LINK}" target="_blank">{ANALYZE_LINK}</a></p>'
-                elif plan == "PREMIUM":
-                    email_html += f'<p>🔗 Full report: <a href="{REPORT_LINK}" target="_blank">{REPORT_LINK}</a></p>'
-                    email_html += '<p>⚠️ Your subscription level does not allow backets access</p>'
-                elif plan == "EA":
-                    email_html += f'<p>🔗 Full report: <a href="{REPORT_LINK}" target="_blank">{REPORT_LINK}</a></p>'
-                    email_html += '<p>⚠️ Your subscription level does not allow backets access</p>'
+                    email_html += f'<p>🔗 Full report: <a href="{REPORT_LINK}" target="_blank" style="color:#1a3d7c;">{REPORT_LINK}</a></p>'
+                    email_html += f'<p>🔗 Analysis: <a href="{ANALYZE_LINK}" target="_blank" style="color:#1a3d7c;">{ANALYZE_LINK}</a></p><p></p>'
+                elif plan in ["PREMIUM","EA"]:
+                    email_html += f'<p>🔗 Full report: <a href="{REPORT_LINK}" target="_blank" style="color:#1a3d7c;">{REPORT_LINK}</a></p>'
+                    email_html += '<p>⚠️ Your subscription level does not allow backets access</p><p></p>'
                 elif plan == "DEMO":
                     email_html += '<p>⚠️ Your subscription level does not allow full report access</p>'
-                    email_html += '<p>⚠️ Your subscription level does not allow backets access</p>'
+                    email_html += '<p>⚠️ Your subscription level does not allow backets access</p><p></p>'
 
-                # --- Top 5 stocks ---
                 summary_html = ""
                 if not top5:
                     summary_html = "<p>⚠️ Failed to load Top 5 stocks.</p>"
                 else:
-                    summary_html = "<h3>🔥 Top 5 Stocks selected</h3>"
+                    summary_html = '<hr style="border:0; border-top:1px solid #ddd;">'
+                    summary_html += "<h3 style='color:#2c3e50;'>🔥 Top 5 Stocks selected</h3>"
                     for stock in top5:
                         yahoo_link = YAHOO_FINANCE_URL.format(ticker=stock['ticker'])
+                        percent_color = "#2ecc71" if stock.get("percent_change",0)>=0 else "#e74c3c"
                         summary_html += f"""
-                        <div style="margin-bottom:18px; padding:12px; border-left:4px solid #2c3e50;">
-                            <div style="font-size:15px; margin-bottom:6px;">
+                        <div style="margin-bottom:16px; padding:10px; border-left:4px solid #2ecc71; background-color:#f9f9f9; border-radius:4px;">
+                            <div style="font-size:15px; margin-bottom:4px;">
                                 <b style="color:#2c3e50;">{stock['ticker']}</b> – 
-                                <a href="{yahoo_link}" target="_blank" style="color:#1a3d7c; text-decoration:none;">
-                                    {stock['name']}
-                                </a>
+                                <a href="{yahoo_link}" target="_blank" style="color:#1a3d7c; text-decoration:none;">{stock['name']}</a>
                             </div>
-                            Price: <b>{round(float(stock['price']),1)}$</b><br>
+                            <div style="font-size:13px; color:#555; margin-bottom:4px;">
+                                Sector: {stock.get('sector','N/A')}, Trend: {colorize_trend(stock.get('sector_trend'))}
+                            </div>
+                            <div style="font-size:14px; margin-bottom:4px;">
+                                Price: <b>{round(float(stock['price']),1)}$</b> 
+                                (<span style="color:{percent_color};">{round(stock.get('percent_change',0),2)}%</span>)
+                            </div>
                         """
-                        # SL/TP iba pre VIP a EA
                         if plan in ["VIP", "EA"]:
-                            summary_html += f"SL: <b>{stock['SL']}$</b>, TP: <b>{stock['TP']}$</b><br>"
+                            summary_html += f"<div>SL: <b>{stock['SL']}$</b> · TP: <b>{stock['TP']}$</b></div>"
 
                         summary_html += f"""
-                            AI Score: {colorize_rating(stock['AIScore'])}, Overall: {colorize_rating(stock['OverallRating'])}, Market: {colorize_trend(stock.get('market_trend'))}, Sector: {colorize_trend(stock.get('sector_trend'))}<br><br>
-                            <i>{stock['AITicker']}</i><br><br>
-                            <i>{stock['AIComment']}</i>
+                            <div>AI Score: {colorize_rating(stock['AIScore'])} · Overall: {colorize_rating(stock['OverallRating'])}</div><br>
+                            <div style="font-size:14px; color:#555; line-height:1.4;">
+                                {stock.get('AITicker','')}<br>
+                                {stock.get('AIComment','')}
+                            </div>
                         </div>
                         """
 
                 email_html += summary_html
-
-                # --- Disclaimer ---
                 email_html += """
-                <hr>
+                <hr style="border:0; border-top:1px solid #ddd;">
                 <p><b>LEGAL & SAFE DISCLAIMER</b><br>
                 This product is provided for informational and educational purposes only. It does not constitute financial advice, investment recommendations, or an offer to buy or sell any securities.<br><br>
                 You are solely responsible for your own trading and investment decisions. Past performance is not indicative of future results. The author/provider assumes no liability for losses, risks, or consequences arising from the use of this information. Trading and investing involve the risk of capital loss.
                 </p>
+                <p style='font-size:12px; color:#777; text-align:center;'>Generated by the MarketScraper system 🤖</p>
+                </div></body></html>
                 """
-
-                # --- Footer ---
-                email_html += "<p style='font-size:12px; color:#777;'>Automatically generated by the MarketScraper system 🤖</p></body></html>"
 
                 msg = MIMEMultipart("alternative")
                 msg["Subject"] = "📊 Your Daily Stock Report – Top Picks"
@@ -277,7 +279,7 @@ def send_email():
                 except Exception as e:
                     print(f"❌ Error sending to {recipient_email}: {e}")
 
-                time.sleep(1)  # pauza medzi emailami
+                time.sleep(1)
 
     except Exception as e:
         print(f"❌ Email sending error: {e}")
