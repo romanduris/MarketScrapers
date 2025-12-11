@@ -12,6 +12,12 @@
         "plan": "EA"
     },
     {
+        "email": "martin.pokryvka@gmail.com",
+        "name": "Martin",
+        "active": true,
+        "plan": "EA"
+    },
+    {
         "email": "viktor.kvapil@gmail.com",
         "name": "Viktor",
         "active": true,
