@@ -28,6 +28,21 @@ r = requests.post(
 cst = r.headers["CST"]
 xsec = r.headers["X-SECURITY-TOKEN"]
 
+# --- Výpis detailov účtu na začiatku ---
+r_acc = requests.get(
+    BASE + "/accounts",
+    headers={"X-CAP-API-KEY": API_KEY, "CST": cst, "X-SECURITY-TOKEN": xsec}
+)
+accounts = r_acc.json().get("accounts", [])
+print("\n--- Account Information ---")
+for acc in accounts:
+    print(f"Account ID: {acc.get('accountId')}")
+    print(f"Account Type: {acc.get('accountType')}")
+    print(f"Currency: {acc.get('currency')}")
+    print(f"Balance: {acc.get('balance')}")
+    print("---")
+print("\n--- Checking tickers ---\n")
+
 # --- Načítanie všetkých markets ---
 r = requests.get(
     BASE + "/markets",
@@ -37,7 +52,6 @@ markets = r.json().get("markets", [])
 
 # --- Výpis EPIC pre tickery zo súboru ---
 print("Ticker | Name | EPIC | Status | Offer Price")
-
 for ticker in tickers_to_check:
     found = False
     for m in markets:
