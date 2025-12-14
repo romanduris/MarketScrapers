@@ -1,0 +1,44 @@
+[
+    {
+        "email": "roman.duris@gmail.com",
+        "name": "Roman",
+        "active": true,
+        "plan": "VIP"
+    },
+    {
+        "email": "aphex@tutamail.com",
+        "name": "Igor",
+        "active": true,
+        "plan": "EA"
+    },
+    {
+        "email": "martin.pokryvka@gmail.com",
+        "name": "Martin",
+        "active": true,
+        "plan": "EA"
+    },
+    {
+        "email": "viktor.kvapil@gmail.com",
+        "name": "Viktor",
+        "active": true,
+        "plan": "EA"
+    },
+    {
+        "email": "ismaroik@gmail.com",
+        "name": "Ismaroik",
+        "active": false,
+        "plan": "DEMO"
+    },
+    {
+        "email": "info.rodus.art@gmail.com",
+        "name": "RodusArt",
+        "active": false,
+        "plan": "PREMIUM"
+    },
+      {
+        "email": "rodu.market.scraper@gmail.com",
+        "name": "Roman",
+        "active": true,
+        "plan": "EA"
+    }
+]

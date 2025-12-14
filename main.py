@@ -22,7 +22,7 @@ pipeline_steps = [
     "step10_send_report.py",
     "step11_Archive.py",
     "step12_Analyze.py",
-    "step13_AnalyzeHtml.py"
+    "step13_AnalyzeHtml.py",
     "step15_CapitalOpen.py"
 ]
 
