@@ -5,8 +5,8 @@ from pathlib import Path
 INPUT_FILE = "data/step6_MarketInfo.json"
 OUTPUT_FILE = "data/step6_TopX.json"
 
-# 🆕 Prepínač — počet TOP akcií, ktoré ostanú vo výsledku
-TOP_X = 20  # default môžeš meniť
+# Počet TOP akcií, ktoré ostanú vo výsledku
+TOP_X = 20
 
 # ---------- LOAD ----------
 if not Path(INPUT_FILE).exists():
@@ -22,7 +22,7 @@ total_stocks = len(stocks)
 def calculate_overall(stock):
     """
     OverallRating = priemer(Fundamental, Tech, news_sentiment)
-    Trend multiplier sa NEPOUŽÍVA
+    Trend sa NEPOUŽÍVA ani ako filter, ani ako multiplier
     Výsledok je obmedzený na 100.
     """
     ratings = []
@@ -39,20 +39,16 @@ def calculate_overall(stock):
     else:
         base_score = sum(ratings) / len(ratings)
 
-    overall = round(min(100, base_score), 1)
-    return overall
+    return round(min(100, base_score), 1)
 
 # Vypočítame OverallRating
 for stock in stocks:
     stock["OverallRating"] = calculate_overall(stock)
 
-# ---------- FILTER NEGATIVE SECTOR TREND ----------
-filtered_stocks = [s for s in stocks if s.get("sector_trend") != "down"]
+# ---------- SORT (bez filtrovania trendu) ----------
+stocks_sorted = sorted(stocks, key=lambda x: x["OverallRating"], reverse=True)
 
-# ---------- SORT ----------
-stocks_sorted = sorted(filtered_stocks, key=lambda x: x["OverallRating"], reverse=True)
-
-# 🆕 Apply TOP_X cutoff
+# ---------- APPLY TOP_X ----------
 stocks_sorted = stocks_sorted[:TOP_X]
 
 # ---------- SAVE ----------
@@ -61,9 +57,9 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(stocks_sorted, f, indent=2, ensure_ascii=False)
 
 # ---------- SUMMARY ----------
-print("\n========== STEP 7 SUMMARY (MOD) ==========")
+print("\n========== STEP 7 SUMMARY ==========")
 print(f"📊 Vstupný počet akcií: {total_stocks}")
-print(f"📊 Počet akcií po odfiltrovaní negatívneho sektoru: {len(filtered_stocks)}")
-print(f"🔥 Zobrazených TOP {TOP_X} podľa OverallRating")
+print(f"📊 Zoradené podľa OverallRating (bez trend filtrov)")
+print(f"🔥 Zobrazených TOP {TOP_X}")
 print(f"💾 Výstup uložený do {OUTPUT_FILE}")
-print("===========================================\n")
+print("====================================\n")
