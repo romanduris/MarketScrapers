@@ -56,7 +56,6 @@ def analyze_trade(trade, purchase_dt):
     tp = trade["TP"]
 
     hist = safe_fetch_history(ticker, purchase_dt)
-
     if hist is None or hist.empty:
         return {
             "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
@@ -72,7 +71,6 @@ def analyze_trade(trade, purchase_dt):
     # =========================
     # 1–MAX_HOLD_DAYS obchodný deň: SL / TP
     # =========================
-
     for day_idx, (idx, row) in enumerate(hist.iterrows()):
         if day_idx >= MAX_HOLD_DAYS:
             break
@@ -80,7 +78,6 @@ def analyze_trade(trade, purchase_dt):
         low = row["Low"]
         high = row["High"]
 
-        # SL má prioritu
         if low <= sl:
             profit = sl - entry_price
             return {
@@ -102,14 +99,12 @@ def analyze_trade(trade, purchase_dt):
             }
 
     # =========================
-    # OPEN alebo TIME_EXIT podľa dostupných dát
+    # OPEN počas dní 1–10
     # =========================
-
     if len(hist) <= MAX_HOLD_DAYS:
         last_row = hist.iloc[-1]
         current_price = last_row["Close"]
         profit = current_price - entry_price
-
         status = "OPEN" if len(hist) < MAX_HOLD_DAYS else "TIME_EXIT"
 
         return {
@@ -121,22 +116,18 @@ def analyze_trade(trade, purchase_dt):
         }
 
     # =========================
-    # TIME_EXIT – 11. deň (MAX_HOLD_DAYS+1) alebo posledný dostupný deň
+    # TIME_EXIT – 11. deň (MAX_HOLD_DAYS+1)
+    # Profit = Open cena 11. dňa – Entry Price
     # =========================
-    if len(hist) > MAX_HOLD_DAYS:
-        exit_row = hist.iloc[MAX_HOLD_DAYS]  # 11. deň (0-based)
-    else:
-        exit_row = hist.iloc[-1]  # posledný dostupný deň
-
-    exit_price = exit_row["Close"]
-    exit_idx = exit_row.name
-    profit = exit_price - entry_price
+    exit_row = hist.iloc[MAX_HOLD_DAYS]  # 11. deň (0-based)
+    exit_open_price = exit_row["Open"]
+    profit = exit_open_price - entry_price
 
     return {
         "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
         "ticker": ticker,
         "status": "TIME_EXIT",
-        "hit_date": str(exit_idx),
+        "hit_date": str(exit_row.name),
         "profit": round(profit, 2)
     }
 
