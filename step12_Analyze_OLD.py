@@ -6,11 +6,9 @@ import time
 import re
 
 HISTORY_DIR = Path("history")
-OUTPUT_FILE = Path("data/step12_Analyz2.json")
-
+OUTPUT_FILE = Path("data/step12_Analyze.json")
 THROTTLE_SECONDS = 0.25
 BAN_LIMIT = 3
-MAX_DAYS = 5  # max počet obchodných dní
 
 def throttled_sleep():
     time.sleep(THROTTLE_SECONDS)
@@ -37,7 +35,6 @@ def analyze_trade(trade, purchase_dt):
     ticker = trade["ticker"]
     sl = trade.get("SL")
     tp = trade.get("TP")
-    entry_price = trade["price"]
 
     if purchase_dt > datetime.now():
         return {
@@ -60,15 +57,12 @@ def analyze_trade(trade, purchase_dt):
             "count_for_ban": True
         }
 
-    # berieme len prvých MAX_DAYS obchodných dní
-    hist_limited = hist.head(MAX_DAYS)
-
-    for idx, row in hist_limited.iterrows():
+    for idx, row in hist.iterrows():
         low = row["Low"]
         high = row["High"]
 
         if low <= sl:
-            profit = sl - entry_price
+            profit = sl - trade["price"]
             return {
                 "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
                 "ticker": ticker,
@@ -78,7 +72,7 @@ def analyze_trade(trade, purchase_dt):
             }
 
         if high >= tp:
-            profit = tp - entry_price
+            profit = tp - trade["price"]
             return {
                 "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
                 "ticker": ticker,
@@ -87,16 +81,13 @@ def analyze_trade(trade, purchase_dt):
                 "profit": round(profit, 2)
             }
 
-    # ⏱️ TIME EXIT na 5. deň – polovica obchodného dňa
-    last_day = hist_limited.iloc[-1]
-    mid_price = (last_day["High"] + last_day["Low"]) / 2
-    profit = mid_price - entry_price
-
+    last_price = hist["Close"].iloc[-1]
+    profit = last_price - trade["price"]
     return {
         "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
         "ticker": ticker,
-        "status": "TIME_EXIT",
-        "hit_date": str(hist_limited.index[-1]),
+        "status": "OPEN",
+        "hit_date": None,
         "profit": round(profit, 2)
     }
 
@@ -104,12 +95,13 @@ def run():
     HISTORY_DIR.mkdir(exist_ok=True)
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
+    # ⚡ Úprava filtra: súbory začínajú dátumom
     files = sorted(HISTORY_DIR.glob("????-??-??_??-??-??.json"))
     print(f"🔍 Načítaných súborov: {len(files)}")
 
     all_results = []
     ban_counter = 0
-    stats = {"TP": 0, "SL": 0, "OPEN": 0, "ERROR": 0, "TIME_EXIT": 0}
+    stats = {"TP": 0, "SL": 0, "OPEN": 0, "ERROR": 0}
 
     for file in files:
         with open(file, "r", encoding="utf-8") as f:
@@ -133,6 +125,7 @@ def run():
             else:
                 ban_counter = 0
 
+            # ⚡ NOVÉ: ukladáme aj market_trend, sector_trend a price
             all_results.append({
                 "source_file": file.name,
                 "purchase_dt": res["purchase_dt"],
@@ -156,13 +149,14 @@ def run():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
 
+    # 🔹 Štatistika
     print("\n📊 Štatistika analyzovaných obchodov:")
     print(f" - Počet analyzovaných súborov: {len(files)}")
     print(f" - Celkový počet obchodov: {len(all_results)}")
-    print(f" - TP: {stats['TP']}")
-    print(f" - SL: {stats['SL']}")
-    print(f" - TIME_EXIT (5 dní): {stats['TIME_EXIT']}")
-    print(f" - ERROR: {stats['ERROR']}")
+    print(f" - TP (Take Profit): {stats['TP']}")
+    print(f" - SL (Stop Loss): {stats['SL']}")
+    print(f" - OPEN (stále otvorené): {stats['OPEN']}")
+    print(f" - ERROR (neúspešné načítanie histórie): {stats['ERROR']}")
 
     print(f"\n💾 Výsledky uložené do {OUTPUT_FILE}")
 

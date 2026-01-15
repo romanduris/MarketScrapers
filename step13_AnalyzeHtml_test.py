@@ -3,8 +3,8 @@ from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
-INPUT_FILE = "data/step12_Analyz2.json"
-OUTPUT_FILE = Path("docs/ai_analyze2.html")
+INPUT_FILE = "data/step12_Analyze.json"
+OUTPUT_FILE = Path("docs/ai_analyze.html")
 OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
 # ---------- načítanie dát ----------
@@ -54,18 +54,13 @@ th {{ background-color: #34495e; color: #fff; }}
 .red {{ color: #e74c3c; font-weight: bold; }}
 .orange {{ color: #f39c12; font-weight: bold; }}
 .blue {{ color: #3498db; font-weight: bold; }}
-.black {{ color: #000000; font-weight: bold; }}
 .small {{ font-size: 10px; color: #555; }}
 hr {{ border: 0; border-top: 1px solid #ccc; margin: 4px 0; }}
 </style>
 </head>
 <body>
-<h2>📊 Trade Profit Analysis Report (AI ANALYZE 2) - {now_str}</h2>
-<p>
-Oranžová = OPEN, zelená = TP, červená = SL, <b>čierna = TIME_EXIT</b>.
-Na konci každého stĺpca je súčet uzavretých obchodov (TP + SL + TIME_EXIT),
-investícia a percento profitu.
-</p>
+<h2>📊 Trade Profit Analysis Report - {now_str}</h2>
+<p>Tento report zobrazuje profit pre jednotlivé obchody podľa dátumu kúpy. Oranžová = otvorený obchod, zelená = TP, červená = SL. Na konci každého stĺpca je súčet uzavretých obchodov (TP + SL) a investície s percentom profitu.</p>
 <table>
 <tr>
 """
@@ -85,7 +80,7 @@ html += "</tr>\n<tr>"
 # ---------- 3. riadok hlavičky: market trend ----------
 for dt in dates:
     trades_for_date = columns[dt]
-    market_trend = trades_for_date[0].get("market_trend", "neutral")
+    market_trend = trades_for_date[0].get("market_trend", "neutral")  # prvý trade z toho dátumu
     html += f"<th>{colorize_trend(market_trend)}</th>"
 html += "</tr>\n<tr>"
 
@@ -95,35 +90,19 @@ for dt in dates:
     col_html = ""
     sum_profit = 0
     sum_invest = 0
-
     for t in column_trades:
         profit = t.get("profit", 0)
         status = t.get("status", "OPEN")
         price = t.get("price", 0)
-
         sum_invest += price
-
-        if status == "OPEN":
-            color_class = "orange"
-        elif status == "TP":
-            color_class = "green"
-        elif status == "SL":
-            color_class = "red"
-        elif status == "TIME_EXIT":
-            color_class = "black"
-        else:
-            color_class = "blue"
-
+        color_class = "orange" if status=="OPEN" else ("green" if status=="TP" else "red")
         col_html += f"<div class='{color_class}'>{profit}</div>"
-
-        if status in ["TP", "SL", "TIME_EXIT"]:
+        if status in ["TP", "SL"]:
             sum_profit += profit
-
     col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
     col_html += f"<div class='small'>Invest: {round(sum_invest)}</div>"
     profit_percent = (sum_profit / sum_invest * 100) if sum_invest else 0
     col_html += f"<div class='small blue'>{round(profit_percent, 1)}%</div>"
-
     html += f"<td>{col_html}</td>"
 
 html += "</tr></table></body></html>"
@@ -139,16 +118,8 @@ print("\n📊 Štatistika podľa stĺpcov:")
 for dt in dates:
     column_trades = columns[dt]
     total = len(column_trades)
-    open_count = sum(1 for t in column_trades if t["status"] == "OPEN")
-    tp_count = sum(1 for t in column_trades if t["status"] == "TP")
-    sl_count = sum(1 for t in column_trades if t["status"] == "SL")
-    time_exit_count = sum(1 for t in column_trades if t["status"] == "TIME_EXIT")
-
-    closed = tp_count + sl_count + time_exit_count
-    success_rate = tp_count / closed * 100 if closed > 0 else 0
-
-    print(
-        f" - {dt} | Total: {total}, OPEN: {open_count}, "
-        f"TP: {tp_count}, SL: {sl_count}, TIME_EXIT: {time_exit_count}, "
-        f"Success rate: {success_rate:.1f}%"
-    )
+    open_count = sum(1 for t in column_trades if t["status"]=="OPEN")
+    tp_count = sum(1 for t in column_trades if t["status"]=="TP")
+    sl_count = sum(1 for t in column_trades if t["status"]=="SL")
+    success_rate = tp_count / (tp_count + sl_count) * 100 if (tp_count + sl_count) > 0 else 0
+    print(f" - {dt} | Total: {total}, OPEN: {open_count}, TP: {tp_count}, SL: {sl_count}, Success rate: {success_rate:.1f}%")
