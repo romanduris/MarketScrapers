@@ -819,7 +819,7 @@
     "ticker": "MAR",
     "status": "TIME_EXIT",
     "hit_date": "2026-01-21 00:00:00-05:00",
-    "profit": -3.35,
+    "profit": -3.02,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 317.8500061035156
@@ -940,7 +940,7 @@
     "ticker": "AMP",
     "status": "TIME_EXIT",
     "hit_date": "2026-01-21 00:00:00-05:00",
-    "profit": 4.16,
+    "profit": 2.37,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 501.3800048828125
@@ -984,7 +984,7 @@
     "ticker": "UPS",
     "status": "TIME_EXIT",
     "hit_date": "2026-01-21 00:00:00-05:00",
-    "profit": 3.83,
+    "profit": 3.8,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 104.68499755859375
@@ -1180,9 +1180,9 @@
     "source_file": "2026-01-08_15-54-11.json",
     "purchase_dt": "2026-01-08 15:54:11",
     "ticker": "TXT",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 3.3,
+    "status": "TP",
+    "hit_date": "2026-01-21 00:00:00-05:00",
+    "profit": 4.59,
     "market_trend": "up",
     "sector_trend": "up",
     "price": 91.75
@@ -1270,7 +1270,7 @@
     "ticker": "RL",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.34,
+    "profit": 3.35,
     "market_trend": "up",
     "sector_trend": "up",
     "price": 366.2300109863281
@@ -1303,7 +1303,7 @@
     "ticker": "JKHY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -2.04,
+    "profit": -0.53,
     "market_trend": "up",
     "sector_trend": "neutral",
     "price": 188.3524932861328
@@ -1318,226 +1318,6 @@
     "market_trend": "up",
     "sector_trend": "up",
     "price": 204.99000549316406
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "AMP",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -0.27,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 505.81500244140625
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "GD",
-    "status": "TP",
-    "hit_date": "2026-01-16 00:00:00-05:00",
-    "profit": 14.17,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 354.3500061035156
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "NTRS",
-    "status": "SL",
-    "hit_date": "2026-01-21 00:00:00-05:00",
-    "profit": -4.35,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 144.91000366210938
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "COP",
-    "status": "SL",
-    "hit_date": "2026-01-08 00:00:00-05:00",
-    "profit": -2.95,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 98.31999969482422
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "SNA",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 8.74,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 360.32000732421875
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "TROW",
-    "status": "SL",
-    "hit_date": "2026-01-13 00:00:00-05:00",
-    "profit": -3.26,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 108.5
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "CFG",
-    "status": "SL",
-    "hit_date": "2026-01-12 00:00:00-05:00",
-    "profit": -1.86,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 62.0099983215332
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "RL",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 2.33,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 367.23529052734375
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "WFC",
-    "status": "SL",
-    "hit_date": "2026-01-14 00:00:00-05:00",
-    "profit": -2.87,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 95.7300033569336
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "ACN",
-    "status": "SL",
-    "hit_date": "2026-01-08 00:00:00-05:00",
-    "profit": -8.58,
-    "market_trend": "up",
-    "sector_trend": "neutral",
-    "price": 285.885009765625
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "DG",
-    "status": "TP",
-    "hit_date": "2026-01-14 00:00:00-05:00",
-    "profit": 8.66,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 144.2716064453125
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "RJF",
-    "status": "TP",
-    "hit_date": "2026-01-15 00:00:00-05:00",
-    "profit": 6.69,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 167.4550018310547
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "TXT",
-    "status": "SL",
-    "hit_date": "2026-01-08 00:00:00-05:00",
-    "profit": -2.76,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 91.95500183105469
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "WAB",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 9.01,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 222.27999877929688
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "CPAY",
-    "status": "SL",
-    "hit_date": "2026-01-08 00:00:00-05:00",
-    "profit": -9.93,
-    "market_trend": "up",
-    "sector_trend": "neutral",
-    "price": 331.04998779296875
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "IEX",
-    "status": "TP",
-    "hit_date": "2026-01-15 00:00:00-05:00",
-    "profit": 9.21,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 184.14999389648438
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "RF",
-    "status": "SL",
-    "hit_date": "2026-01-12 00:00:00-05:00",
-    "profit": -0.87,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 29.174999237060547
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "MMM",
-    "status": "TP",
-    "hit_date": "2026-01-15 00:00:00-05:00",
-    "profit": 6.62,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 165.57760620117188
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "INCY",
-    "status": "SL",
-    "hit_date": "2026-01-13 00:00:00-05:00",
-    "profit": -3.19,
-    "market_trend": "up",
-    "sector_trend": "up",
-    "price": 106.30000305175781
-  },
-  {
-    "source_file": "2026-01-08_18-40-33.json",
-    "purchase_dt": "2026-01-08 18:40:33",
-    "ticker": "JKHY",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": -1.55,
-    "market_trend": "up",
-    "sector_trend": "neutral",
-    "price": 187.86000061035156
   },
   {
     "source_file": "2026-01-09_15-50-38.json",
@@ -1567,7 +1347,7 @@
     "ticker": "WAB",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 7.05,
+    "profit": 8.76,
     "market_trend": "up",
     "sector_trend": "up",
     "price": 224.24000549316406
@@ -1578,7 +1358,7 @@
     "ticker": "ACN",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.86,
+    "profit": 0.96,
     "market_trend": "up",
     "sector_trend": "neutral",
     "price": 279.760009765625
@@ -1589,7 +1369,7 @@
     "ticker": "CTVA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.64,
+    "profit": 1.72,
     "market_trend": "up",
     "sector_trend": "up",
     "price": 69.76499938964844
@@ -1710,7 +1490,7 @@
     "ticker": "AME",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 6.48,
+    "profit": 8.91,
     "market_trend": "up",
     "sector_trend": "up",
     "price": 211.50999450683594
@@ -1765,7 +1545,7 @@
     "ticker": "CTVA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.17,
+    "profit": 2.25,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 69.23500061035156
@@ -1787,7 +1567,7 @@
     "ticker": "TJX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -3.02,
+    "profit": -2.88,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 158.72999572753906
@@ -1831,7 +1611,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 6.7,
+    "profit": 6.71,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 358.07000732421875
@@ -1875,7 +1655,7 @@
     "ticker": "AOS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.26,
+    "profit": 0.81,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 71.43499755859375
@@ -1974,7 +1754,7 @@
     "ticker": "HST",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.33,
+    "profit": 0.43,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 18.2549991607666
@@ -1985,7 +1765,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.12,
+    "profit": -0.11,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 364.885009765625
@@ -2095,7 +1875,7 @@
     "ticker": "HUBB",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.33,
+    "profit": 4.24,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 478.260009765625
@@ -2106,7 +1886,7 @@
     "ticker": "HSY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.34,
+    "profit": 0.24,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 195.8300018310547
@@ -2117,7 +1897,7 @@
     "ticker": "MNST",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.93,
+    "profit": 3.44,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 78.16000366210938
@@ -2161,7 +1941,7 @@
     "ticker": "JNJ",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.01,
+    "profit": 5.12,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 212.88499450683594
@@ -2172,7 +1952,7 @@
     "ticker": "CTAS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 4.0,
+    "profit": 4.18,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 191.22500610351562
@@ -2227,7 +2007,7 @@
     "ticker": "WAB",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 6.09,
+    "profit": 7.8,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 225.1999969482422
@@ -2238,7 +2018,7 @@
     "ticker": "JKHY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -4.72,
+    "profit": -3.22,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 191.0449981689453
@@ -2249,7 +2029,7 @@
     "ticker": "PH",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 11.98,
+    "profit": 15.37,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 929.9199829101562
@@ -2260,7 +2040,7 @@
     "ticker": "AKAM",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.18,
+    "profit": 3.01,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 90.71499633789062
@@ -2315,7 +2095,7 @@
     "ticker": "DOV",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.85,
+    "profit": 5.39,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 203.16000366210938
@@ -2326,7 +2106,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.8,
+    "profit": 3.93,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 360.8500061035156
@@ -2348,7 +2128,7 @@
     "ticker": "RJF",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.44,
+    "profit": 0.93,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 169.13499450683594
@@ -2359,7 +2139,7 @@
     "ticker": "TXN",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.09,
+    "profit": 3.68,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 190.72999572753906
@@ -2370,7 +2150,7 @@
     "ticker": "TJX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.69,
+    "profit": -0.55,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 156.39999389648438
@@ -2392,7 +2172,7 @@
     "ticker": "AMP",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 4.95,
+    "profit": 3.15,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 500.5950012207031
@@ -2403,7 +2183,7 @@
     "ticker": "NTRS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.46,
+    "profit": 0.24,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 144.1750030517578
@@ -2434,9 +2214,9 @@
     "source_file": "2026-01-15_15-51-14.json",
     "purchase_dt": "2026-01-15 15:51:14",
     "ticker": "EME",
-    "status": "OPEN",
-    "hit_date": null,
-    "profit": 19.36,
+    "status": "TP",
+    "hit_date": "2026-01-21 00:00:00-05:00",
+    "profit": 27.33,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 683.3300170898438
@@ -2458,7 +2238,7 @@
     "ticker": "MNST",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.22,
+    "profit": 2.73,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 78.87000274658203
@@ -2469,7 +2249,7 @@
     "ticker": "NUE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 4.72,
+    "profit": 4.66,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 175.56500244140625
@@ -2480,7 +2260,7 @@
     "ticker": "CTAS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.54,
+    "profit": -1.36,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 196.7747039794922
@@ -2491,7 +2271,7 @@
     "ticker": "AOS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.12,
+    "profit": 0.66,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 71.58000183105469
@@ -2524,7 +2304,7 @@
     "ticker": "GWW",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -10.21,
+    "profit": -4.86,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 1063.43505859375
@@ -2535,7 +2315,7 @@
     "ticker": "WAB",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.39,
+    "profit": 3.1,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 229.89500427246094
@@ -2645,7 +2425,7 @@
     "ticker": "PWR",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.45,
+    "profit": 4.1,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 469.1449890136719
@@ -2689,7 +2469,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.96,
+    "profit": -1.83,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 366.6099853515625
@@ -2711,7 +2491,7 @@
     "ticker": "APH",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.01,
+    "profit": 2.15,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 152.4499969482422
@@ -2744,7 +2524,7 @@
     "ticker": "CTVA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.66,
+    "profit": 1.74,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 69.73999786376953
@@ -2788,7 +2568,7 @@
     "ticker": "BK",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.83,
+    "profit": -2.02,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 121.77999877929688
@@ -2799,7 +2579,7 @@
     "ticker": "GS",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.53,
+    "profit": -9.29,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 962.2999877929688
@@ -2865,7 +2645,7 @@
     "ticker": "MNST",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.04,
+    "profit": 2.53,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 79.06500244140625
@@ -2876,7 +2656,7 @@
     "ticker": "CBRE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.28,
+    "profit": 1.74,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 168.5500030517578
@@ -2887,7 +2667,7 @@
     "ticker": "COP",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.15,
+    "profit": -0.34,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 97.48999786376953
@@ -2909,7 +2689,7 @@
     "ticker": "CBOE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.6,
+    "profit": 2.02,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 271.04998779296875
@@ -2920,7 +2700,7 @@
     "ticker": "JNJ",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.63,
+    "profit": 1.51,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 216.5
@@ -2942,7 +2722,7 @@
     "ticker": "PNC",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.58,
+    "profit": 0.91,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 224.5800018310547
@@ -2953,7 +2733,7 @@
     "ticker": "GWW",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 8.6,
+    "profit": 13.95,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 1044.6300048828125
@@ -2964,7 +2744,7 @@
     "ticker": "REG",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.08,
+    "profit": 0.29,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 70.7249984741211
@@ -2975,7 +2755,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.33,
+    "profit": 1.46,
     "market_trend": "neutral",
     "sector_trend": "up",
     "price": 363.3171081542969
@@ -2986,7 +2766,7 @@
     "ticker": "CTVA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.17,
+    "profit": 2.25,
     "market_trend": "neutral",
     "sector_trend": "neutral",
     "price": 69.23500061035156
@@ -3008,7 +2788,7 @@
     "ticker": "JKHY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -2.9,
+    "profit": -1.4,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 189.22500610351562
@@ -3019,7 +2799,7 @@
     "ticker": "BK",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.75,
+    "profit": -1.95,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 121.70999908447266
@@ -3074,7 +2854,7 @@
     "ticker": "AKAM",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.32,
+    "profit": 1.86,
     "market_trend": "neutral",
     "sector_trend": "down",
     "price": 91.86499786376953
@@ -3085,7 +2865,7 @@
     "ticker": "GD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 1.17,
+    "profit": 1.3,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 363.4755859375
@@ -3096,7 +2876,7 @@
     "ticker": "NUE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 2.02,
+    "profit": 1.9,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 178.3300018310547
@@ -3107,7 +2887,7 @@
     "ticker": "OKE",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.04,
+    "profit": 0.25,
     "market_trend": "down",
     "sector_trend": "up",
     "price": 75.56999969482422
@@ -3118,7 +2898,7 @@
     "ticker": "AME",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.63,
+    "profit": 1.57,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 218.85499572753906
@@ -3129,7 +2909,7 @@
     "ticker": "CTVA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.53,
+    "profit": 0.61,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 70.875
@@ -3140,7 +2920,7 @@
     "ticker": "DOV",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.86,
+    "profit": 2.17,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 206.3800048828125
@@ -3151,7 +2931,7 @@
     "ticker": "COP",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.2,
+    "profit": -0.29,
     "market_trend": "down",
     "sector_trend": "up",
     "price": 97.44000244140625
@@ -3162,7 +2942,7 @@
     "ticker": "CAT",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.06,
+    "profit": 9.95,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 635.43359375
@@ -3184,7 +2964,7 @@
     "ticker": "GWW",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 3.71,
+    "profit": 9.06,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 1049.5150146484375
@@ -3206,7 +2986,7 @@
     "ticker": "DGX",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.71,
+    "profit": -1.81,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 186.4550018310547
@@ -3217,7 +2997,7 @@
     "ticker": "DD",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.18,
+    "profit": 0.13,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 43.25
@@ -3228,7 +3008,7 @@
     "ticker": "PH",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.95,
+    "profit": 4.34,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 940.9500122070312
@@ -3239,7 +3019,7 @@
     "ticker": "SNA",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.73,
+    "profit": 3.2,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 368.44500732421875
@@ -3250,7 +3030,7 @@
     "ticker": "JKHY",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -2.65,
+    "profit": -1.16,
     "market_trend": "down",
     "sector_trend": "down",
     "price": 188.97999572753906
@@ -3259,9 +3039,9 @@
     "source_file": "2026-01-21_16-00-27.json",
     "purchase_dt": "2026-01-21 16:00:27",
     "ticker": "IVZ",
-    "status": "SL",
-    "hit_date": "2026-01-21 00:00:00-05:00",
-    "profit": -0.88,
+    "status": "OPEN",
+    "hit_date": null,
+    "profit": -0.05,
     "market_trend": "down",
     "sector_trend": "down",
     "price": 29.219999313354492
@@ -3272,7 +3052,7 @@
     "ticker": "MNST",
     "status": "OPEN",
     "hit_date": null,
-    "profit": 0.83,
+    "profit": 1.32,
     "market_trend": "down",
     "sector_trend": "neutral",
     "price": 80.27999877929688
@@ -3283,7 +3063,7 @@
     "ticker": "RJF",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -0.36,
+    "profit": -0.99,
     "market_trend": "down",
     "sector_trend": "down",
     "price": 171.0500030517578
@@ -3294,7 +3074,7 @@
     "ticker": "RL",
     "status": "OPEN",
     "hit_date": null,
-    "profit": -1.17,
+    "profit": -1.02,
     "market_trend": "down",
     "sector_trend": "down",
     "price": 370.5950012207031
