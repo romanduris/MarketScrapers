@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 # --- Cesta k vstupnému JSON ---
-DATA_FILE = Path(r"data/step8_SLTP.json")
+DATA_FILE = Path(r"data/step9_Normalize.json")
 
 # --- Demo API Capital.com ---
 BASE = "https://demo-api-capital.backend-capital.com/api/v1"
@@ -31,8 +31,6 @@ r = requests.get(
     headers={"X-CAP-API-KEY": API_KEY, "CST": cst, "X-SECURITY-TOKEN": xsec},
 )
 markets = r.json().get("markets", [])
-
-# --- Mapping ticker -> market data ---
 market_dict = {m["symbol"]: m for m in markets if m.get("instrumentType") == "SHARES"}
 
 print("\n--- Starting Trading (CFD, US shares only) ---\n")
@@ -63,7 +61,7 @@ for item in data:
         continue
 
     # --- Parametre z JSON ---
-    size = 1
+    size = item.get("Normalize", 1)  # použitie Normalize parametra pre size CFD
     sl = item.get("SL")
     tp = item.get("TP")
     json_price = item.get("price")
@@ -75,7 +73,7 @@ for item in data:
         "size": size,
         "orderType": "MARKET",
         "stopLevel": sl,
-        "profitLevel": tp,   # ✅ SPRÁVNY TP PARAMETER
+        "profitLevel": tp,
     }
 
     r_order = requests.post(
@@ -85,10 +83,10 @@ for item in data:
     )
 
     if r_order.status_code == 200:
-        print(
-            f"BUY executed | Offer: {offer_price} | "
-            f"JSON Price: {json_price} | "
-            f"SL: {sl} | TP(profitLevel): {tp}\n"
+       print(
+        f"BUY executed | Offer: {offer_price} | JSON Price: {json_price} | "
+        f"SL: {sl} | TP: {tp} | "
+         f"Normalize Factor: {item.get('Normalize', 1):.4f} | Size(CFD): {size:.4f}"
         )
     else:
         print(f"Order failed | Response: {r_order.text}\n")

@@ -228,52 +228,6 @@ for dt in dates:
 html += "</tr>"
 html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 5 trades: {round(total_sum_first5)} (OPEN: {round(total_open_first5)})</td></tr>"
 
-# ---------- pod tabuľkou prvá akcia ----------
-total_sum_first1 = 0
-total_open_first1 = 0
-
-html += "<tr>"
-for dt in dates:
-    column_trades = columns[dt][:1]  # prvá akcia
-    col_html = ""
-    sum_profit = 0
-    closed_count = 0
-    profitable_count = 0
-    open_sum = 0
-
-    for t in column_trades:
-        profit = t.get("profit",0)
-        status = t.get("status","OPEN")
-        if status == "OPEN":
-            color_class="orange"
-            open_sum += profit
-        elif status=="TP":
-            color_class="green"
-        elif status=="SL":
-            color_class="red"
-        elif status=="TIME_EXIT":
-            color_class="black"
-        else:
-            color_class="blue"
-        col_html += f"<div class='{color_class}'>{profit}</div>"
-        if status in ["TP","SL","TIME_EXIT"]:
-            sum_profit += profit
-            closed_count += 1
-            if profit>0:
-                profitable_count +=1
-
-    total_sum_first1 += sum_profit
-    total_open_first1 += open_sum
-
-    col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
-    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {round(open_sum)}</div>"
-    success_rate = round((profitable_count/closed_count*100)) if closed_count>0 else 0
-    col_html += f"<div class='small blue'>Rate: {success_rate}%</div>"
-
-    html += f"<td>{col_html}</td>"
-html += "</tr>"
-html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 1 trade: {round(total_sum_first1)} (OPEN: {round(total_open_first1)})</td></tr>"
-
 html += "</table></body></html>"
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

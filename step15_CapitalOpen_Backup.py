@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 # --- Cesta k vstupnému JSON ---
-DATA_FILE = Path(r"data/step8_SLTP.json")
+DATA_FILE = Path(r"data/step9_Normalize.json")
 
 # --- Demo API Capital.com ---
 BASE = "https://demo-api-capital.backend-capital.com/api/v1"
@@ -32,14 +32,15 @@ r = requests.get(
 )
 markets = r.json().get("markets", [])
 
-# --- Vytvorenie mapping ticker -> market data ---
+# --- Mapping ticker -> market data ---
 market_dict = {m["symbol"]: m for m in markets if m.get("instrumentType") == "SHARES"}
 
-# --- Obchodovanie prvých 5 tickers zo súboru ---
 print("\n--- Starting Trading (CFD, US shares only) ---\n")
+
 count = 0
 for item in data:
     ticker = item["ticker"]
+
     if ticker not in market_dict:
         print(f"{ticker} | NOT FOUND in demo account SHARES → skipping")
         continue
@@ -74,7 +75,7 @@ for item in data:
         "size": size,
         "orderType": "MARKET",
         "stopLevel": sl,
-        "limitLevel": tp,
+        "profitLevel": tp,   # ✅ SPRÁVNY TP PARAMETER
     }
 
     r_order = requests.post(
@@ -84,7 +85,11 @@ for item in data:
     )
 
     if r_order.status_code == 200:
-        print(f"BUY executed | Offer: {offer_price} | JSON Price: {json_price} | SL: {sl} | TP: {tp}\n")
+        print(
+            f"BUY executed | Offer: {offer_price} | "
+            f"JSON Price: {json_price} | "
+            f"SL: {sl} | TP(profitLevel): {tp}\n"
+        )
     else:
         print(f"Order failed | Response: {r_order.text}\n")
 
