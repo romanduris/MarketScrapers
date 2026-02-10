@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-INPUT_FILE = Path("data/step8_SLTP.json")
+INPUT_FILE = Path("data/step9_Normalize.json")
 ARCHIVE_DIR = Path("history")
 
 def archive_sltp():

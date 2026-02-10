@@ -54,6 +54,7 @@ def analyze_trade(trade, purchase_dt):
     entry_price = trade["price"]
     sl = trade["SL"]
     tp = trade["TP"]
+    normalize = trade.get("Normalize", 1)
 
     hist = safe_fetch_history(ticker, purchase_dt)
     if hist is None or hist.empty:
@@ -79,7 +80,7 @@ def analyze_trade(trade, purchase_dt):
         high = row["High"]
 
         if low <= sl:
-            profit = sl - entry_price
+            profit = (sl - entry_price) * normalize
             return {
                 "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
                 "ticker": ticker,
@@ -89,7 +90,7 @@ def analyze_trade(trade, purchase_dt):
             }
 
         if high >= tp:
-            profit = tp - entry_price
+            profit = (tp - entry_price) * normalize
             return {
                 "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
                 "ticker": ticker,
@@ -104,7 +105,7 @@ def analyze_trade(trade, purchase_dt):
     if len(hist) <= MAX_HOLD_DAYS:
         last_row = hist.iloc[-1]
         current_price = last_row["Close"]
-        profit = current_price - entry_price
+        profit = (current_price - entry_price) * normalize
         status = "OPEN" if len(hist) < MAX_HOLD_DAYS else "TIME_EXIT"
 
         return {
@@ -121,7 +122,7 @@ def analyze_trade(trade, purchase_dt):
     # =========================
     exit_row = hist.iloc[MAX_HOLD_DAYS]  # 11. deň (0-based)
     exit_open_price = exit_row["Open"]
-    profit = exit_open_price - entry_price
+    profit = (exit_open_price - entry_price) * normalize
 
     return {
         "purchase_dt": purchase_dt.strftime("%Y-%m-%d %H:%M:%S"),
