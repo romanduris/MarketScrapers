@@ -25,6 +25,7 @@ pipeline_steps = [
     "step12_Analyze.py",
     "step13_AnalyzeHtml.py",
     "step15_CapitalOpen.py",
+    "step16_CapitalClose.py",
 ]
 
 def check_and_install_module(module_name):
