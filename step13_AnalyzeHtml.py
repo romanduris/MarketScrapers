@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
+import math  # pridané pre kontrolu NaN
 
 INPUT_FILE = "data/step12_Analyze.json"
 OUTPUT_FILE = Path("docs/ai_analyze.html")
@@ -92,6 +93,12 @@ for dt in dates:
     html += f"<th>{colorize_trend(market_trend)}</th>"
 html += "</tr>\n<tr>"
 
+# ---------- funkcia pre bezpečné round pre open_sum ----------
+def safe_round(value):
+    if value is None or (isinstance(value, float) and math.isnan(value)):
+        return 0
+    return round(value)
+
 # ---------- hlavná tabuľka hodnoty profit + SUM, OPEN nad Rate ----------
 total_sum_all = 0
 total_open_all = 0
@@ -127,14 +134,18 @@ for dt in dates:
 
     total_sum_all += sum_profit
     total_open_all += open_sum
-    col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
-    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {round(open_sum)}</div>"
+    col_html += f"<hr><div><b>SUM: {safe_round(sum_profit)}</b></div>"
+
+    # diagnostika
+    print(f"DEBUG: open_sum = {open_sum}, type = {type(open_sum)}")
+
+    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {safe_round(open_sum)}</div>"
     success_rate = round((profitable_count / closed_count * 100)) if closed_count>0 else 0
     col_html += f"<div class='small blue'>Rate: {success_rate}%</div>"
     html += f"<td>{col_html}</td>"
 
 html += "</tr>"
-html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of all closed trades: {round(total_sum_all)} (OPEN: {round(total_open_all)})</td></tr>"
+html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of all closed trades: {safe_round(total_sum_all)} (OPEN: {safe_round(total_open_all)})</td></tr>"
 
 # ---------- pod tabuľkou prvých 10 obchodov ----------
 total_sum_first10 = 0
@@ -173,14 +184,14 @@ for dt in dates:
     total_sum_first10 += sum_profit
     total_open_first10 += open_sum
 
-    col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
-    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {round(open_sum)}</div>"
+    col_html += f"<hr><div><b>SUM: {safe_round(sum_profit)}</b></div>"
+    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {safe_round(open_sum)}</div>"
     success_rate = round((profitable_count/closed_count*100)) if closed_count>0 else 0
     col_html += f"<div class='small blue'>Rate: {success_rate}%</div>"
 
     html += f"<td>{col_html}</td>"
 html += "</tr>"
-html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 10 trades: {round(total_sum_first10)} (OPEN: {round(total_open_first10)})</td></tr>"
+html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 10 trades: {safe_round(total_sum_first10)} (OPEN: {safe_round(total_open_first10)})</td></tr>"
 
 # ---------- pod tabuľkou prvých 5 obchodov ----------
 total_sum_first5 = 0
@@ -219,14 +230,14 @@ for dt in dates:
     total_sum_first5 += sum_profit
     total_open_first5 += open_sum
 
-    col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
-    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {round(open_sum)}</div>"
+    col_html += f"<hr><div><b>SUM: {safe_round(sum_profit)}</b></div>"
+    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {safe_round(open_sum)}</div>"
     success_rate = round((profitable_count/closed_count*100)) if closed_count>0 else 0
     col_html += f"<div class='small blue'>Rate: {success_rate}%</div>"
 
     html += f"<td>{col_html}</td>"
 html += "</tr>"
-html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 5 trades: {round(total_sum_first5)} (OPEN: {round(total_open_first5)})</td></tr>"
+html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 5 trades: {safe_round(total_sum_first5)} (OPEN: {safe_round(total_open_first5)})</td></tr>"
 
 # ---------- pod tabuľkou prvá akcia ----------
 total_sum_first1 = 0
@@ -265,14 +276,14 @@ for dt in dates:
     total_sum_first1 += sum_profit
     total_open_first1 += open_sum
 
-    col_html += f"<hr><div><b>SUM: {round(sum_profit)}</b></div>"
-    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {round(open_sum)}</div>"
+    col_html += f"<hr><div><b>SUM: {safe_round(sum_profit)}</b></div>"
+    col_html += f"<div class='small' style='color:#f39c12; font-weight:bold;'>OPEN: {safe_round(open_sum)}</div>"
     success_rate = round((profitable_count/closed_count*100)) if closed_count>0 else 0
     col_html += f"<div class='small blue'>Rate: {success_rate}%</div>"
 
     html += f"<td>{col_html}</td>"
 html += "</tr>"
-html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 1 trade: {round(total_sum_first1)} (OPEN: {round(total_open_first1)})</td></tr>"
+html += f"<tr><td colspan='{len(dates)}' style='text-align:center; font-weight:bold; background-color:#ecf0f1;'>Total SUM of first 1 trade: {safe_round(total_sum_first1)} (OPEN: {safe_round(total_open_first1)})</td></tr>"
 
 html += "</table></body></html>"
 
