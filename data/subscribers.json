@@ -22,23 +22,5 @@
         "name": "Viktor",
         "active": true,
         "plan": "EA"
-    },
-    {
-        "email": "XXismaroik@gmail.com",
-        "name": "Ismaroik",
-        "active": false,
-        "plan": "DEMO"
-    },
-    {
-        "email": "XXinfo.rodus.art@gmail.com",
-        "name": "RodusArt",
-        "active": false,
-        "plan": "PREMIUM"
-    },
-      {
-        "email": "XXrodu.market.scraper@gmail.com",
-        "name": "Roman",
-        "active": true,
-        "plan": "EA"
     }
 ]
